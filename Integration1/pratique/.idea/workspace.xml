@@ -18,6 +18,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -30,6 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -55,7 +57,7 @@
       <updated>1573303288220</updated>
       <workItem from="1573303289611" duration="67000" />
       <workItem from="1573303388189" duration="3208000" />
-      <workItem from="1573313622688" duration="4203000" />
+      <workItem from="1573313622688" duration="4768000" />
     </task>
     <servers />
   </component>
