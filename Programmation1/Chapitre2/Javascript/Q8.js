@@ -15,3 +15,5 @@ salaire2 =
 if (nombreHeures > 40) {
     document.write((tauxHoraire * 40) + )
 }
+
+// pas fini
