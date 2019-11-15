@@ -18,6 +18,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -30,6 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -55,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573772296569</updated>
       <workItem from="1573772297986" duration="1065000" />
-      <workItem from="1573773452331" duration="2477000" />
+      <workItem from="1573773452331" duration="10741000" />
     </task>
     <servers />
   </component>
