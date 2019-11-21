@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="558b020d-fc8e-4a75-92dd-d7a6d5c325ce" name="Default Changelist" comment="" />
+    <list default="true" id="a3648ce7-013a-4509-8d46-96d0443a246e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,26 +13,15 @@
       <executable />
     </execution>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectId" id="1TcveqUFOExRltcBxVN3oP95sFm" />
+  <component name="ProjectId" id="1Twhp9zb8dugCFiGH3Gx7jzQzF2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Integration1/pratique/Media" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,14 +40,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="558b020d-fc8e-4a75-92dd-d7a6d5c325ce" name="Default Changelist" comment="" />
-      <created>1573772296569</created>
+      <changelist id="a3648ce7-013a-4509-8d46-96d0443a246e" name="Default Changelist" comment="" />
+      <created>1574377245559</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573772296569</updated>
-      <workItem from="1573772297986" duration="1065000" />
-      <workItem from="1573773452331" duration="12667000" />
-      <workItem from="1574377145618" duration="94000" />
+      <updated>1574377245559</updated>
+      <workItem from="1574377247015" duration="1260000" />
     </task>
     <servers />
   </component>
@@ -70,9 +57,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
