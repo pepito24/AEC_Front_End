@@ -2,16 +2,53 @@
 /* Programmé par erik p.*/
 /*2019-11-21*/
 
-p {
-   text-align: center;
-
-}
-
-
 body {
-    background: url("../Picture/156846315236271822 (5).png") no-repeat center ;
+    width: 900px;
+    background: url("../Picture/ocean-2051859_960_720.jpg") no-repeat top ;
+    background-color: lightgrey;
     margin: auto;
-    width: 100%;
 }
 
-{}
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+
+h1 {
+    font-weight: 36px;
+}
+
+h2 {
+    font-weight: 24px;
+}
+
+p{
+    font-weight: 14px;
+    color: white;
+    text-align: justify;
+}
+
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 500px;
+    height: 425px ;
+    border-radius: 8px;
+}
+
+img:hover {
+    box-shadow: 5px 10px #888888;
+}
