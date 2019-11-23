@@ -2,11 +2,6 @@
 var couleur;
 
 
-var vert;
-var rouge;
-var bleu;
-
-
 couleur = (prompt("Choisir un des 3 choix suivantes : Vert, Rouge ou Bleu"));
 
 if(couleur.toUpperCase() === "VERT"){
