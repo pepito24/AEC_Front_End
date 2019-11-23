@@ -45,10 +45,10 @@ else if (b > a && b > c ) {
      }
  }
 
- else if (c === b | c === a ){
+ else if (c === b || c === a ){
      document.write("Erreur")
  }
 
- else if (a === b  | a === c){
+ else if (a === b  || a === c){
      document.write("Erreur")
  }

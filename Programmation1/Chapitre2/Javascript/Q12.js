@@ -37,3 +37,5 @@ else{
 
 
 //alert("Votre prime est de : " + prime);
+
+//document.write("<p>C'est pas humain! <strong class='texteRouge'>" + temperature +"</strong></p>");//

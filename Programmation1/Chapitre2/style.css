@@ -1,7 +1,16 @@
-#homme {
+.vert1 {
     color: green;
+    background-color: black;
 }
 
-#femme{
-    color: magenta;
+.rouge1{
+    color: red;
+    background-color: black;
 }
+
+.bleu1{
+    color: blue;
+    background-color: grey;
+}
+
+
