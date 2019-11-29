@@ -2,10 +2,13 @@ var age;
 var sexe;
 var prime;
 var valeur;
+var taux;
 
 valeur = Number(prompt("Entrer la valeur de votre voiture"));
 age = Number(prompt("Entrer votre age"));
 sexe = prompt("Entrer votre sexe");
+
+
 
 if (sexe.toUpperCase() === "M") {
     if (age >= 16  && age <= 25) {
