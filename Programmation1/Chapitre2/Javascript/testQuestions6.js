@@ -10,8 +10,10 @@ var prixYeux;
 var prixfilament = 20;
 var prixbatterie = 15;
 var livraison = total * 0.15;
-var sousTotal = ( prixControleur + prixUsb + prixMoteur + prixYeux + prixfilament + prixbatterie );
+var sousTotal = (prixControleur + prixUsb + prixMoteur + prixYeux + prixfilament + prixbatterie );
 var total = sousTotal + livraison;
+
+// if du controleur
 
 if ( controleur.toUpperCase() === "RASPBERRY PI"){
     prixControleur = 55;
@@ -19,23 +21,36 @@ if ( controleur.toUpperCase() === "RASPBERRY PI"){
 else if ( controleur.toUpperCase() === "RASPBERRY PI ZERO"){
     prixControleur = 15;
 }
-if ( usb.toUpperCase() === "OUI"){
-    prixUsb = 35;
-
-}
-else if ( usb.toUpperCase() === "NON"){
-    prixControleur = 0;
-}
-
-if ( yeux.toUpperCase() === "OUI"){
-    prixUsb = 10;
-}
-else if ( yeux.toUpperCase() === "NON"){
-    prixControleur = 0;
-}
-
-
 else {
     document.write( "Non valide" );
 }
+
+// if camera USB
+
+if ( usb.toUpperCase() === "OUI"){
+    prixUsb = 35;
+}
+else if ( usb.toUpperCase() === "NON"){
+    prixUsb = 0;
+}
+else {
+    document.write( "Non valide" );
+}
+
+// if des yeux
+
+if ( yeux.toUpperCase() === "OUI"){
+    prixYeux = 10;
+}
+else if ( yeux.toUpperCase() === "NON"){
+    prixYeux = 0;
+}
+else {
+    document.write( "Non valide" );
+}
+    document.write( controleur + moteurs + " moteurs " + usb + yeux );
+    document.write( sousTotal );
+    document.write(total );
+
+
 
