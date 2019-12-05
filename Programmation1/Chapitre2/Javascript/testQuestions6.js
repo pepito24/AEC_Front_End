@@ -1,56 +1,62 @@
-var controleur = prompt("Sélectionner le contrôleur entre un RASPBERRY PI ou un RASPBERRY PI ZERO ");
-var moteurs = Number(prompt("Entrez le nombre de moteurs desirée (entre 2 et 24)"));
-var usb = prompt("Voulez-vous une camera USB ? OUI ou NON");
-var yeux = prompt("Voulez-vous une matrice web pour les yeux ? OUI ou NON");
+var controleur;
+var controleurTexte;
+var nbMoteurs;
+var nbMoteursTexte;
+var camera;
+var cameraTexte;
+var matriceLed;
+var matriceLedTexte;
+var prix = 0;
+var prixLivraison = 0;
 
-var prixControleur;
-var prixMoteur = moteurs * 5;
-var prixUsb;
-var prixYeux;
-var prixfilament = 20;
-var prixbatterie = 15;
-var livraison = total * 0.15;
-var sousTotal = (prixControleur + prixUsb + prixMoteur + prixYeux + prixfilament + prixbatterie );
-var total = sousTotal + livraison;
+controleur = prompt("Pi ou PiZero?");
+nbMoteurs = Number(prompt("Entrez le nombre de moteurs (2-24)"));
+camera = prompt("camera USB oui ou non");
+matriceLed = prompt("Matrice LED oui ou non");
 
-// if du controleur
-
-if ( controleur.toUpperCase() === "RASPBERRY PI"){
-    prixControleur = 55;
+if(controleur.toUpperCase() === "PI"){
+    prix+=55;
+    controleurTexte = "Robot avec Raspberry Pi ";
 }
-else if ( controleur.toUpperCase() === "RASPBERRY PI ZERO"){
-    prixControleur = 15;
+else if(controleur.toUpperCase() === "PIZERO") {
+    prix+=15;
+    controleurTexte = "Robot avec Raspberry Pi Zero ";
 }
-else {
-    document.write( "Non valide" );
-}
-
-// if camera USB
-
-if ( usb.toUpperCase() === "OUI"){
-    prixUsb = 35;
-}
-else if ( usb.toUpperCase() === "NON"){
-    prixUsb = 0;
-}
-else {
-    document.write( "Non valide" );
+else{
+    controleurTexte = "Erreur de contrôleur ";
 }
 
-// if des yeux
+if(nbMoteurs>=2 && nbMoteurs <=24){
+    prix+= (nbMoteurs*5);
+    nbMoteursTexte = nbMoteurs + " moteurs ";
+}
+else{
+    nbMoteursTexte = "Erreur dans les moteurs ";
+}
 
-if ( yeux.toUpperCase() === "OUI"){
-    prixYeux = 10;
+if(camera.toUpperCase() ==="OUI"){
+    prix+=35;
+    cameraTexte = " avec caméra USB ";
 }
-else if ( yeux.toUpperCase() === "NON"){
-    prixYeux = 0;
+else{
+    cameraTexte = " sans caméra USB ";
 }
-else {
-    document.write( "Non valide" );
+
+if(matriceLed.toUpperCase() === "OUI "){
+    prix+=10;
+    matriceLedTexte = "avec matrice de LEDS ";
 }
-    document.write( controleur + moteurs + " moteurs " + usb + yeux );
-    document.write( sousTotal );
-    document.write(total );
+else{
+    matriceLedTexte = "sans matrice de LEDS ";
+}
+
+prix+=35; // On ajoute le filament et la batterie
+
+prixLivraison = prix * 1.15;
+
+document.write(controleurTexte + nbMoteursTexte + cameraTexte + matriceLedTexte);
+document.write("Le prix est de : " + prix);
+document.write("Le prix avec la livraison est de " + prixLivraison);
 
 
 

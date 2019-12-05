@@ -1,21 +1,22 @@
-var pointDeVie = Number(prompt("Entrez le nombre de point de vie de votre pokémon"));
+var pointsDommagesMadBullGX = 0;
+var pointsVieAdversaire = 0;
 
-if (pointDeVie < 60 &&  pointDeVie > 0){
-    document.write("les points de dommages de l’attaque Mad Bull GX sont de 100 points" );
+pointsVieAdversaire = Number(prompt("Entrez le nombre de points de vie de l'adversaire"));
+
+if(pointsVieAdversaire < 60){
+    pointsDommagesMadBullGX = 100;
+}
+else if(pointsVieAdversaire >= 60 && pointsVieAdversaire <= 79){
+    pointsDommagesMadBullGX = 150;
+}
+else if(pointsVieAdversaire >= 80 && pointsVieAdversaire <= 99){
+    pointsDommagesMadBullGX = 200;
+}
+else if(pointsVieAdversaire >= 100){
+    pointsDommagesMadBullGX = 250;
 }
 
-else if (pointDeVie >= 60 &&  pointDeVie <= 79){
-    document.write("les points de dommages de l’attaque Mad Bull GX sont de 150 points" );
-}
-
-else if (pointDeVie >= 80 &&  pointDeVie <= 99){
-    document.write("les points de dommages de l’attaque Mad Bull GX sont de 200 points" );
-}
-
-else if (pointDeVie >= 100){
-    document.write("les points de dommages de l’attaque Mad Bull GX sont de 250 points" );
-}
-
+document.write("L'attaque Mad Bull GX fait " + pointsDommagesMadBullGX + " dommages à l'adversaire");
 
 
 
