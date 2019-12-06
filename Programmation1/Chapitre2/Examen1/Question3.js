@@ -1,5 +1,4 @@
 
-
 var legume;
 var legumeTexte;
 var pepperoni;
@@ -47,4 +46,4 @@ prixTotal = prix + (prix * taxesTotal);
 
 document.write(legumeTexte + pepperonitexte + sauceTexte);
 document.write("Le prix avant taxes : " + prix + " $ ");
-document.write("Le prix total avec taxes : " + prixTotal + " $");
+document.write("Le prix total avec taxes : " + prixTotal.toFixed(2) + " $");
