@@ -1,3 +1,5 @@
+//Par Erik Paquet
+//2019-12-05
 
 var trancheAge = "";
 var age = Number(prompt("Entrer votre âge :"));

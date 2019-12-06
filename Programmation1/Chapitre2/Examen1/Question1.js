@@ -1,3 +1,5 @@
+//Par Erik Paquet
+//2019-12-05
 
 var prixSaison = 50;
 var prixTotal;
