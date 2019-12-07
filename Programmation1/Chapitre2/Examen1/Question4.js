@@ -1,7 +1,5 @@
 //Par Erik Paquet
 //2019-12-05
-
-
 var type ="";
 var aire = 0;
 var longueur;

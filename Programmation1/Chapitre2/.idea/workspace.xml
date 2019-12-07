@@ -13,6 +13,9 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Chapitre2" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -30,7 +33,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Integration1/pratique" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -58,7 +61,7 @@
       <workItem from="1574977127793" duration="13879000" />
       <workItem from="1575055274205" duration="2682000" />
       <workItem from="1575120523848" duration="2442000" />
-      <workItem from="1575579415137" duration="10752000" />
+      <workItem from="1575579415137" duration="11788000" />
     </task>
     <servers />
   </component>
