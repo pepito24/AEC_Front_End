@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4c2ded3-d3c8-48d8-8ade-ccd167923dfc" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -27,10 +26,15 @@
   </component>
   <component name="ProjectId" id="1TNb1xllrOYelMAujNuEOJ8bGWw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Programmation1/Chapitre2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -40,15 +44,15 @@
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media\Html" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -67,7 +71,11 @@
       <workItem from="1573313622688" duration="5751000" />
       <workItem from="1573768873127" duration="1808000" />
       <workItem from="1574379134618" duration="7886000" />
-      <workItem from="1575723582670" duration="726000" />
+      <workItem from="1575723582670" duration="1346000" />
+      <workItem from="1576100127560" duration="218000" />
+      <workItem from="1576100724793" duration="155000" />
+      <workItem from="1576101159465" duration="10000" />
+      <workItem from="1576188522141" duration="640000" />
     </task>
     <servers />
   </component>
@@ -86,5 +94,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1576189820754">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040@0.0.1366.728" timestamp="1576189820754" />
   </component>
 </project>
