@@ -33,8 +33,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Programmation1/Chapitre2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -76,6 +77,7 @@
       <workItem from="1576100724793" duration="155000" />
       <workItem from="1576101159465" duration="10000" />
       <workItem from="1576188522141" duration="640000" />
+      <workItem from="1576932618699" duration="3114000" />
     </task>
     <servers />
   </component>
