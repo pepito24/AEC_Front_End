@@ -1,13 +1,19 @@
 
-var nombre1 = prompt("Premier nombre");
-var nombre2 = prompt("Deuxieme nombre");
-var nombre3 = prompt("troisieme nombre");
-var nombre4 = prompt("Quatrieme nombre");
-var nombre5 = prompt("Écriver 0");
+//pas fini
 
+var sommesPos =0;
+var sommesNeg = 0;
+var numero1 = "";
 
-if (nombre1 < 0 ){
+while (numero1 != 0){
+    numero1 = prompt("Écrivez un numero");
+   if (numero1 === numero1 * 2){
+       sommesPos+= numero1;
+   }
 
+   sommesPos++;
 }
 
+document.write(sommesPos + '<br/>');
+document.write(sommesNeg + '<br/>');
 
