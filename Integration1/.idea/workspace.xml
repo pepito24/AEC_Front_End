@@ -12,6 +12,13 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -26,6 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -57,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573773373125</updated>
       <workItem from="1573773374286" duration="76000" />
-      <workItem from="1576939791815" duration="1625000" />
+      <workItem from="1576939791815" duration="4020000" />
     </task>
     <servers />
   </component>
@@ -78,9 +86,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576940133672">
+    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576941523573">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1576940133672" />
+    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1576941523573" />
   </component>
 </project>
