@@ -35,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Integration1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -69,7 +69,7 @@
       <workItem from="1573772297986" duration="1065000" />
       <workItem from="1573773452331" duration="12667000" />
       <workItem from="1574377145618" duration="94000" />
-      <workItem from="1578612951030" duration="9549000" />
+      <workItem from="1578612951030" duration="11479000" />
     </task>
     <servers />
   </component>
@@ -94,5 +94,9 @@
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
     <state x="-1187" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1578615013435" />
+    <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1578747783622">
+      <screen x="-1920" y="-139" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="135" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1578747783622" />
   </component>
 </project>
