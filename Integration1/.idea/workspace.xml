@@ -16,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -30,6 +31,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -37,6 +39,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media\Html" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media\Font" />
@@ -68,7 +71,7 @@
       <workItem from="1576939791815" duration="6517000" />
       <workItem from="1578611082201" duration="633000" />
       <workItem from="1578747794955" duration="6769000" />
-      <workItem from="1579042281315" duration="599000" />
+      <workItem from="1579042281315" duration="7613000" />
     </task>
     <servers />
   </component>
