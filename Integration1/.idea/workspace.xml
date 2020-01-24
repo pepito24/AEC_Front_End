@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -34,15 +34,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programmation1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\image" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media\Picture" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media\Html" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media\Font" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -72,6 +73,7 @@
       <workItem from="1578611082201" duration="633000" />
       <workItem from="1578747794955" duration="6769000" />
       <workItem from="1579042281315" duration="7707000" />
+      <workItem from="1579822120977" duration="10765000" />
     </task>
     <servers />
   </component>
@@ -92,10 +94,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576941523573">
+    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579830535453">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1576941523573" />
+    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1579830535453" />
     <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1579210417755">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
