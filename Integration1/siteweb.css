@@ -45,3 +45,13 @@ border-color: white;
     padding: 10px;
 }
 
+.div3{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.center{
+    margin:auto;
+    float:none;  /* annule le float:left de bootstrap*/
+}
+
