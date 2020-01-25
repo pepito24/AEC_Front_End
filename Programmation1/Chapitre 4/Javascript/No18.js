@@ -13,13 +13,11 @@
 
 var reponse = ["Tommy","Erik","Carina","Alain","Billy","Valerie","Nadia","Lidia","Martin","Manon"];
 var lettre = [];
+var nbPlacer = false;
 
-for(var i = 0;i < reponse.length-1;i++){
-    for(var j = 0;j < reponse.length;j++){
-       if (reponse[i][0] < reponse[j][0]){
-        lettre.push(reponse[i][0])
-   }
- }
+for(var i = 0;i < reponse.length;i++){
+if (reponse[i][0] < reponse[i+1][0])
+    lettre.push(reponse[i][0]);
 }
 
 
