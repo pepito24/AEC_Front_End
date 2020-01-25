@@ -1,17 +1,20 @@
 
 
-var nombre = [];
+var tabNombres = [];
+var trouver = false;
 
-for(var i = 0;i < 12;i++){
-    nombre[i] = Number(prompt("Écrire un nombre : " ));
+for(var i=0;i<12;i++){
+    tabNombres[i] = Math.floor(Math.random() * 10);
+    console.log(tabNombres[i]);
 }
 
-for (var j = 0;j < nombre.length;j++){
-    if( nombre[11] + nombre[j] === 15 ){
-        document.write(Math.max(nombre) + " et " + nombre[j])
+for(var j=0;j<tabNombres.length-1;j++){
+    if((tabNombres[j] + tabNombres[11]) === 15){
+        document.write("Le nombre à indice " + j + " = " + tabNombres[j] + " + le nombre " + tabNombres[11] +" = 15<br>");
+        trouver = true;
     }
-    else{
-        document.write();
-    }
+}
 
+if(!trouver){
+    document.write("Aucune solution!");
 }
