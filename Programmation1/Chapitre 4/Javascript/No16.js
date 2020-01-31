@@ -1,14 +1,12 @@
 
 var tabNombres = [10,20,30,40,50,60,70,80,90];
 var aleatoire, temp, temp2;
-
-
+var nbPlacer = false;
 
 document.write(tabNombres + "<br><br>");
 //On génère un nombre aléatoire qui représente l'indice à échanger
 aleatoire = Math.floor(Math.random() * 200);
 document.write("On veut ajouter le nombre " + aleatoire + " dans le tableau<br><br>");
-
 
 for(var i=0;i<tabNombres.length;i++){
     //Si le nombre est placé dans le tableau, on décale vers la droite les nombres
