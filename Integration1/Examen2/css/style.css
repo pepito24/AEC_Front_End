@@ -1,0 +1,37 @@
+/* style.css */
+/* Par Erik Paquet */
+/* 2020-02-04 */
+
+body{
+    background-color: #0b0b0b;
+}
+
+@font-face {
+    font-family: witcher;
+    src: url("../font/Thewitcher-jnOj.ttf");
+}
+
+
+hr{
+    background: #353434;
+    height: 1px;
+    border-style: none;
+    margin: 2% 0;
+}
+
+
+.text1{
+    color:#6c6c6c;
+    font-weight: bold;
+}
+
+.banniere{
+    background-image: url("../img/witcherBanniere.jpg");
+    font-family: witcher;
+    padding: 15rem;
+}
+
+.textBasPage{
+    font-family: witcher;
+}
+
