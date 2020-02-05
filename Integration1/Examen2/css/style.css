@@ -29,6 +29,7 @@ hr{
     background-image: url("../img/witcherBanniere.jpg");
     font-family: witcher;
     padding: 15rem;
+    margin: auto;
 }
 
 .textBasPage{
