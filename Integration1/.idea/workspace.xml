@@ -17,6 +17,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -74,7 +75,8 @@
       <workItem from="1578747794955" duration="6769000" />
       <workItem from="1579042281315" duration="7707000" />
       <workItem from="1579822120977" duration="14455000" />
-      <workItem from="1580560784062" duration="24281000" />
+      <workItem from="1580560784062" duration="24292000" />
+      <workItem from="1581081813757" duration="9587000" />
     </task>
     <servers />
   </component>
@@ -99,10 +101,10 @@
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
     <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1579830535453" />
-    <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1579955424621">
+    <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1581032928800">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
-    <state x="-1180" y="135" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1579955424621" />
+    <state x="-1180" y="135" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1581032928800" />
     <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580572433891">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>

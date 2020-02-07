@@ -20,19 +20,17 @@ hr{
 }
 
 
-.text1{
+.textCouleur{
     color:#6c6c6c;
-    font-weight: bold;
 }
 
-.banniere{
+.baniere{
     background-image: url("../img/witcherBanniere.jpg");
-    font-family: witcher;
-    padding: 15rem;
-    margin: auto;
+    background-repeat: no-repeat;
+    height: 70vh;
+
 }
 
-.textBasPage{
+.text{
     font-family: witcher;
 }
-
