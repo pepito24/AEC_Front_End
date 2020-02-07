@@ -27,6 +27,8 @@ hr{
 .baniere{
     background-image: url("../img/witcherBanniere.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 70vh;
 
 }
