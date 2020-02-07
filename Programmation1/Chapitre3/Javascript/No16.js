@@ -3,7 +3,7 @@
 var gagnier = 0;
 var perdu = 0;
 
-for(var i = 0;i <= 10;i++){
+
     var nombreAleatoire = Math.floor(Math.random() *2);
    var nombre1 = prompt("Entrer un nombre entre 0 et 1 ");
 if (nombreAleatoire === nombre1){

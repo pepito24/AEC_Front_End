@@ -35,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Integration1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -75,6 +75,7 @@
       <workItem from="1579955434604" duration="14745000" />
       <workItem from="1580251587472" duration="581000" />
       <workItem from="1580415830488" duration="13687000" />
+      <workItem from="1581032933754" duration="9091000" />
     </task>
     <servers />
   </component>
