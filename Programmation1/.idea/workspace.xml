@@ -35,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Integration1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -76,7 +76,8 @@
       <workItem from="1580251587472" duration="581000" />
       <workItem from="1580415830488" duration="13687000" />
       <workItem from="1581032933754" duration="9182000" />
-      <workItem from="1581100488964" duration="951000" />
+      <workItem from="1581100488964" duration="1167000" />
+      <workItem from="1581175789880" duration="2622000" />
     </task>
     <servers />
   </component>
@@ -101,14 +102,16 @@
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
     <state x="-1187" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1578615013435" />
-    <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1581081804049">
-      <screen x="-1920" y="-139" width="1920" height="1040" />
+    <state x="526" y="192" key="FileChooserDialogImpl" timestamp="1581465397661">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-1180" y="135" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1581081804049" />
-    <state x="-1317" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579963268336">
-      <screen x="-1920" y="-139" width="1920" height="1040" />
+    <state x="-1180" y="135" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1581101655349" />
+    <state x="526" y="192" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581465397657" />
+    <state x="429" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581176672346">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="-1317" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1579963268336" />
+    <state x="429" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1581176672346" />
     <state x="-1304" y="171" key="run.anything.popup" timestamp="1579226037137">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>

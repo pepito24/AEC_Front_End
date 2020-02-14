@@ -1,19 +1,9 @@
-.red {
-    background-color: red;
+.navbar-nav li a{
+    color:white !important;
 }
 
-.blue{
-    background-color: blue;
-}
-
-.row{
-    height: 100px;
-}
-
-.green{
-    background-color: green;
-}
-
-.yellow{
-    background-color: gold;
+.fa, .fas .fa-facebook{
+    color: white;
+    width: 4em;
+    height: 4em;
 }
