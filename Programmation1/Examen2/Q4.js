@@ -33,7 +33,6 @@ class Personne {
     }
 }
 
-
 let activite1 = new Activite("Golden Knights hockey", 125);
 let activite2 = new Activite("Raiders football", 200);
 let activite3 = new Activite("Tournoi de poker", 500);
@@ -43,9 +42,6 @@ let tab= [activite1,activite2,activite3];
 let voyage1 = new Voyage("Las Vegas", 400,tab);
 
 let personne1 = new Personne("Shany Carle", this.destination);
-
-
-
 
 document.write("Nom : " + personne1.nom + "<br>"
     + "Destination : " + voyage1.destination + "<br>"
