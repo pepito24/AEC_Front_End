@@ -1,7 +1,6 @@
 //Par Erik Paquet
 //2019-12-05
 
-
 let tabNombres = [];
 let tabLettres = [];
 let nombreE = 0;
