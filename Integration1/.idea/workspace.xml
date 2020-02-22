@@ -15,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -82,7 +82,7 @@
       <workItem from="1581465400736" duration="627000" />
       <workItem from="1581631934242" duration="10632000" />
       <workItem from="1582242678368" duration="449000" />
-      <workItem from="1582378928497" duration="1141000" />
+      <workItem from="1582378928497" duration="4444000" />
     </task>
     <servers />
   </component>
@@ -103,10 +103,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579830535453">
+    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582382716497">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1579830535453" />
+    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1582382716497" />
     <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1582243126589">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
