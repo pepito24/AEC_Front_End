@@ -86,3 +86,19 @@ header .overlay {
 .navbar-nav li a{
     color:white !important;
 }
+
+
+
+/* Paralax */
+
+
+
+
+.bg1{
+    background-image: ;
+    opacity: 0.5;
+}
+
+.bg2{
+    background-image: ;
+}
