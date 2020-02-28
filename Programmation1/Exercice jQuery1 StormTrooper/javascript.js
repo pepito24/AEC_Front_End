@@ -17,7 +17,7 @@
 //$('.row4 h1').css("font-size" , "4rem");
 
 //Changez l’opacité de la classe orange pour .8.
-//$('.orange').css("opacity" , "8");
+$('.orange').css("opacity" , "8");
 
 //Changez la couleur de fond de la classe fondNoir pour un gris foncé.
 //$('.fondNoir').css("background-color" , "darkgrey");
