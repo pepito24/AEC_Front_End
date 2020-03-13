@@ -2,6 +2,16 @@
 /* Par Erik Paquet */
 /* 2020-02-04 */
 
+
+/*     #ff8400   */
+
+
+@font-face {
+    font-family: zombie;
+    src: url("../font/Oswald-VariableFont_wght.ttf");
+}
+
+/* Video */
 header {
     position: relative;
     background-color: black;
@@ -50,23 +60,17 @@ header .overlay {
         display: none;
     }
 }
+/* Video fin */
 
+
+
+/* Menu */
 .navbar-nav li a{
     color:white !important;
 }
+/* Menu fin */
 
 
-
-
-.row2{
-     background-color: #218838;
-     color: white;
-     height: 20em;
- }
-
-.row3{
-    background-color: black;
-    color: white;
-    height: 35em;
-    padding-top: 3em;
+.text{
+    font-family: zombie;
 }

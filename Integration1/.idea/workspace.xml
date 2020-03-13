@@ -35,17 +35,20 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Examen final/bootstrap" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\bootstrap" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\font" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\CSS" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\image" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen2" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media\Picture" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique\Media" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -83,6 +86,7 @@
       <workItem from="1581631934242" duration="10632000" />
       <workItem from="1582242678368" duration="449000" />
       <workItem from="1582378928497" duration="14245000" />
+      <workItem from="1584052072207" duration="9207000" />
     </task>
     <servers />
   </component>
@@ -112,9 +116,10 @@
     </state>
     <state x="-1180" y="135" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1582846019316" />
     <state x="526" y="192" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581175786577" />
-    <state x="-1459" y="22" key="SettingsEditor" timestamp="1581637253295">
+    <state x="-1459" y="22" key="SettingsEditor" timestamp="1584060238124">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
+    <state x="-1459" y="22" key="SettingsEditor/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1584060238124" />
     <state x="-1459" y="22" key="SettingsEditor/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1581637253295" />
     <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580572433891">
       <screen x="-1920" y="-139" width="1920" height="1040" />

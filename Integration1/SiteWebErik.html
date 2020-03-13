@@ -12,14 +12,14 @@
 <! -- section 1 menu -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-black navbar fixed-top">
-    <a class="navbar-brand" href="https://www.zombiemedia.ca/"><img src="image/156846315236271822-5.png" height="65" width="60"/></a>
+    <a class="navbar-brand ml-5" href="https://www.zombiemedia.ca/"><img src="image/156846315236271822-5.png" height="65" width="60"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active ml-5">
                 <a class="nav-link" href="style.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -38,6 +38,12 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="style3.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="style3.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="style2.html">Catalogue</a>
             </li>
         </ul>
 
@@ -69,31 +75,19 @@
             </div>
         </div>
     </div>
-    </header>
+</header>
 
 <!-- Background video fin -->
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 mx-auto text-white">
-
+<! -- section 2 -->
+<div class="container-fluid  row2">
+    <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+            <h3>En savoir plus sur nos produits !</h3>
+            <p class="lead mb-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br> eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p><br><br>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -126,7 +120,100 @@
         </div>
     </div>
 </div>
+
 <!-- pop pup fin -->
+
+
+<! -- section 2 -->
+<div class="container-fluid row3">
+    <div class="row ">
+        <div class="col-lg-5 offset-lg-6 center mt-5 ">
+
+
+    <form action="FormulaireEnvoye.html">>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationServer01">First name</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServer02">Last name</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Otto" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServerUsername">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationServer05">Zip</label>
+                <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                <label class="form-check-label" for="invalidCheck3">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-success" type="submit">Envoye</button>
+    </form>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-lg-4">
+            <p>.</p>
+        </div>
+
+        <div class="col-lg-4">
+            <p>.</p>
+        </div>
+
+        <div class="col-lg-4">
+            <p>.</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
 
 <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
