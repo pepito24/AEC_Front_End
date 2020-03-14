@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Démo Bootstrap 2</title>
+    <!-- LA LIGNE LA PLUS IMPORTANTE AU MONDE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <!-- ORDRE EST IMPORTANT BOOTSTRAP AVANT NOTRE CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 mt-5">
+            <form>
+                <div class="form-group">
+                    <label for="nom1">Name</label>
+                    <input type="name" class="form-control" id="nom1" aria-describedby="nameHelp" placeholder="Name">
+                    <small id="nom1" class="form-text text-muted">We'll never share your email with anyone else.</small
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Confirm your Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+
+
+                <fieldset class="form-group">
+                <div class="row">
+                        <div class="form-check ml-3" id="off">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Choisir
+                            </label>
+                        </div>
+                        <div class="form-check ml-3" id="starwars">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
+                            <label class="form-check-label" for="gridRadios2">
+                                Starwars
+                            </label>
+                        </div>
+                        <div class="form-check ml-3" id="marvel">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                            <label class="form-check-label" for="gridRadios3">
+                                Marvel
+                            </label>
+                        </div>
+                        <div class="form-check ml-3" id="dc">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                            <label class="form-check-label" for="gridRadios4">
+                                DC
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <!-- division cache 1 -->
+
+                <div class="form-inline mt-3" id="Starwars1">
+                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Votre personnage</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected value="Yoda" id="yoda">Yoda</option>
+                        <option value="Darkvador" id="darkvador">Darkvador</option>
+                        <option value="Obiwan" id="obiwan">Obiwan</option>
+                    </select>
+                </div>
+
+
+
+
+
+
+                <!-- division cache 2 -->
+
+                    <div class="form-inline" id="Marvel1">
+                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Votre personnage</label>
+                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected value="Spiderman">Spiderman</option>
+                            <option value="Thor">Thor</option>
+                            <option value="Hulk">Hulk</option>
+                        </select>
+                    </div>
+
+
+
+
+                <!-- division cache 3 -->
+
+                        <div class="form-inline" id="DC1">
+                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Votre personnage</label>
+                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                <option selected value="Batman">Batman</option>
+                                <option value="Superman">Superman</option>
+                                <option value="Flash">Flash</option>
+                            </select>
+                         </div>
+
+                            <img id="img1" src="img/MP-YodaSpecies.png"/><br><br>
+                            <img id="img2" src="img/Dark_Vador-RO-SWCT.png" height="1003" width="873"/><br><br>
+
+
+
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="../jquery-3.4.1.js"></script>
+<script src="Bootstrap/js/bootstrap.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
+

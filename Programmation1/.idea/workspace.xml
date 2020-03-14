@@ -15,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -35,12 +35,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Integration1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Comicon 2019" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Comicon 2019" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Comicon 2019\img" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Chapitre 4" />
     </key>
   </component>
@@ -83,6 +87,7 @@
       <workItem from="1582243130544" duration="4198000" />
       <workItem from="1582846052471" duration="8398000" />
       <workItem from="1584052043191" duration="25000" />
+      <workItem from="1584187787677" duration="7568000" />
     </task>
     <servers />
   </component>

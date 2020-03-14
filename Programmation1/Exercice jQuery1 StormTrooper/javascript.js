@@ -35,4 +35,4 @@ $('.orange').css("opacity" , "8");
 //$('#tom').html("Père de Luke Skywalker");
 
 //Cacher  une section de votre choix.
-//$('.parallax3').hide();
+$('.parallax3').hide();
