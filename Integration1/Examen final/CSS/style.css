@@ -10,7 +10,7 @@ html,body {
 
 
 body{
-    background-color: #000;
+    background-color: #141414;
 }
 
 @font-face {
@@ -20,20 +20,30 @@ body{
 
 
 /* -------  Menu  --------- */
+.navbar{
+    background-color: #141414 ;
+}
 
 .navbar-nav li a{
-    color:white !important;
+    font-family: zombie;
+    font-size: 1.5rem;
 }
-/* ------ Menu fin -------- */
 
+.dropdown-item {
+    color: white;
+}
 
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #ff8400;
+    color: white;
+}
 
 
 /* --------- Video --------- */
 header {
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 100vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -56,7 +66,28 @@ header video {
 
 header .container {
     position: relative;
+    margin-left: 17em;
+    margin-top: 17em;
     z-index: 2;
+}
+
+/* Cellulaires */
+@media only screen and (max-width: 480px){
+    header .container {
+        text-align: center;
+        align-items: center;
+        margin-top: 60%;
+        margin-left: auto;
+    }
+}
+/* TABLETTES */
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+    header .container {
+        text-align: center;
+        align-items: center;
+        margin-top: 35%;
+        margin-left: auto;
+    }
 }
 
 header .overlay {
@@ -66,7 +97,7 @@ header .overlay {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     z-index: 1;
 }
 
@@ -78,14 +109,29 @@ header .overlay {
         display: none;
     }
 }
-/*  --------- Video fin --------- */
 
 
+/*  --------- Textes --------- */
 
-.text{
+h1,h2,h3,h4,p{
     font-family: zombie;
 }
 
 .orange{
     color: #ff8400;
 }
+
+
+/*  --------- Bouton --------- */
+
+.boutonPrincipal{
+    background-color: #ff8400;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #bf6300;
+    color: white;
+}
+
+

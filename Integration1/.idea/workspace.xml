@@ -35,19 +35,20 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Examen final/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\video" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\font" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\CSS" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\image" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\bootstrap" />
     </key>
   </component>
@@ -87,7 +88,7 @@
       <workItem from="1582242678368" duration="449000" />
       <workItem from="1582378928497" duration="14245000" />
       <workItem from="1584052072207" duration="9972000" />
-      <workItem from="1584274964659" duration="4967000" />
+      <workItem from="1584274964659" duration="13328000" />
     </task>
     <servers />
   </component>
@@ -112,6 +113,10 @@
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
     <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1582382716497" />
+    <state x="-1230" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584382759076">
+      <screen x="-1920" y="-139" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.-139.1920.1040/1366.0.1920.1040/0.0.1366.728@-1920.-139.1920.1040" timestamp="1584382759076" />
     <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1584187768608">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
