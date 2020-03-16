@@ -5,14 +5,85 @@
 <! -- 2020-02-04 -->
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 <body>
 
+<! -- section 1 menu -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black navbar fixed-top">
+    <a class="navbar-brand ml-5" href="*"><img src="images/logo_menu.png" height="105" width="100"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active ml-5">
+                <a class="nav-link" href="style.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="style2.html">Catalogue</a>
+            </li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Shop
+                </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="style3.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="style3.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="style2.html">Catalogue</a>
+            </li>
+        </ul>
+
+        <a class="nav-link" href="#"><i class="fab fa-facebook-square fa-2x text-white"></i></a>
+
+        <a class="nav-link" href="#"><i class="fab fa-instagram fa-2x text-white"></i></a>
+
+        <a class="nav-link" href="#"><i class="fab fa-twitter-square fa-2x text-white"></i></a>
+
+
+    </div>
+</nav>
+<!-- fin du menu -->
+
+
+
+<! --Background video -->
+
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <h1 class="display-3">Le Corsaire du Web</h1>
+                <p class="lead mb-0">Marketing Numérique</p><br><br>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Background video fin -->
 
 
 
@@ -35,6 +106,6 @@
 
 <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

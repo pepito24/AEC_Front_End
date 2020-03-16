@@ -3,15 +3,33 @@
 /* 2020-02-04 */
 
 
-/*     #ff8400   */
 
+html,body {
+    margin:0; height:100%;
+}
+
+
+body{
+    background-color: #000;
+}
 
 @font-face {
     font-family: zombie;
     src: url("../font/Oswald-VariableFont_wght.ttf");
 }
 
-/* Video */
+
+/* -------  Menu  --------- */
+
+.navbar-nav li a{
+    color:white !important;
+}
+/* ------ Menu fin -------- */
+
+
+
+
+/* --------- Video --------- */
 header {
     position: relative;
     background-color: black;
@@ -60,17 +78,14 @@ header .overlay {
         display: none;
     }
 }
-/* Video fin */
+/*  --------- Video fin --------- */
 
-
-
-/* Menu */
-.navbar-nav li a{
-    color:white !important;
-}
-/* Menu fin */
 
 
 .text{
     font-family: zombie;
+}
+
+.orange{
+    color: #ff8400;
 }

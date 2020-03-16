@@ -35,20 +35,20 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programmation1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\bootstrap" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\font" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\CSS" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\image" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\bootstrap" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -87,6 +87,7 @@
       <workItem from="1582242678368" duration="449000" />
       <workItem from="1582378928497" duration="14245000" />
       <workItem from="1584052072207" duration="9972000" />
+      <workItem from="1584274964659" duration="4967000" />
     </task>
     <servers />
   </component>
