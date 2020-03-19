@@ -111,6 +111,21 @@ header .overlay {
 }
 
 
+/*  --------- Parallax --------- */
+
+.parallax {
+    background-image: url("https://cdn.pixabay.com/photo/2019/01/05/09/59/personal-data-3914806_960_720.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
 /*  --------- Textes --------- */
 
 h1,h2,h3,h4,p{
@@ -134,4 +149,6 @@ h1,h2,h3,h4,p{
     color: white;
 }
 
-
+.row2{
+    height: 30em;
+}

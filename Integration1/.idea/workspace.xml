@@ -40,16 +40,16 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\video" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\font" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\CSS" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\image" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\bootstrap" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\video" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\font" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\CSS" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\image" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -88,7 +88,8 @@
       <workItem from="1582242678368" duration="449000" />
       <workItem from="1582378928497" duration="14245000" />
       <workItem from="1584052072207" duration="9972000" />
-      <workItem from="1584274964659" duration="13328000" />
+      <workItem from="1584274964659" duration="13473000" />
+      <workItem from="1584483022104" duration="4367000" />
     </task>
     <servers />
   </component>
