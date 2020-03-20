@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <title>Flash</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="AllSite">
+	<div id="imgFlash">
+			<img id="flashID" class="flashClass" src="flash.jpg" width="200px"/>
+	</div>
+			<input type="button" value="Déplacer Gauche" id="boutonGauche"/> <br/>
+			<input type="button" value="Déplacer Droite" id="boutonDroite"/> <br/>
+			<input type="button" value="Changer image" id="boutonChangerImage"/>Changez l'image de Flash1 à Flash 2 et vice-versa (une fois). <br/>
+			<input type="button" value="Enlever l'image" id="boutonEnleverImage"/>Faire disparaître l'image (fadeOut)<br/>
+			<input type="button" value="Afficher l'image" id="boutonAjouterImage"/>Faire apparaître l'image (fadeIn)<br/>
+			<input type="button" value="Ajouter attribut" id="boutonAjouterAttribut"/>Ajoutez un attribut alt à votre image avec la description 'photo de Flash'<br/>
+			<input type="button" value="Ajouter Titre" id="boutonAjouterTitre"/>Ajoutez un titre en H1 'FLASH JQUERY' dans le haut de cette page avant la photo (before)<br />
+			<input type="button" value="Dupliquer" id="boutonDupliquer"/>Flash est tellement rapide, ajoutez une autre image à côté de Flash à tous les cliques sur ce bouton!<br />
+			<input type="button" value="Ralentir" id="boutonRalentir"/>Flash ralentit, enlevez une image!<br />
+			<input type="button" value="Teleport" id="boutonTeleport"/>Flash se téléporte sous ces boutons et retourne en haut lorsque l'on clique de nouveau<br />
+	<input type="button" value="VitesseSupreme" id="boutonVitesseSupreme"/>Flash doit apparaître et disparaître toutes les 500MS pendant 5 secondes.<br />
+	<input type="button" value="Nuke" id="boutonNuke"/>Ce bouton fait afficher une image d'explosion dans l'écran et enlève tout le reste (boutons images, etc).<br />
+
+	<img id="flashIDBas" class="flashClass" src="flash.jpg" width="200px"/>
+</div>
+<img src="nuke.jpg" id="nuke">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/flash.js"></script>
+</body>
+</html>

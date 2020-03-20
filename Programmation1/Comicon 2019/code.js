@@ -26,23 +26,6 @@ $( "#starwars" ).click(function() {
 
 });
 
-$( "#yoda" ).click(function() {
-    $('#img1').show();
-    $('#img2').hide();
-    $('#img3').hide();
-});
-
-
-
-$( "#darkvador" ).select(function() {
-    $('#img1').hide();
-    $('#img2').show();
-    $('#img3').hide();
-});
-
-
-
-
 
 $( "#marvel" ).click(function() {
     $('#Marvel1').show();
