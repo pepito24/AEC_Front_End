@@ -49,6 +49,19 @@ header {
     overflow: hidden;
 }
 
+/* Cellulaires */
+@media only screen and (max-width: 576px){
+    header{
+        height: 90vh;
+    }
+}
+/* TABLETTES */
+@media screen and (min-width: 577px) and (max-width: 1025px) {
+    header  {
+        height: 70vh;
+    }
+}
+
 header video {
     position: absolute;
     top: 50%;
@@ -72,7 +85,7 @@ header .container {
 }
 
 /* Cellulaires */
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 576px){
     header .container {
         text-align: center;
         align-items: center;
@@ -81,7 +94,7 @@ header .container {
     }
 }
 /* TABLETTES */
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+@media screen and (min-width: 577px) and (max-width: 1025px) {
     header .container {
         text-align: center;
         align-items: center;
@@ -114,16 +127,13 @@ header .overlay {
 /*  --------- Parallax --------- */
 
 .parallax {
-    background-image: url("https://cdn.pixabay.com/photo/2019/01/05/09/59/personal-data-3914806_960_720.jpg");
+    background-image: url("../images/pirate_black.png");
     height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
 
 
 /*  --------- Textes --------- */
@@ -151,4 +161,10 @@ h1,h2,h3,h4,p{
 
 .row2{
     height: 30em;
+}
+
+.box1{
+    background-color: #ff8400 ;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
