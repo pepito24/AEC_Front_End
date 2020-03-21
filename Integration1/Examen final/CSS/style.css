@@ -8,6 +8,10 @@ html,body {
     margin:0; height:100%;
 }
 
+p{
+    font-size: 18px;
+    color: white;
+}
 
 body{
     background-color: #141414;
@@ -29,20 +33,21 @@ body{
     font-size: 1.5rem;
 }
 
-.dropdown-item {
+.toggler{
     color: white;
+    font-size:28px;
 }
 
-.dropdown-item:hover, .dropdown-item:focus {
-    background-color: #ff8400;
-    color: white;
+@media only screen and (min-width: 992px){
+    .navbar-brand{
+      margin-left: 2em;
+    }
 }
-
 
 /* --------- Video --------- */
 header {
     position: relative;
-    background-color: black;
+    background-color: #141414;
     height: 100vh;
     min-height: 25rem;
     width: 100%;
@@ -53,12 +58,14 @@ header {
 @media only screen and (max-width: 576px){
     header{
         height: 90vh;
+        padding-top: 10vh;
     }
 }
 /* TABLETTES */
 @media screen and (min-width: 577px) and (max-width: 1025px) {
     header  {
         height: 70vh;
+        padding-top: 10vh;
     }
 }
 
@@ -79,21 +86,34 @@ header video {
 
 header .container {
     position: relative;
-    margin-left: 17em;
-    margin-top: 17em;
     z-index: 2;
 }
 
-/* Cellulaires */
-@media only screen and (max-width: 576px){
+
+@media screen and (min-width: 1199px){
     header .container {
-        text-align: center;
-        align-items: center;
-        margin-top: 60%;
-        margin-left: auto;
+        position: relative;
+        margin-left: 17em;
+        margin-top: 17em;
+        z-index: 2;
     }
 }
-/* TABLETTES */
+
+@media screen and (max-width: 1200px){
+    .titre {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Cellulaires
+@media only screen and (max-width: 576px){
+    header .container {
+        position: relative;
+        z-index: 2;
+    }
+}*/
+/* TABLETTES
 @media screen and (min-width: 577px) and (max-width: 1025px) {
     header .container {
         text-align: center;
@@ -101,7 +121,7 @@ header .container {
         margin-top: 35%;
         margin-left: auto;
     }
-}
+}*/
 
 header .overlay {
     position: absolute;
@@ -114,14 +134,26 @@ header .overlay {
     z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
+
+/*  TABLETTES */
+@media (min-width: 577px) and (max-width: 991px) {
     header {
-        background: url('https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4') black no-repeat center center scroll;
+        background: url('../images/medium_img_pirate.png') black no-repeat center center scroll;
     }
     header video {
         display: none;
     }
 }
+/*  Cellulaires */
+@media (max-width: 576px) {
+    header {
+        background: url('../images/cell_logo.png') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
+
 
 
 /*  --------- Parallax --------- */
@@ -159,12 +191,21 @@ h1,h2,h3,h4,p{
     color: white;
 }
 
-.row2{
-    height: 30em;
+.row1{
+    min-height: 7em;
 }
+
+.row2{
+    min-height: 25em;
+}
+
 
 .box1{
     background-color: #ff8400 ;
     padding-top: 3em;
     padding-bottom: 3em;
+}
+
+.boxImage{
+    width: 100%;
 }
