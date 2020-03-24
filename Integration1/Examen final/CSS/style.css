@@ -188,6 +188,14 @@ header .overlay {
     }
 }
 
+/*  TABLETTES */
+@media (min-width: 577px) and (max-width: 991px) {
+    p {
+        font-size: 1.6em;
+    }
+}
+
+
 /*  Cellulaires */
 @media (max-width: 576px) {
     p {
