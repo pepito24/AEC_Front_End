@@ -8,9 +8,17 @@ html,body {
     margin:0; height:100%;
 }
 
+h1,h2,h3,h4,p{
+    font-family: zombie;
+}
+
 p{
     font-size: 18px;
     color: white;
+}
+
+hr{
+    background-color: #ff8400;
 }
 
 body{
@@ -170,14 +178,22 @@ header .overlay {
 
 /*  --------- Textes --------- */
 
-h1,h2,h3,h4,p{
-    font-family: zombie;
-}
-
 .orange{
     color: #ff8400;
 }
 
+@media (max-width: 991px) {
+    .text1 {
+        text-align: center;
+    }
+}
+
+/*  Cellulaires */
+@media (max-width: 576px) {
+    p {
+        font-size: 1.2em;
+    }
+}
 
 /*  --------- Bouton --------- */
 
@@ -191,6 +207,9 @@ h1,h2,h3,h4,p{
     color: white;
 }
 
+
+/*  --------- Row --------- */
+
 .row1{
     min-height: 7em;
 }
@@ -200,12 +219,22 @@ h1,h2,h3,h4,p{
 }
 
 
+/*  --------- Image --------- */
+
+
+.boxImage{
+    width: 100%;
+}
+
+
+
+/*  ---------  --------- */
+
+
+
+
 .box1{
     background-color: #ff8400 ;
     padding-top: 3em;
     padding-bottom: 3em;
-}
-
-.boxImage{
-    width: 100%;
 }
