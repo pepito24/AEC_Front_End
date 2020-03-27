@@ -43,9 +43,9 @@ html,body { margin:0; height:100%;}
     font-size: 5rem;
 }
 
-.parallax2 {
+.section1 {
     /* L’image du Parallax */
-    background-image: url("../images/lune.jpg");
+    background-image: url("/images/lune.jpg");
 
     /* L’hauteur du Parallax */
     height: 500px;

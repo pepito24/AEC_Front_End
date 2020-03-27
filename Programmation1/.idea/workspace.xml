@@ -35,17 +35,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Integration1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Examen2 JavaScript Photociti 2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Comicon 2019" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Examen2 JavaScript Photociti 2\Examen2 JavaScript Photociti 2" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Comicon 2019\img" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Chapitre 4" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Examen2 JavaScript Photociti 2" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Programmation1\Comicon 2019" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -89,6 +91,7 @@
       <workItem from="1584052043191" duration="25000" />
       <workItem from="1584187787677" duration="8788000" />
       <workItem from="1584656873352" duration="8364000" />
+      <workItem from="1585261728532" duration="10388000" />
     </task>
     <servers />
   </component>
