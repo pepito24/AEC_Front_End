@@ -2,8 +2,6 @@
 /* Par Erik Paquet */
 /* 2020-02-04 */
 
-
-
 html,body {
     margin:0; height:100%;
 }
@@ -48,7 +46,7 @@ body{
 
 @media only screen and (min-width: 992px){
     .navbar-brand{
-      margin-left: 2em;
+        margin-left: 2em;
     }
 }
 
@@ -114,22 +112,6 @@ header .container {
     }
 }
 
-/* Cellulaires
-@media only screen and (max-width: 576px){
-    header .container {
-        position: relative;
-        z-index: 2;
-    }
-}*/
-/* TABLETTES
-@media screen and (min-width: 577px) and (max-width: 1025px) {
-    header .container {
-        text-align: center;
-        align-items: center;
-        margin-top: 35%;
-        margin-left: auto;
-    }
-}*/
 
 header .overlay {
     position: absolute;
@@ -167,10 +149,10 @@ header .overlay {
 /*  --------- Parallax --------- */
 
 .parallax {
-    background-image: url("../images/black-corsaire.png");
+    background-image: url("../images/kraken-nice.jpg");
     height: 100%;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -226,6 +208,39 @@ header .overlay {
     min-height: 25em;
 }
 
+.row3{
+    height: 30em;
+}
+
+.row4{
+    height: 70em;
+    background-image: url("../images/kraken.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10em;
+    padding-bottom: 5em;
+}
+
+
+.row5{
+    height: 15em;
+}
+
+.row6{
+    height: 7em;
+    background-color: #ff8400;
+}
+
+
+@media (max-width: 991px) {
+    .row6 {
+        height: 0em;
+    }
+}
+
+.row7{
+    height: 50em;
+}
 
 /*  --------- Image --------- */
 
@@ -236,9 +251,7 @@ header .overlay {
 
 
 
-/*  ---------  --------- */
-
-
+/*  --------- Box  --------- */
 
 
 .box1{
@@ -246,3 +259,21 @@ header .overlay {
     padding-top: 3em;
     padding-bottom: 3em;
 }
+
+.boxForm{
+    background-color: #ff8400 ;
+}
+
+.boxContact{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+/*  --------- Image --------- */
+
+.boxImage{
+    width: 100%;
+}
+
+
+
+
