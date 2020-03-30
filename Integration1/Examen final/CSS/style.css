@@ -238,11 +238,6 @@ header .overlay {
     background-color: #ff8400;
 }
 
-@media (max-width: 991px) {
-    .row6 {
-        height: 0em;
-    }
-}
 
 .row7{
     height: 50em;
