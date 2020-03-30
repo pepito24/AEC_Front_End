@@ -160,6 +160,10 @@ header .overlay {
 
 /*  --------- Textes --------- */
 
+.sous {
+    text-decoration: underline #ff8400;
+}
+
 .orange{
     color: #ff8400;
 }
@@ -200,6 +204,10 @@ header .overlay {
 
 /*  --------- Row --------- */
 
+.background{
+    background-color: #ff8400;
+}
+
 .row1{
     min-height: 7em;
 }
@@ -221,7 +229,6 @@ header .overlay {
     padding-bottom: 5em;
 }
 
-
 .row5{
     height: 15em;
 }
@@ -230,7 +237,6 @@ header .overlay {
     height: 7em;
     background-color: #ff8400;
 }
-
 
 @media (max-width: 991px) {
     .row6 {
@@ -248,7 +254,6 @@ header .overlay {
 .boxImage{
     width: 100%;
 }
-
 
 
 /*  --------- Box  --------- */
