@@ -21,25 +21,36 @@ html,body{
 .section2 {
     background-image: url("background/blanc.jpg");
     border: 5px solid black;
-    height: 300px;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .section3{
     height: 200px;
 }
 
+.cols{
+    width: 100%;
+}
 
 .boxImage{
     width: 100%;
-    max-height: 200px;
+   height: 100%;
 }
 
 .lettre{
     width: 100%;
-    max-height: 200px;
+    max-height: 100%;
 }
 
+.mots{
+    border: 2px solid white;
+}
 
+.messageErreur{
+    color: red;
+}
 
 .box{
     border: 1px solid black;

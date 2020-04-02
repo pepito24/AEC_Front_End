@@ -1,14 +1,111 @@
 
 //mot
 var str = "";
-
+//$(document).on('click', '#btn', function(){
 $("#btn").click(function(){
     str = $("#inpt").val();
-    console.log(str.length);
-    //for(var j=0;j<=str.length;j++) {
-      //  console.log(str[j]);
-    //}
-    alert(str);
+
+    if (str.length < 3){
+        document.getElementById('imput1').innerHTML="* Votre mot est trop court";
+        $('#imput1').attr("class","messageErreur");
+    }
+
+    else if (str.length === 3){
+        for(let j=1; j<=3; j++){
+            $("#div" + j).attr("class","col-md-4");
+            $("#image" + j).attr("class","lettre mots");
+        }
+        for(let i=0; i<=(str.length -1); i++){
+            $("#image" + i).attr("src","Letters/" + (str.toUpperCase()[i]) + "/" + (str.toUpperCase()[i]) + "1.jpg");
+            if($("#image" + i).attr("src") === "Letters/*/*1.jpg"){
+                $("#image" + i).attr("src","Letters/CS/CS1.jpg");
+            }
+        }
+        for(let k=3; k<=12; k++){
+            $("#image" + k).attr("src","");
+            $('#laSection').attr("class","container");
+            $('.section2').css("padding-top","20px");
+            $('.section2').css("height","100%");
+        }
+    }
+
+    else if (str.length === 4){
+        for(let j=1; j<=4; j++){
+        $("#div" + j).attr("class","col-md-3 ");
+        $("#image" + j).attr("class","lettre mots");
+        }
+        for(let i=0; i<=(str.length -1); i++){
+            $("#image" + i).attr("src","Letters/" + (str.toUpperCase()[i]) + "/" + (str.toUpperCase()[i]) + "1.jpg");
+            if($("#image" + i).attr("src") === "Letters/*/*1.jpg"){
+                $("#image" + i).attr("src","Letters/CS/CS1.jpg");
+            }
+        }
+        for(let k=4; k<=12; k++){
+            $("#image" + k).attr("src","");
+            $('#laSection').attr("class","container");
+            $('.section2').css("padding-top","20px");
+            $('.section2').css("height","100%");
+        }
+    }
+
+    else if (str.length === 5){
+        for(let j=1; j<=5; j++){
+            $("#div" + j).attr("class","col-md-2");
+            $('.section2').css("height","300px");
+        }
+            for(let i=0; i<=(str.length -1); i++){
+                $("#image" + i).attr("src","Letters/" + (str.toUpperCase()[i]) + "/" + (str.toUpperCase()[i]) + "1.jpg");
+                if($("#image" + i).attr("src") === "Letters/*/*1.jpg"){
+                    $("#image" + i).attr("src","Letters/CS/CS1.jpg");
+                }
+            }
+            for(let k=5; k<=12; k++){
+                $("#image" + k).attr("src","");
+                $('#laSection').attr("class","container");
+                $('.section2').css("padding-top","25px");
+            }
+        }
+
+    else if (str.length === 6){
+        for(let j=1; j<=6; j++){
+        $("#div" + j).attr("class","col-md-2");
+        $('.section2').css("height","300px");
+        }
+        for(let i=0; i<=(str.length -1); i++){
+            $("#image" + i).attr("src","Letters/" + (str.toUpperCase()[i]) + "/" + (str.toUpperCase()[i]) + "1.jpg");
+            if($("#image" + i).attr("src") === "Letters/*/*1.jpg"){
+                $("#image" + i).attr("src","Letters/CS/CS1.jpg");
+            }
+        }
+        for(let k=6; k<=12; k++){
+            $("#image" + k).attr("src","");
+            $('#laSection').attr("class","container");
+            $('.section2').css("padding-top","25px");
+        }
+    }
+
+    else if (str.length > 6 && str.length <= 12){
+            for(let j=1; j<=12; j++){
+        $("#div" + j).attr("class","col-md-1");
+        $('.section2').css("height","275px");
+        $('.section2').css("padding-top","3px");
+        $('#laSection').attr("class","container-fluid");
+            }
+        for(let i=0; i<=(str.length -1); i++){
+            $("#image" + i).attr("src","Letters/" + (str.toUpperCase()[i]) + "/" + (str.toUpperCase()[i]) + "1.jpg");
+            if($("#image" + i).attr("src") === "Letters/*/*1.jpg"){
+                $("#image" + i).attr("src","Letters/CS/CS1.jpg");
+            }
+        }
+        for(let i=0; i<=(str.length -1); i++){
+            $("#image" + j).attr("class","lettre mots");
+        }
+    }
+
+    else if (str.length > 12){
+        document.getElementById('imput1').innerHTML="* Votre mot est trop long";
+        $('#imput1').attr("class","messageErreur");
+    }
 });
 
 
@@ -37,42 +134,40 @@ $( "#blanc" ).click(function() {
 
 
 
-///changer les images
-let premierClick = true;
+
+
+
+//changer les images
+let clickUn = true;
 let modalShow = false;
-let idImage1;
-let idImage2;
-let srcImage1;
-let srcImage2;
+let id1;
+let id2;
+let src1;
+let src2;
 
 $('.lettre').click(function() {
-    if(premierClick){
-        idImage1 = $(this).attr("id");
-        srcImage1 = $(this).attr("src");
-        premierClick = false;
+
+    if(clickUn){
+        id1 = $(this).attr("id");
+        src1 = $(this).attr("src");
+        clickUn = false;
         $('#modal').modal('show');
         modalShow = true;
         if (modalShow = true){
-            $('#img1').attr("src","Letters/" + (srcImage1[8]) + "/" + (srcImage1[8]) + "1.jpg");
-            $('#img2').attr("src","Letters/" + (srcImage1[8]) + "/" + (srcImage1[8]) + "2.jpg");
-            $('#img3').attr("src","Letters/" + (srcImage1[8]) + "/" + (srcImage1[8]) + "3.jpg");
-            $('#img4').attr("src","Letters/" + (srcImage1[8]) + "/" + (srcImage1[8]) + "4.jpg");
-            $('#img5').attr("src","Letters/" + (srcImage1[8]) + "/" + (srcImage1[8]) + "5.jpg");
+            for(var i=1;i<=5;i++){
+            $("#img" + i).attr("src","Letters/" + (src1[8]) + "/" + (src1[8]) + i + ".jpg");
+          }
         }
         modalShow = false;
     }
     else{
-        idImage2 = $(this).attr("id");
-        srcImage2 = $(this).attr("src");
+        id2 = $(this).attr("id");
+        src2 = $(this).attr("src");
         $('#modal').modal('hide');
-        $("#" + idImage1).attr("src",srcImage2);
-        $("#" + idImage2).attr("src",srcImage1);
-        premierClick = true;
+        $("#" + id1).attr("src",src2);
+        $("#" + id2).attr("src",src1);
+        clickUn = true;
     }
-
 });
 
-
-
-//for (var i=0;i<=5;i++){
 

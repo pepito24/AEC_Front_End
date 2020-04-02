@@ -40,23 +40,6 @@ function Victoire(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $('#boutonRecommencer').click(function() {
     $('body').prepend("<img src='images/victoire.jpg' id='demoOn'>");
 });
@@ -64,11 +47,6 @@ $('#boutonRecommencer').click(function() {
 // $('#demoOn').click(function() {
 //     alert("YAHOO");
 // });
-
-
-
-
-
 
 
 
