@@ -165,7 +165,7 @@ $('.lettre').click(function() {
         if (modalShow = true){
             for(var i=1;i<=5;i++){
             $("#img" + i).attr("src","Letters/" + (src1[8]) + "/" + (src1[8]) + i + ".jpg");
-            if (src1 === "Letters/CS/CS1.jpg"){
+            if (src1 === "Letters/CS/CS1.jpg" || src1 === "Letters/CS/CS2.jpg" || src1 === "Letters/CS/CS3.jpg" || src1 === "Letters/CS/CS4.jpg" || src1 === "Letters/CS/CS5.jpg"){
                 $("#img" + i).attr("src","Letters/CS/CS" + i +".jpg");
             }
           }
