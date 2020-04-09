@@ -75,6 +75,7 @@ $("#btn").click(function(){
     else if (str.length === 5){
         for(let j=1; j<=5; j++){
             $("#div" + j).attr("class","col-md-2");
+            $("#image" + j).attr("class","lettre mots");
             $('.section2').css("height","300px");
             }
             for(let k=5; k<=12; k++){
@@ -88,6 +89,7 @@ $("#btn").click(function(){
     else if (str.length === 6){
         for(let j=1; j<=6; j++){
         $("#div" + j).attr("class","col-md-2");
+        $("#image" + j).attr("class","lettre mots");
         $('.section2').css("height","300px");
         }
         for(let k=6; k<=12; k++){
@@ -105,8 +107,60 @@ $("#btn").click(function(){
         $('.section2').css("padding-top","3px");
         $('#laSection').attr("class","container-fluid");
         }
-        for(let i=0; i<=(str.length -1); i++){
-            $("#image" + j).attr("class","lettre mots");
+            if (str.length === 7){
+                for(let k=1; k<=7; k++){
+                    $("#image" + k).attr("class","lettre mots");
+                }
+                for(let k=7; k<=12; k++){
+                    $("#image" + k).attr("src","");
+                    $("#image" + k).attr("class","lettre");
+                }
+            }
+
+        else if (str.length === 8){
+            for(let k=1; k<=8; k++){
+                $("#image" + k).attr("class","lettre mots");
+            }
+                for(let k=8; k<=12; k++){
+                    $("#image" + k).attr("src","");
+                    $("#image" + k).attr("class","lettre");
+                }
+        }
+
+        else if (str.length === 9){
+            for(let k=1; k<=9; k++){
+                $("#image" + k).attr("class","lettre mots");
+            }
+                for(let k=9; k<=12; k++){
+                    $("#image" + k).attr("src","");
+                    $("#image" + k).attr("class","lettre");
+                }
+        }
+
+        else if (str.length === 10){
+            for(let k=1; k<=10; k++){
+                $("#image" + k).attr("class","lettre mots");
+            }
+                for(let k=10; k<=12; k++){
+                    $("#image" + k).attr("src","");
+                    $("#image" + k).attr("class","lettre");
+                }
+        }
+
+        else if (str.length === 11){
+            for(let k=1; k<=10; k++){
+                $("#image" + k).attr("class","lettre mots");
+            }
+                for(let k=11; k<=12; k++){
+                    $("#image" + k).attr("src","");
+                    $("#image" + k).attr("class","lettre");
+                }
+        }
+
+        else if (str.length === 12){
+            for(let k=1; k<=12; k++){
+                $("#image" + k).attr("class","lettre mots");
+            }
         }
     }
 
