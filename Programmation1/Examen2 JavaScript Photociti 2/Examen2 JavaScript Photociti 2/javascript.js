@@ -1,13 +1,8 @@
-
-
-
-
-
+// erik paquet
+// 2020-04-09
 
 var str = "";
 
-
-//$(document).on('click', '#btn', function(){
 $("#btn").click(function(){
     str = $("#inpt").val();
 
@@ -34,6 +29,19 @@ $("#btn").click(function(){
         $("#image1").attr("src","Letters/R/R5.jpg");
         $("#image2").attr("src","Letters/I/I1.jpg");
         $("#image3").attr("src","Letters/K/K2.jpg");
+
+        for(let j=1; j<=4; j++){
+            $("#div" + j).attr("class","col-md-3 ");
+            $("#image" + j).attr("class","lettre mots");
+        }
+
+        for(let k=4; k<=12; k++){
+            $("#image" + k).attr("src","");
+            $("#image" + k).attr("class","lettre");
+            $('#laSection').attr("class","container");
+            $('.section2').css("padding-top","20px");
+            $('.section2').css("height","100%");
+        }
     }
 
     else if (str.length === 3){
@@ -109,15 +117,20 @@ $("#btn").click(function(){
         $("#image1").attr("src","Letters/R/R5.jpg");
         $("#image2").attr("src","Letters/I/I1.jpg");
         $("#image3").attr("src","Letters/K/K2.jpg");
+
+        for(let j=1; j<=4; j++){
+            $("#div" + j).attr("class","col-md-3 ");
+            $("#image" + j).attr("class","lettre mots");
+        }
         for(let k=4; k<=12; k++){
             $("#image" + k).attr("src","");
             $("#image" + k).attr("class","lettre");
+            $('#laSection').attr("class","container");
+            $('.section2').css("padding-top","20px");
+            $('.section2').css("height","100%");
         }
     }
 });
-
-
-
 
 //changement fond
 
@@ -142,8 +155,6 @@ $( "#bleu" ).click(function() {
 $( "#blanc" ).click(function() {
     $('.section2').css("background-image" , "url(\"background/blanc.jpg\")");
 });
-
-
 
 //changer les images
 let clickUn = true;
