@@ -35,21 +35,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Programmation1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Integration 2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\bootstrap" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration 2\images" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\video" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\font" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\CSS" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\image" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration 2" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\bootstrap" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -92,6 +93,7 @@
       <workItem from="1584483022104" duration="4383000" />
       <workItem from="1584723965005" duration="33885000" />
       <workItem from="1585323524123" duration="26782000" />
+      <workItem from="1587212711327" duration="5430000" />
     </task>
     <servers />
   </component>
@@ -112,9 +114,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582382716497">
+    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587212785292">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
+    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1587212785292" />
     <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1582382716497" />
     <state x="-1230" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585095005404">
       <screen x="-1920" y="-139" width="1920" height="1040" />
@@ -132,10 +135,10 @@
     </state>
     <state x="-1459" y="22" key="SettingsEditor/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1584060238124" />
     <state x="-1459" y="22" key="SettingsEditor/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1581637253295" />
-    <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584726215586">
+    <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587219781559">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
-    <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1584726215586" />
+    <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1587219781559" />
     <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/-1920.-139.1920.1040@-1920.-139.1920.1040" timestamp="1580572433891" />
   </component>
 </project>
