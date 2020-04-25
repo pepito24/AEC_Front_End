@@ -1,6 +1,6 @@
 .bg1{
     background-color: #0f6674;
-    height: 500px;
+    height: 400px;
 }
 
 .bg2{
@@ -9,3 +9,7 @@
     color: saddlebrown;
 }
 
+.bg3{
+    background-color: #0f6674;
+    height: 150px;
+}
