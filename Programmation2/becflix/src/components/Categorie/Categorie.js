@@ -1,26 +1,51 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container' ;  
-import Row from 'react-bootstrap/Row' ;  
-import Col from 'react-bootstrap/Col' ;
-import { TvShow } from '../TvShow/TvShow';
-   
-const nonCategorie = "Suspense";
+import Row from "react-bootstrap/Row";
+import {TvShow} from '../TvShow/TvShow';
 
-export class Categorie extends React.Component {  
+export class Categorie extends React.Component{
+  render() {
+    return (
+      <>
+      <Row>
+        <h1>
+            {this.props.categorie}
+            </h1>
+      </Row>
+      <Row>
+      {this.AfficherCategorie()}
+      </Row>
+      </>
+      )
+  }
 
-    render() {  
-       return <Container>
-       <Row>
-           <h1>{ nonCategorie }</h1>
-           </Row>
-           <Row>
-           <TvShow />
-           <TvShow />
-           <TvShow />
-           <TvShow />
-           <TvShow />
-           <TvShow />
-               </Row>
-           </Container>   
-    }  
-};  
+  AfficherCategorie(){
+  return (
+    <>
+    <TvShow src= {require("../../img/Suspense/lesinvincibles.jpg")} 
+    alt="Les invincibles" 
+    title="Les Invincibles" 
+    /> 
+    <TvShow src= {require("../../img/Suspense/lesinvincibles.jpg")} 
+    alt="Les invincibles" 
+    title="Les Invincibles" 
+    /> 
+    <TvShow src= {require("../../img/Suspense/lesinvincibles.jpg")} 
+    alt="Les invincibles" 
+    title="Les Invincibles" 
+    /> 
+    <TvShow src= {require("../../img/Suspense/lesinvincibles.jpg")} 
+    alt="Les invincibles" 
+    title="Les Invincibles" 
+    /> 
+    <TvShow src= {require("../../img/Suspense/lesinvincibles.jpg")} 
+    alt="Les invincibles" 
+    title="Les Invincibles" 
+    /> 
+    <TvShow src= {require("../../img/Suspense/lesinvincibles.jpg")} 
+    alt="Les invincibles" 
+    title="Les Invincibles" 
+    /> 
+    </>
+   )
+ }
+}
