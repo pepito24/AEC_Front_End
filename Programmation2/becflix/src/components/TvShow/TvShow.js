@@ -1,20 +1,14 @@
 import React from 'react';
-import Col from "react-bootstrap/Col";
-import showImage from '../../images/22.jpg'; 
-
-let image = {
-  src : showImage,
-  alt : 'Les invincibles',
-  title : 'Les invicibles'
-}
+import Col from "react-bootstrap/Col"; 
 
 export class TvShow extends React.Component{
   render() {
     return (
       <Col xs lg="2">
-        <img src={image.src}
-           alt = {image.alt}
-           title = {image.title}
+        <img 
+        src={this.props.src}
+           alt = {this.props.alt}
+           title = {this.props.title}
            className = "img-fluid"
         />
       </Col>
