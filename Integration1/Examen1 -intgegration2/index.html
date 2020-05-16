@@ -16,7 +16,7 @@
 <! -- section 1 menu -->
 <div class="container-fluid text-white">
     <div class="row my-5">
-        <div class="col-lg-4 offset-2 box">
+        <div class="col-lg-4 offset-3 box">
 
 
             <div class="row mt-5">
@@ -96,13 +96,13 @@
         </div>
 
 
-        <div class="col-lg-3 offset-1">
+        <div class="col-lg-3">
             <div class="row">
                 <div class="col-lg-12 bloc"></div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12"></div>
+                    <div class="col-lg-10 offset-1">
                     <canvas id="canvas" width="380" height="290" style="background-color:black"></canvas>
                     <script>
                         var canvas = document.getElementById("canvas");
@@ -202,9 +202,10 @@
                         ctx.fill();
                     </script>
                 </div>
+                </div>
 
                 <div class="row pt-3">
-                    <div class="col-lg-12"></div>
+                    <div class="col-lg-10 offset-1">
                     <svg width="380" height="550">
 
                         // /rectangle(principal)
@@ -221,10 +222,11 @@
 
                     </svg>
                 </div>
+                </div>
 
-                <div class="row paypalbox">
-                    <div class="col-lg-12"></div>
-                    <div id="paypal-button-container" ></div>
+                <div class="row">
+                    <div class="col-lg-10 offset-1 paypalbox">
+                    <div class="mt-3" id="paypal-button-container" ></div>
                     <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD" data-sdk-integration-source="button-factory"></script>
                     <script>
                         paypal.Buttons({
@@ -252,7 +254,7 @@
                         }).render('#paypal-button-container');
                     </script>
                 </div>
-
+                </div>
             </div>
         </div>
     </div>
