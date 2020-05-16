@@ -1,15 +1,15 @@
 .bg1{
-    background-color: #0f6674;
+    background-color: white;
     height: 400px;
 }
 
 .bg2{
     background-color: lightgray;
-    height: 500px;
-    color: saddlebrown;
+    height: 400px;
+    color: #007bff;
 }
 
 .bg3{
-    background-color: #0f6674;
-    height: 150px;
+    background-color: white;
+    height: 800px;
 }

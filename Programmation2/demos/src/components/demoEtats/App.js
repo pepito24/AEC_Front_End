@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import {Accueil} from '../Accueil/Accueil'
+import { Parent } from './Parent';
 
 function App() {
   return (
-    <Accueil />
+    <Parent/>
   );
 }
 

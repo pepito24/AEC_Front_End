@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<! -- index.html -->
+<! -- Par Erik Paquet -->
+<! -- 2020-05-16 -->
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Examen 1</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<! -- section 1 menu -->
+<div class="container-fluid text-white">
+    <div class="row my-5">
+        <div class="col-lg-4 offset-2 box"></div>
+
+
+        <div class="col-lg-3 offset-1">
+            <div class="row">
+                <div class="col-lg-12 bloc"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12"></div>
+                    <canvas id="canvas" width="380" height="290" style="background-color:black"></canvas>
+                    <script>
+                        var canvas = document.getElementById("canvas");
+                        var ctx = canvas.getContext("2d");
+
+                        //gradient
+                        var grd = ctx.createRadialGradient(190, 140, 50, 180, 180, 200);
+                        grd.addColorStop(0, "orange");
+                        grd.addColorStop(1, "black");
+                        ctx.fillStyle = grd;
+
+                        // /cercle
+                        ctx.beginPath();
+                        ctx.fillStyle = grd;
+                        ctx.arc(190, 140, 110, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        // /mots
+                        ctx.font = "32px Blippo, fantasy";
+                        ctx.fillStyle = "black";
+                        ctx.fillText("MARS", 155, 150);
+
+                        // /etoiles
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(90, 40, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(360, 40, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(100, 60, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(280, 60, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(10, 100, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(30, 110, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(20, 260, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(260, 260, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(300, 260, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(310, 145, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(80, 250, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(70, 230, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(360, 210, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(50, 145, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+
+                        ctx.beginPath();
+                        ctx.fillStyle = "white";
+                        ctx.arc(5, 5, 1, 0, 2 * Math.PI);
+                        ctx.fill();
+                    </script>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-lg-12"></div>
+                    <svg width="380" height="550">
+
+                        // /rectangle(principal)
+                        <rect width="380" height="500" fill="black"  />
+
+                        // /triangle
+                        <polygon points="185,20 90,200 290,200" style="fill:white" />
+
+                        // /bas de fleche (rectangle)
+                        <rect x="135" y="200" width="110" height="200" fill="white"  />
+
+                        // /texte
+                        <text x="25" y="470" fill="white" font-size="50px" font-family="Lucida Console, Monaco, monospace">Destination</text>
+
+                    </svg>
+                </div>
+
+                <div class="row paypalbox">
+                    <div class="col-lg-12"></div>
+                    <div id="paypal-button-container " class="paypal"></div>
+                    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD" data-sdk-integration-source="button-factory"></script>
+                    <script>
+                        paypal.Buttons({
+                            style: {
+                                shape: 'rect',
+                                color: 'gold',
+                                layout: 'vertical',
+                                label: 'paypal',
+
+                            },
+                            createOrder: function(data, actions) {
+                                return actions.order.create({
+                                    purchase_units: [{
+                                        amount: {
+                                            value: '10000'
+                                        }
+                                    }]
+                                });
+                            },
+                            onApprove: function(data, actions) {
+                                return actions.order.capture().then(function(details) {
+                                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                });
+                            }
+                        }).render('#paypal-button-container');
+                    </script>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<! -- Fin -->
+
+<script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+</body>
+</html>

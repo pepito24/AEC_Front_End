@@ -1,0 +1,25 @@
+/* style.css */
+/* Par Erik Paquet */
+/* 2020-05-16 */
+
+body{
+    background-color: black;
+}
+
+.box{
+    background-color: grey;
+    height: 1200px;
+    width: 100%;
+}
+
+.bloc{
+    height: 200px;
+}
+
+.paypalbox{
+    background-color: white;
+}
+
+.paypal{
+    width: 100%;
+}

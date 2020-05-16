@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import {Accueil} from '../Accueil/Accueil'
+import { Player } from './Player';
 
 function App() {
   return (
-    <Accueil />
+    <Player/>
   );
 }
 
