@@ -7,7 +7,7 @@ body{
 }
 
 .box{
-    background-color: grey;
+    background-color: #333333;
     height: 1200px;
     width: 100%;
 }
@@ -20,6 +20,6 @@ body{
     background-color: white;
 }
 
-.paypal{
-    width: 100%;
+hr{
+    background-color: white;
 }
