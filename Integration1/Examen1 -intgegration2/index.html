@@ -10,15 +10,12 @@
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<! -- section 1 menu -->
+<! -- Zone Formulaire -->
 <div class="container-fluid text-white">
     <div class="row my-5">
         <div class="col-lg-4 offset-3 box">
-
-
             <div class="row mt-5">
                 <div class="col-lg-10 ml-4">
                     <h3>Participez à l'avenir de la race humaine</h3>
@@ -27,65 +24,37 @@
                 </div>
             </div>
 
-
+            <! -- Debut Formulaire -->
             <div class="row">
                 <div class="col-lg-10 ml-4 mt-4">
 
                     <form>
+                        <! -- ligne 1 -->
                         <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
+                            <label for="inputEmail3" class="col-2 col-form-label">Email</label>
+                            <div class="col-4">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                            <div class="col-5">
                                 <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                            </div>
-                        </div>
-                        <fieldset class="form-group">
-                            <div class="row">
-                                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                                <div class="col-sm-10">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="gridRadios1">
-                                            First radio
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                        <label class="form-check-label" for="gridRadios2">
-                                            Second radio
-                                        </label>
-                                    </div>
-                                    <div class="form-check disabled">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                                        <label class="form-check-label" for="gridRadios3">
-                                            Third disabled radio
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class="form-group row">
-                            <div class="col-sm-2">Checkbox</div>
-                            <div class="col-sm-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                    <label class="form-check-label" for="gridCheck1">
-                                        Example checkbox
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <button type="submit" class="btn btn-primary">Sign in</button>
-                            </div>
-                        </div>
+
+                        <! -- ligne 2 -->
+
+                        <! -- ligne 3 -->
+
+                        <! -- ligne 4 -->
+
+                        <! -- ligne 5 -->
+
+                        <! -- ligne 6 -->
+
+
+
+
                     </form>
+                    <! -- Fin Formulaire -->
 
 
 
@@ -94,13 +63,15 @@
                 </div>
             </div>
         </div>
+        <! -- Fin zone Formulaire -->
 
 
+        <! -- Zone SVG,Canva et Paypal -->
         <div class="col-lg-3">
             <div class="row">
                 <div class="col-lg-12 bloc"></div>
                 </div>
-
+            <! -- Planet Mars Debut -->
                 <div class="row">
                     <div class="col-lg-10 offset-1">
                     <canvas id="canvas" width="380" height="290" style="background-color:black"></canvas>
@@ -203,7 +174,11 @@
                     </script>
                 </div>
                 </div>
+            <! -- Planet Mars Fin -->
 
+
+
+            <! -- Fleche debut -->
                 <div class="row pt-3">
                     <div class="col-lg-10 offset-1">
                     <svg width="380" height="550">
@@ -221,40 +196,47 @@
                         <text x="25" y="470" fill="white" font-size="50px" font-family="Lucida Console, Monaco, monospace">Destination</text>
 
                     </svg>
+                    </div>
                 </div>
-                </div>
+            <! -- Fleche fin -->
 
+
+
+            <! -- Paypal debut -->
                 <div class="row">
                     <div class="col-lg-10 offset-1 paypalbox">
-                    <div class="mt-3" id="paypal-button-container" ></div>
+                    <div class="mt-3" id="paypal-button-container" >
                     <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=CAD" data-sdk-integration-source="button-factory"></script>
-                    <script>
-                        paypal.Buttons({
-                            style: {
-                                shape: 'rect',
-                                color: 'gold',
-                                layout: 'vertical',
-                                label: 'paypal',
+                        <script>
+                            paypal.Buttons({
+                                style: {
+                                    shape: 'rect',
+                                    color: 'gold',
+                                    layout: 'vertical',
+                                    label: 'paypal',
 
-                            },
-                            createOrder: function(data, actions) {
-                                return actions.order.create({
-                                    purchase_units: [{
-                                        amount: {
-                                            value: '10000'
-                                        }
-                                    }]
-                                });
-                            },
-                            onApprove: function(data, actions) {
-                                return actions.order.capture().then(function(details) {
-                                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                                });
-                            }
-                        }).render('#paypal-button-container');
-                    </script>
+                                },
+                                createOrder: function(data, actions) {
+                                    return actions.order.create({
+                                        purchase_units: [{
+                                            amount: {
+                                                value: '10000'
+                                            }
+                                        }]
+                                    });
+                                },
+                                onApprove: function(data, actions) {
+                                    return actions.order.capture().then(function(details) {
+                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                    });
+                                }
+                            }).render('#paypal-button-container');
+                        </script>
+                    </div>
+                    </div>
                 </div>
-                </div>
+            <! -- Paypal Fin -->
+
             </div>
         </div>
     </div>
