@@ -15,50 +15,143 @@
 <! -- Zone Formulaire -->
 <div class="container-fluid text-white">
     <div class="row my-5">
-        <div class="col-lg-4 offset-3 box">
-            <div class="row mt-5">
-                <div class="col-lg-10 ml-4">
-                    <h3>Participez à l'avenir de la race humaine</h3>
-                    <p>Inscrivez-vous à la prochaine mission de colonisation sur Mars !</p>
-                    <hr>
-                </div>
-            </div>
-
-            <! -- Debut Formulaire -->
+        <div class="col-lg-5 offset-2 box">
             <div class="row">
-                <div class="col-lg-10 ml-4 mt-4">
+                <div class="col-lg-12 ml-4 mr-4 mt-4">
+                    <h2>Participez à l'avenir de la race humaine</h2>
+                    <p>Inscrivez-vous à la prochaine mission de colonisation sur Mars !</p>
+                    <hr class="mr-5">
 
-                    <form>
-                        <! -- ligne 1 -->
-                        <div class="form-group row">
-                            <label for="inputEmail3" class="col-2 col-form-label">Email</label>
-                            <div class="col-4">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    <! -- Debut Formulaire -->
+                    <form name="monFormulaire"  onsubmit="return validerFormulaire()">
+
+                        <! -- Nom et Prenom -->
+                        <div class="form-group row mt-5">
+                            <label for="nom" class="col-3 col-form-label pright">Identification <span class="text-danger"> *</span></label>
+                            <div class="col-2 pleft pright">
+                                <input type="text" name="nom" class="form-control" id="nom" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+                                <small id="nomHelp" class="form-text">Nom</small>
                             </div>
-                            <div class="col-5">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            <div class="col-3 pleft">
+                                <input type="text" name="prenom" class="form-control" id="prenom" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+                                <small id="prenomHelp" class="form-text">Prénom</small>
                             </div>
                         </div>
 
-                        <! -- ligne 2 -->
 
-                        <! -- ligne 3 -->
+                        <! -- Date de naissance -->
+                        <div class="form-group row mt-5">
+                            <label for="nom" class="col-3 col-form-label pright">Date de naissance <span class="text-danger"> *</span></label>
+                            <div class="col-7 pleft pright">
+                                <input type="date" class="form-control" id="date" min="1920-01-01" max="2020-01-01">
+                            </div>
+                        </div>
 
-                        <! -- ligne 4 -->
+                        <! -- Télépnone -->
+                        <div class="form-group row mt-5">
+                            <label for="nom" class="col-3 col-form-label pright">Numéro de téléphone <span class="text-danger"> *</span></label>
+                            <div class="col-2 pleft pright">
+                                <input type="tel" class="form-control" id="phone"  pattern="[0-9]{4}-[0-9]{3}--[0-9]{1}/[A-Za-z]{1}" required>
+                                <small id="codeHelp" class="form-text">Code régionnal</small>
+                            </div>
+                            -
+                            <div class="col-3 pleft pright">
+                                <input type="tel" class="form-control" id="phone"  pattern="[0-9]{4}-[0-9]{3}--[0-9]{1}/[A-Za-z]{1}" required>
+                                <small id="numeroHelp" class="form-text">Numéro de téléphone</small>
+                            </div>
+                        </div>
 
-                        <! -- ligne 5 -->
+                        <! -- Email -->
+                        <div class="form-group row mt-5">
+                            <label for="nom" class="col-3 col-form-label pright">E-mail <span class="text-danger"> *</span></label>
+                            <div class="col-6 pleft pright">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ex : myname@exemple.com" maxlength = "35">
+                                <small id="emailHelp" class="form-text">exemple@exemple.com</small>
+                            </div>
+                        </div>
 
-                        <! -- ligne 6 -->
+                        <! -- Numéro de porte -->
+                        <div class="form-group row mt-5">
+                            <label for="porte" class="col-3 col-form-label pright">Addresse <span class="text-danger"> *</span></label>
+                            <div class="col-6 pleft pright">
+                                <input type="date" class="form-control" id="porte" min="1920-01-01" max="2020-01-01">
+                                <small id="prenomHelp" class="form-text">Prénom</small>
+                            </div>
+                        </div>
 
+                        <! -- Numéro d'appartement -->
+                        <div class="form-group row">
+                            <label for="app" class="col-3 col-form-label pright"></label>
+                            <div class="col-6 pleft pright">
+                                <input type="date" class="form-control" id="app" min="1920-01-01" max="2020-01-01">
+                                <small id="prenomHelp" class="form-text">Prénom</small>
+                            </div>
+                        </div>
 
+                        <! -- ville & État/province -->
+                        <div class="form-group row">
+                            <label for="ville" class="col-3 col-form-label pright"></label>
+                            <div class="col-3 pleft pright">
+                                <input type="text" name="nom" class="form-control" id="ville" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+                                <small id="nomHelp" class="form-text">Nom</small>
+                            </div>
+                            <div class="col-3 pleft">
+                                <input type="text" name="prenom" class="form-control" id="etat" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+                                <small id="prenomHelp" class="form-text">Prénom</small>
+                            </div>
+                        </div>
 
+                        <! -- Code postal -->
+                        <div class="form-group row">
+                            <label for="code" class="col-3 col-form-label pright"></label>
+                            <div class="col-3 pleft pright">
+                                <input type="text" name="nom" class="form-control" id="code" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+                                <small id="nomHelp" class="form-text">Nom</small>
+                            </div>
+                        </div>
+
+                        <! -- Sexe -->
+                        <div class="form-group row mt-5">
+                            <label for="sexe" class="col-3 col-form-label pright">Sexe <span class="text-danger"> *</span></label>
+                            <div class="col-3 pleft pright">
+                                <select id="sexe" class="form-control">
+                                    <option selected>Quebec</option>
+                                    <option>Montreal</option>
+                                    <option>Trois-Riviere</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <! -- Métier -->
+                        <div class="form-group row mt-5">
+                            <label for="metier" class="col-3 col-form-label pright">Métier <span class="text-danger"> *</span></label>
+                            <div class="col-3 pleft pright">
+                                <select id="metier" class="form-control">
+                                    <option selected>Quebec</option>
+                                    <option>Montreal</option>
+                                    <option>Trois-Riviere</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <! -- Présentation -->
+                        <div class="form-group row mt-5" >
+                            <label for="Textarea1" class="col-3 col-form-label pright">Présentation</label>
+                            <div class="col-7 pleft pright">
+                                <textarea class="form-control" id="Textarea1" rows="4"></textarea>
+
+                            </div>
+                        </div>
+
+                        <! -- Bouton -->
+                        <div class="form-group row mt-5">
+                            <div class="col-3 offset-3 pleft pright">
+                                <button type="submit" class="btn btn-light">Soumettre ma candidature</button>
+                            </div>
+                        </div>
 
                     </form>
                     <! -- Fin Formulaire -->
-
-
-
-
 
                 </div>
             </div>
