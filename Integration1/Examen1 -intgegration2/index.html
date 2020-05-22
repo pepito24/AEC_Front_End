@@ -9,6 +9,19 @@
     <title>Examen 1</title>
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function validerFormulaire() {
+            var x = document.forms["monFormulaire"]["codeReg"].value;
+            if (x === "418" || x === "514" || x === "819" ) {
+                return true;
+            }
+            else{
+                alert("Veuillez utiliser l'un des codes régionaux suivant : (819, 418, 514)");
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -29,34 +42,36 @@
                         <div class="form-group row mt-5">
                             <label for="nom" class="col-3 col-form-label pright">Identification <span class="text-danger"> *</span></label>
                             <div class="col-2 pleft pright">
-                                <input type="text" name="nom" class="form-control" id="nom" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+                                <input type="text" name="nom" class="form-control" id="nom" maxlength = "35" pattern="[á, é, í, ó, ú, ý. Á, É, Í, Ó, Ú, Ý A-Za-z]{3,}" required>
                                 <small id="nomHelp" class="form-text">Nom</small>
                             </div>
                             <div class="col-3 pleft">
-                                <input type="text" name="prenom" class="form-control" id="prenom" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+                                <input type="text" name="prenom" class="form-control" id="prenom" maxlength = "35" pattern="[á, é, í, ó, ú, ý. Á, É, Í, Ó, Ú, Ý A-Za-z]{3,}" required>
                                 <small id="prenomHelp" class="form-text">Prénom</small>
                             </div>
                         </div>
 
 
-                        <! -- Date de naissance -->
+                        <! -- Date de naissance  (18 ans et + (max 100 ans))-->
                         <div class="form-group row mt-5">
                             <label for="nom" class="col-3 col-form-label pright">Date de naissance <span class="text-danger"> *</span></label>
                             <div class="col-7 pleft pright">
-                                <input type="date" class="form-control" id="date" min="1920-01-01" max="2020-01-01">
+                                <input type="date" class="form-control" id="date" min="1920-01-01" max="2002-01-01">
                             </div>
                         </div>
 
-                        <! -- Télépnone -->
+                        <! -- code régional -->
                         <div class="form-group row mt-5">
-                            <label for="nom" class="col-3 col-form-label pright">Numéro de téléphone <span class="text-danger"> *</span></label>
+                            <label for="codeReg" class="col-3 col-form-label pright">Numéro de téléphone <span class="text-danger"> *</span></label>
                             <div class="col-2 pleft pright">
-                                <input type="tel" class="form-control" id="phone"  pattern="[0-9]{4}-[0-9]{3}--[0-9]{1}/[A-Za-z]{1}" required>
+                                <input type="number" name="codeReg" class="form-control" id="codeReg" maxlength = "3" pattern="[0-9]{3}" required>
                                 <small id="codeHelp" class="form-text">Code régionnal</small>
                             </div>
                             -
+
+                            <! -- Téléphone -->
                             <div class="col-3 pleft pright">
-                                <input type="tel" class="form-control" id="phone"  pattern="[0-9]{4}-[0-9]{3}--[0-9]{1}/[A-Za-z]{1}" required>
+                                <input type="tel" class="form-control" id="phone"  maxlength = "8" pattern="[0-9]{3}-[0-9]{4}" required>
                                 <small id="numeroHelp" class="form-text">Numéro de téléphone</small>
                             </div>
                         </div>
@@ -64,8 +79,8 @@
                         <! -- Email -->
                         <div class="form-group row mt-5">
                             <label for="nom" class="col-3 col-form-label pright">E-mail <span class="text-danger"> *</span></label>
-                            <div class="col-6 pleft pright">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ex : myname@exemple.com" maxlength = "35">
+                            <div class="col-5 pleft pright">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ex : myname@exemple.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength = "35">
                                 <small id="emailHelp" class="form-text">exemple@exemple.com</small>
                             </div>
                         </div>
@@ -74,8 +89,8 @@
                         <div class="form-group row mt-5">
                             <label for="porte" class="col-3 col-form-label pright">Addresse <span class="text-danger"> *</span></label>
                             <div class="col-6 pleft pright">
-                                <input type="date" class="form-control" id="porte" min="1920-01-01" max="2020-01-01">
-                                <small id="prenomHelp" class="form-text">Prénom</small>
+                                <input type="number" class="form-control" id="porte" pattern="[0-9]" min="1" max="9999" required>
+                                <small id="porteHelp" class="form-text">Numéro de porte</small>
                             </div>
                         </div>
 
@@ -83,21 +98,23 @@
                         <div class="form-group row">
                             <label for="app" class="col-3 col-form-label pright"></label>
                             <div class="col-6 pleft pright">
-                                <input type="date" class="form-control" id="app" min="1920-01-01" max="2020-01-01">
-                                <small id="prenomHelp" class="form-text">Prénom</small>
+                                <input type="number" class="form-control" id="app"  pattern="[0-9] " min="1" max="100">
+                                <small id="appHelp" class="form-text">Numéro d'appartement</small>
                             </div>
                         </div>
 
-                        <! -- ville & État/province -->
+                        <! -- ville  -->
                         <div class="form-group row">
                             <label for="ville" class="col-3 col-form-label pright"></label>
                             <div class="col-3 pleft pright">
-                                <input type="text" name="nom" class="form-control" id="ville" maxlength = "35" pattern="[A-Za-z]{3,}" required>
-                                <small id="nomHelp" class="form-text">Nom</small>
+                                <input type="text" name="nom" class="form-control" id="ville" maxlength = "55" pattern="[á, é, í, ó, ú, ý. Á, É, Í, Ó, Ú, Ý A-Za-z]{3,}" required>
+                                <small id="villeHelp" class="form-text">Ville</small>
                             </div>
+
+                            <! -- État/province -->
                             <div class="col-3 pleft">
-                                <input type="text" name="prenom" class="form-control" id="etat" maxlength = "35" pattern="[A-Za-z]{3,}" required>
-                                <small id="prenomHelp" class="form-text">Prénom</small>
+                                <input type="text" name="prenom" class="form-control" id="etat" maxlength = "55" pattern="[ á, é, í, ó, ú, ý. Á, É, Í, Ó, Ú, Ý A-Za-z]{3,}" required>
+                                <small id="etatHelp" class="form-text">État/province</small>
                             </div>
                         </div>
 
@@ -105,8 +122,8 @@
                         <div class="form-group row">
                             <label for="code" class="col-3 col-form-label pright"></label>
                             <div class="col-3 pleft pright">
-                                <input type="text" name="nom" class="form-control" id="code" maxlength = "35" pattern="[A-Za-z]{3,}" required>
-                                <small id="nomHelp" class="form-text">Nom</small>
+                                <input type="text" name="nom" class="form-control" id="code" maxlength = "6" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}" required>
+                                <small id="codePostalHelp" class="form-text">Code postal</small>
                             </div>
                         </div>
 
@@ -115,9 +132,9 @@
                             <label for="sexe" class="col-3 col-form-label pright">Sexe <span class="text-danger"> *</span></label>
                             <div class="col-3 pleft pright">
                                 <select id="sexe" class="form-control">
-                                    <option selected>Quebec</option>
-                                    <option>Montreal</option>
-                                    <option>Trois-Riviere</option>
+                                    <option selected>Femme</option>
+                                    <option>Homme</option>
+                                    <option>Non-binaire</option>
                                 </select>
                             </div>
                         </div>
@@ -125,12 +142,8 @@
                         <! -- Métier -->
                         <div class="form-group row mt-5">
                             <label for="metier" class="col-3 col-form-label pright">Métier <span class="text-danger"> *</span></label>
-                            <div class="col-3 pleft pright">
-                                <select id="metier" class="form-control">
-                                    <option selected>Quebec</option>
-                                    <option>Montreal</option>
-                                    <option>Trois-Riviere</option>
-                                </select>
+                            <div class="col-4 pleft pright">
+                                <input type="text" name="metier" class="form-control" id="metier" maxlength = "55" pattern="[á, é, í, ó, ú, ý. Á, É, Í, Ó, Ú, Ý A-Za-z]{3,}" required>
                             </div>
                         </div>
 
@@ -138,8 +151,7 @@
                         <div class="form-group row mt-5" >
                             <label for="Textarea1" class="col-3 col-form-label pright">Présentation</label>
                             <div class="col-7 pleft pright">
-                                <textarea class="form-control" id="Textarea1" rows="4"></textarea>
-
+                                <textarea class="form-control" id="Textarea1" rows="4" maxlength = "2000"></textarea>
                             </div>
                         </div>
 
