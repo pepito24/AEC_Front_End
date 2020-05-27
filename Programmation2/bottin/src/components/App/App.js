@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import {Catalogue} from '../Catalogue/Catalogue';
+import { Bottin } from '../Bottin';
+import { Accueil } from '../Accueil';
 function App() {
   return (
     <div className="App">
-      <Catalogue /> 
+      <Accueil /> 
     </div>
   );
 }
