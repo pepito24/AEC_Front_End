@@ -2,9 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container"; 
 import Row from "react-bootstrap/Row"; 
 import Col from "react-bootstrap/Col"; 
-import {Bottin} from '../components/Bottin';
-import {Connexion} from '../components/Connexion';
-import {Deconnexion} from '../components/Deconnexion';
+import { Catalogue } from "../Components/Catalogue";
+import {Connexion} from '../Components/Connexion';
+import {Deconnexion} from '../Components/Deconnexion';
 
 export class Accueil extends React.Component {
   constructor(props) {
@@ -19,15 +19,17 @@ export class Accueil extends React.Component {
   }
 
   gererConnexion(){
-    if(this.state.connecter){
+    if(this.state.connecter === true){
       return (
         <Container fluid>
           <Row>
-            <Col>
+          <Col></Col>
+          <Col></Col>
+            <Col className="mt-5">
               <Deconnexion onClick={this.verifierConnexion} />
             </Col>
           </Row>
-          <Bottin />
+          <Catalogue />
         </Container>  
       )
     }
