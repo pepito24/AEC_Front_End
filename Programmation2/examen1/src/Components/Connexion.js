@@ -17,7 +17,7 @@ export class Connexion extends React.Component {
     const email = document.getElementById('email').value;
     const pass = document.getElementById('password').value;
     if (email.toLowerCase() === "g.o.t.s@hotmail.com" && pass === "erik")
-      connecter = true;
+     connecter = true;
     this.props.onClick(connecter);  
   } 
 
@@ -44,9 +44,14 @@ export class Connexion extends React.Component {
                   <Form.Control type="password" placeholder="Password"/>
                 </Form.Group>
 
-                <Button variant="danger" onClick={this.handleConnexion}>
+
+                
+                <Button variant="danger" onClick={this.handleConnexion}>    
                   Submit
-                </Button>
+                </Button> 
+
+
+                
               </Form>
             </Col>
           </Row>

@@ -2,24 +2,36 @@ import React from "react";
 import Container from "react-bootstrap/Container"; 
 import Row from "react-bootstrap/Row"; 
 import Col from "react-bootstrap/Col"; 
-import { Catalogue } from "../Components/Catalogue";
 import {Connexion} from '../Components/Connexion';
 import {Deconnexion} from '../Components/Deconnexion';
+import { Repertoire } from "./Repertoire";
+import { Albums } from "./Albums";
 
 export class Accueil extends React.Component {
   constructor(props) {
     super(props);
     this.state = {connecter: false};
+   
     this.gererConnexion = this.gererConnexion.bind(this);
     this.verifierConnexion = this.verifierConnexion.bind(this);
+    
   }
+
+
+
+
+  /* Connexion */
 
   verifierConnexion(connexion){
     this.setState({ connecter: connexion });
   }
+  /* fin Connexion */
+
+  
+  
 
   gererConnexion(){
-    if(this.state.connecter === true){
+    if(this.state.connecter){
       return (
         <Container fluid>
           <Row>
@@ -29,16 +41,23 @@ export class Accueil extends React.Component {
               <Deconnexion onClick={this.verifierConnexion} />
             </Col>
           </Row>
-          <Catalogue />
+          <Repertoire />
+          <Albums/>
         </Container>  
       )
     }
+
+
+
     else{
       return(
-        <Connexion onClick={this.verifierConnexion} />
+        <Connexion onClick={this.verifierConnexion}/>
       )
     }
   }
+
+
+
   render() {
     return (
         this.gererConnexion()
