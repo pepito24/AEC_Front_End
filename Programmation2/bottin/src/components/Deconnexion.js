@@ -3,11 +3,11 @@ import Button from "react-bootstrap/Button";
 
 export class Deconnexion extends React.Component {
   handleDeconnexion() {
-    this.props.onClick(false);
+    this.props.onChange2(false);
   }
   render() {
     return (
-      <Button variant="primary" onClick={() => this.handleDeconnexion()}>
+      <Button variant="danger" onClick={() => this.handleDeconnexion()}>
         Déconnexion
       </Button>
     );

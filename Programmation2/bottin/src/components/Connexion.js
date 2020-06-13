@@ -1,7 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Jumbotron from "react-bootstrap/Jumbotron";
 import {Container, Row, Col} from "react-bootstrap";
 
 export class Connexion extends React.Component {
@@ -9,30 +8,28 @@ export class Connexion extends React.Component {
     super(props);  
     this.handleConnexion = this.handleConnexion.bind(this);  
   } 
-  handleConnexion(){
-    let connecter = false;
 
-    const email = document.getElementById('email').value;
-    const pass = document.getElementById('password').value;
-    if (email.toLowerCase() === "g.o.t.s@hotmail.com" && pass === "erik2424")
-      connecter = true;
+  
+  handleConnexion(){
+    let connecter = true;
     this.props.onClick(connecter);  
   } 
 
   render() {
     return (
       <Container>
-        <Jumbotron>
           <Row className="text-center">
-            <Col>
-              <h1 >CONNEXION</h1>
+            <Col >
+           
+              <h1 className="mb-5">Corsaire Music / Login</h1>
             </Col>
           </Row>
           <Row>
-            <Col>
+          <Col md="3" lg="4" ></Col>
+            <Col md="6" lg="4" >
               <Form>
                 <Form.Group controlId="email">
-                  <Form.Label>Email address</Form.Label>
+                  <Form.Label >Email address</Form.Label>
                   <Form.Control type="email" placeholder="Enter email"/>
                 </Form.Group>
 
@@ -41,13 +38,17 @@ export class Connexion extends React.Component {
                   <Form.Control type="password" placeholder="Password"/>
                 </Form.Group>
 
-                <Button variant="primary" onClick={this.handleConnexion}>
+
+                
+                <Button variant="danger" onClick={this.handleConnexion}>    
                   Submit
-                </Button>
+                </Button> 
+
+
+                
               </Form>
             </Col>
           </Row>
-        </Jumbotron>
       </Container> 
     );
   }
