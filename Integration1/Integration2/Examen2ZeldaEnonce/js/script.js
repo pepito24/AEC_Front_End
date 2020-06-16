@@ -1,6 +1,9 @@
+// script.js
+// 2020-06-16
+// Erik Paquet
 
 
-
+// Recherche de jeu
 function tri() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
@@ -19,8 +22,7 @@ function tri() {
 }
 
 
-
-
+// Premier tableau
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
@@ -46,6 +48,7 @@ function drawChart() {
 
 
 
+// 2eme tableau
 google.charts.load('current', {
     'packages':['geochart'],
     // Note: you will need to get a mapsApiKey for your project.
