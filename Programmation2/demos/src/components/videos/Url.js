@@ -14,6 +14,8 @@ export class Url extends React.Component {
   handleC(){
     const url1 = document.getElementById('text').value;
     this.setState({ value: url1 });
+    getData();
+    alert(this.state.value2);
   } 
 
 render() {
@@ -51,14 +53,13 @@ const getData = async () => {
    try{ 
       const response = await fetch('https://api.rebrandly.com/v1/links', { 
          method:'POST', 
-         headers: {'apikey': apiKey  }, 
+         headers: { 'Content-Type': 'application/json','apikey': apiKey  }, 
          body:JSON.stringify({destination: this.state.value })
        }); 
       if(response.ok){ 
-        
          const jsonResponse = await response.json(); 
-         this.setState({ value2: jsonResponse });
-         return jsonResponse; 
+         this.setState({ value2: jsonResponse.shortURL });
+         return jsonResponse.shortURL; 
       } 
       throw new Error('Request failed!'); 
    } 
