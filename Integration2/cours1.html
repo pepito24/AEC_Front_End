@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script>
+        function validerFormulaire() {
+            var x = document.forms["monFormulaire"]["nom"].value;
+            if (x === "" ) {
+                alert("Seul les lettre sont accepter");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+<div class="row mt-5">
+    <div class="col-lg-12 mt-5">
+
+<form name="monFormulaire"  onsubmit="return validerFormulaire()">
+        <div class="form-group">
+            <label for="nom">Name <span class="text-danger">*</span></label>
+            <input type="text" name="nom" class="form-control" id="nom" placeholder="Nom" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+        </div>
+    <div class="form-row">
+    <div class="form-group col-lg-6">
+        <label for="age">age </label>
+        <input type="number" class="form-control" id="age" min="0" max="15" placeholder="age">
+    </div>
+
+    <div class="form-group col-lg-6">
+        <label for="date">Date de naissance </label>
+        <input type="date" class="form-control" id="date"  placeholder="ex: 2005-01-01" min="2005-01-01" max="2020-03-01">
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="taille">Taille(longueur) </label>
+        <input type="number" class="form-control" id="taille"  placeholder="Taille en pouces (longueur du chat)" min="6" max="20" >
+    </div>
+
+
+    <div class="form-group">
+        <label for="poid">Poid </label>
+        <input type="number" class="form-control" id="poid"  placeholder="Poid en lbs" min="1" max="15" >
+    </div>
+
+    <div class="form-check form-check-inline mt-2 mb-4">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">vacciner</label>
+    </div>
+
+    <div class="form-group">
+        <label for="couleurs">Couleurs</label>
+        <select id="couleurs" class="form-control">
+            <option selected>Noir</option>
+            <option>Blanc</option>
+            <option>Brun</option>
+            <option>Mixte</option>
+        </select>
+    </div>
+
+    <div class="form-check form-check-inlin mt-4">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="domestique" value="option1">
+        <label class="form-check-label" for="domestique">Domestique</label>
+    </div>
+    <div class="form-check form-check-inline mb-4">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="race" value="option2">
+        <label class="form-check-label" for="race">Race</label>
+    </div>
+
+    <div class="form-group ">
+        <label for="lieu">Lieu de naissance</label>
+        <select id="lieu" class="form-control">
+            <option selected>Quebec</option>
+            <option>Montreal</option>
+            <option>Trois-Riviere</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Photos">Photos</label>
+        <input type="file" class="form-control-file" id="Photos" multiple><br><br>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" maxlength = "35">
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Telephone (9999-999--9/X)</label>
+        <input type="tel" class="form-control" id="phone" placeholder="telephone" pattern="[0-9]{4}-[0-9]{3}--[0-9]{1}/[A-Za-z]{1}">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+
+
+</form>
+    </div>
+
+</div>
+</div>
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-12 mt-5">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-5">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+
+
+</body>
+</html>

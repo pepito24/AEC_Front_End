@@ -7,17 +7,14 @@ export class Url extends React.Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
-
+    this.state = {value2: ''};
     this.handleC = this.handleC.bind(this); 
   }
 
   handleC(){
     const url1 = document.getElementById('text').value;
     this.setState({ value: url1 });
-    alert(this.state.value);
   } 
-
-
 
 render() {
     return (
@@ -40,7 +37,7 @@ render() {
       <Col md="3" lg="4" ></Col>
       <Col md="3" lg="4" >
          Votre Url court est :
-         {getData}
+         <h2>{this.state.value2}</h2>
       </Col>
       </Row>
   </Container> 
@@ -50,26 +47,21 @@ render() {
 
 
 const apiKey = "9469098f736044e5bbfa9a96f9567714"; 
- 
 const getData = async () => { 
-
    try{ 
       const response = await fetch('https://api.rebrandly.com/v1/links', { 
          method:'POST', 
          headers: {'apikey': apiKey  }, 
-         body:JSON.stringify({destination: this.state.value }) // se quon envoi a l<api ladress de la page de entrer dans le imput
-
+         body:JSON.stringify({destination: this.state.value })
        }); 
-
       if(response.ok){ 
+        
          const jsonResponse = await response.json(); 
+         this.setState({ value2: jsonResponse });
          return jsonResponse; 
-
       } 
       throw new Error('Request failed!'); 
-
    } 
-
    catch(error){ 
       console.log(error); 
    } 

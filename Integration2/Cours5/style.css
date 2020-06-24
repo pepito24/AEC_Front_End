@@ -1,0 +1,45 @@
+
+.masthead {
+    height: 100vh;
+    min-height: 700px;
+    background-image: url('https://images.cinemaexpress.com/uploads/user/imagelibrary/2019/5/17/original/john-wick-3-parabellum-movie-review-keanu-reeves.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.box1{
+     background-color: purple;
+     height: 500px;
+ }
+
+.box2{
+    background-color: white;
+    height: 800px;
+}
+
+
+.box3{
+    background-color: lightgray;
+    height: 300px;
+}
+
+
+.box4{
+
+    height: 80%;
+    width: 100%;
+
+}
+
+.img1{
+    width: 100%;
+}
+
+
+
+
+svg {
+    width: 20em;
+}

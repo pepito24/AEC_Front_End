@@ -1,0 +1,51 @@
+.monContainer {
+  width: 100%;
+}
+.monContainer .col3 {
+  width: 25%;
+}
+.monContainer .col6 {
+  width: 50%;
+}
+.monContainer .image-resposive {
+  max-width: 100%;
+  max-width-height: auto;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.bg {
+  background-image: url("../medias/sw.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 6px;
+  border-color: #ffffff;
+}
+
+.bgOrange {
+  background-color: orangered;
+}
+
+.grosseMarge {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.hrOrange {
+  max-width: 50px;
+  border-width: 6px;
+  border-color: orangered;
+}
+
+h1, p {
+  color: white;
+}
+
+/*# sourceMappingURL=style2.css.map */

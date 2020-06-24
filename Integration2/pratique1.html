@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+
+<!-- Canvas -->
+
+<div class="container-fluid">
+    <div class="row bg1">
+        <div class="col-lg-4 offset-lg-4 mt-5 text-center">
+
+
+            <canvas id="canvas" width="380" height="290" style="background-color:black"></canvas>
+
+            <script>
+                var canvas = document.getElementById("canvas");
+                var ctx = canvas.getContext("2d");
+
+                //gradient
+                var grd = ctx.createRadialGradient(190, 140, 50, 180, 180, 200);
+                grd.addColorStop(0, "orange");
+                grd.addColorStop(1, "black");
+                ctx.fillStyle = grd;
+
+                // /cercle
+                ctx.beginPath();
+                ctx.fillStyle = grd;
+                ctx.arc(190, 140, 110, 0, 2 * Math.PI);
+                ctx.fill();
+
+                // /mots
+                ctx.font = "32px Blippo, fantasy";
+                ctx.fillStyle = "black";
+                ctx.fillText("MARS", 155, 150);
+
+
+                // /etoiles
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(90, 40, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(360, 40, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(100, 60, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(280, 60, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(10, 100, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(30, 110, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(20, 260, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(260, 260, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(300, 260, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(310, 145, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(80, 250, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(70, 230, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(360, 210, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(50, 145, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.beginPath();
+                ctx.fillStyle = "white";
+                ctx.arc(5, 5, 1, 0, 2 * Math.PI);
+                ctx.fill();
+
+
+            </script>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row bg3">
+        <div class="col-lg-4 offset-lg-4 mt-5 text-center">
+            <svg width="380" height="550">
+
+                // /rectangle(principal)
+                <rect width="380" height="500" fill="black"  />
+
+                // /triangle
+                <polygon points="185,20 90,200 290,200" style="fill:white" />
+
+                // /bas de fleche (rectangle)
+                <rect x="135" y="200" width="110" height="200" fill="white"  />
+
+                // /texte
+                <text x="25" y="470" fill="white" font-size="50px" font-family="Lucida Console, Monaco, monospace">Destination</text>
+
+            </svg>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+    <div class="row bg1">
+            <div class="col-lg-6 offset-3 mt-5">
+
+                <form name="monFormulaire"  onsubmit="return validerFormulaire()">
+                    <div class="form-group">
+                        <label for="nom">Name <span class="text-danger">*</span></label>
+                        <input type="text" name="nom" class="form-control" id="nom" placeholder="Nom" maxlength = "35" pattern="[A-Za-z]{3,}" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <label for="age">age </label>
+                            <input type="number" class="form-control" id="age" min="0" max="15" placeholder="age">
+                        </div>
+
+                        <div class="form-group col-lg-6">
+                            <label for="date">Date de naissance </label>
+                            <input type="date" class="form-control" id="date"  placeholder="ex: 2005-01-01" min="2005-01-01" max="2020-03-01">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="taille">Taille(longueur) </label>
+                        <input type="number" class="form-control" id="taille"  placeholder="Taille en pouces (longueur du chat)" min="6" max="20" >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="poid">Poid </label>
+                        <input type="number" class="form-control" id="poid"  placeholder="Poid en lbs" min="1" max="15" >
+                    </div>
+
+                    <div class="form-check form-check-inline mt-2 mb-4">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">vacciner</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="couleurs">Couleurs</label>
+                        <select id="couleurs" class="form-control">
+                            <option selected>Noir</option>
+                            <option>Blanc</option>
+                            <option>Brun</option>
+                            <option>Mixte</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check form-check-inlin mt-4">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="domestique" value="option1">
+                        <label class="form-check-label" for="domestique">Domestique</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+
+
+            </form>
+        </div>
+
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+
+
+</body>
+</html>

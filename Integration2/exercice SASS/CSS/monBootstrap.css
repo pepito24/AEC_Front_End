@@ -1,0 +1,29 @@
+.monContainer {
+  width: 100%;
+}
+.monContainer .col3 {
+  width: 25%;
+}
+.monContainer .col6 {
+  width: 50%;
+}
+.monContainer .image-resposive {
+  max-width: 100%;
+  height: auto;
+}
+
+.monContainer2 {
+  width: 80%;
+}
+.monContainer2 .col3 {
+  width: 25%;
+}
+.monContainer2 .col6 {
+  width: 50%;
+}
+.monContainer2 .image-resposive {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=monBootstrap.css.map */

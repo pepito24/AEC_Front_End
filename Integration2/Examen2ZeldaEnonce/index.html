@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<! -- index.html -->
+<! -- Par Erik Paquet -->
+<! -- 2020-06-13 -->
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<!--   Menu header   -->
+<header class="header">
+    <div class="container-fluid  text-center pt-3">
+        <div class="row">
+            <div class="col-1">
+                <a class="adeco hvr-grow" href="#">Jeux</a>
+            </div>
+            <div class="col-1 mr-5">
+                <a class="adeco hvr-grow" href="#">Marchandise</a>
+            </div>
+            <div class="col-1 mr-2">
+                <a class="adeco hvr-grow" href="#">FanArt</a>
+            </div>
+        </div>
+    </div>
+<!--    Image header     -->
+    <div class="container-fluid  text-center sous-titre ">
+        <div class="row">
+            <div class="col-12">
+                <h1>La légende de </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="zelda">Zelda </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid separation">
+        <div class="row ">
+            <div class="col-12 text-center">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!--    Liste    -->
+<div class="container">
+    <div class="row pt-3 pb-3">
+        <div class="col-12 ">
+            <input class="form-control" type="text" id="myInput"  placeholder="Rechercher un jeu..." onkeyup="tri()">
+            <hr>
+            <ul class="list-group text-center" id="myUL">
+                <li class="list-group-item"><a href="#" class="zelda2">Breath of the wild</a></li>
+                <li class="list-group-item"><a href="#" class="zelda2">Ocarina of Time</a></li>
+
+                <li class="list-group-item"><a href="#" class="zelda2">Four Swords</a></li>
+                <li class="list-group-item"><a href="#" class="zelda2">The Minish Cap</a></li>
+
+                <li class="list-group-item"><a href="#" class="zelda2">Skyward Sword</a></li>
+                <li class="list-group-item"><a href="#" class="zelda2">Majora's Mask </a></li>
+
+                <li class="list-group-item"><a href="#" class="zelda2">Twilight Princess</a></li>
+                <li class="list-group-item"><a href="#" class="zelda2">The Legend of Zelda</a></li>
+
+                <li class="list-group-item "><a href="#" class="zelda2">A Link to the Past</a></li>
+                <li class="list-group-item"><a href="#" class="zelda2">Link's Awakening</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--    Graphiques    -->
+<div  data-aos="fade-up" class="container-fluid graphiques pt-5 " >
+    <div class="row ">
+        <div class="col-12 text-center pb-5">
+            <h1> Zelda en chiffres</h1>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-12 text-center pb-3">
+            <div id="piechart" style="graphique1"></div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-12 text-center">
+            <div id="regions_div" style="graphique1"></div>
+        </div>
+    </div>
+</div>
+
+
+<!--    script    -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+
+</body>
+</html>
