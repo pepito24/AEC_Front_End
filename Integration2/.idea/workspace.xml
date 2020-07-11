@@ -12,6 +12,13 @@
       <executable />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -23,13 +30,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test SASS" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\test SASS" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\test SASS\img" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\exercice SASS\medias" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\exercice SASS" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2" />
     </key>
@@ -57,6 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1592658580575</updated>
       <workItem from="1592658582703" duration="5297000" />
+      <workItem from="1593260180252" duration="7655000" />
+      <workItem from="1594469564787" duration="9775000" />
     </task>
     <servers />
   </component>
@@ -64,6 +80,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1230" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593265850623">
+      <screen x="-1920" y="-139" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.-139.1920.1040/1366.0.1920.1040/0.0.1366.728@-1920.-139.1920.1040" timestamp="1593265850623" />
     <state x="-1326" y="158" key="EditFileWatcherDialog" timestamp="1592658862833">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>

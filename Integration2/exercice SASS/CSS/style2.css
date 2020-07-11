@@ -9,7 +9,21 @@
 }
 .monContainer .image-resposive {
   max-width: 100%;
-  max-width-height: auto;
+  height: auto;
+}
+
+.monContainer2 {
+  width: 80%;
+}
+.monContainer2 .col3 {
+  width: 25%;
+}
+.monContainer2 .col6 {
+  width: 50%;
+}
+.monContainer2 .image-resposive {
+  max-width: 100%;
+  height: auto;
 }
 
 html, body {
@@ -46,6 +60,10 @@ hr {
 
 h1, p {
   color: white;
+}
+
+.p1 {
+  color: black;
 }
 
 /*# sourceMappingURL=style2.css.map */

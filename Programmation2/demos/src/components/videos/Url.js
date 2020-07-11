@@ -6,8 +6,7 @@ import {Container, Row, Col} from "react-bootstrap";
 export class Url extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
-    this.state = {value2: ''};
+    this.state = {value: "https://www.facebook.com/" , value2: ""};
     this.handleC = this.handleC.bind(this); 
   }
 
@@ -15,7 +14,7 @@ export class Url extends React.Component {
     const url1 = document.getElementById('text').value;
     this.setState({ value: url1 });
     getData();
-    alert(this.state.value2);
+    alert(this.state.value);
   } 
 
 render() {
@@ -54,12 +53,12 @@ const getData = async () => {
       const response = await fetch('https://api.rebrandly.com/v1/links', { 
          method:'POST', 
          headers: { 'Content-Type': 'application/json','apikey': apiKey  }, 
-         body:JSON.stringify({destination: this.state.value })
+         body:JSON.stringify({destination: "https://www.facebook.com/" })
        }); 
       if(response.ok){ 
          const jsonResponse = await response.json(); 
          this.setState({ value2: jsonResponse.shortURL });
-         return jsonResponse.shortURL; 
+         return jsonResponse; 
       } 
       throw new Error('Request failed!'); 
    } 

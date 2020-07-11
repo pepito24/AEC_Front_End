@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+.color{
+  color: orange;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+#logo{
+  height: 70px;
+}
+
+.box1{
+  height:90vh;
+  min-height: 500px;
+  background-image: url('https://images.hdqwalls.com/wallpapers/state-of-decay-2-illustration-ga.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box2{
+  height: 500px;
+  max-height: 500px;
+  width: 100%;
+  background-image: url('https://www.g4less.com/images/product/7587_10.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box3{
+  height: 500px;
+  max-height: 500px;
+  width: 100%;
+  background-image: url('https://wallpaperaccess.com/full/2192261.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box4{
+  height: 500px;
+  max-height: 500px;
+  width: 100%;
+  background-image: url('https://images7.alphacoders.com/516/thumb-1920-516429.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer{
+  height: 100px;
+  background-color: #343a40;
+}
