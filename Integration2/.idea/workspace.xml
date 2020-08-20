@@ -16,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,18 +35,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test SASS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Integration1" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\test SASS" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\test SASS\img" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\exercice SASS\medias" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\exercice SASS" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration2\test SASS" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -72,7 +73,9 @@
       <updated>1592658580575</updated>
       <workItem from="1592658582703" duration="5297000" />
       <workItem from="1593260180252" duration="7655000" />
-      <workItem from="1594469564787" duration="9775000" />
+      <workItem from="1594469564787" duration="14912000" />
+      <workItem from="1595074435212" duration="5835000" />
+      <workItem from="1597953461151" duration="1813000" />
     </task>
     <servers />
   </component>
@@ -88,6 +91,10 @@
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>
     <state x="-1326" y="158" key="EditFileWatcherDialog/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1592658862833" />
+    <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1597964149610">
+      <screen x="-1920" y="-139" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="135" key="FileChooserDialogImpl/-1920.-139.1920.1040/1366.0.1920.1040/0.0.1366.728@-1920.-139.1920.1040" timestamp="1597964149610" />
     <state x="-1459" y="22" key="SettingsEditor" timestamp="1592658866943">
       <screen x="-1920" y="-139" width="1920" height="1040" />
     </state>

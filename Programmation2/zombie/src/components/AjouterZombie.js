@@ -11,21 +11,21 @@ export class AjouterZombie extends React.Component {
     this.state = {photo: "", setErrors : {}};
     this.handleSave = this.handleSave.bind(this);
     this.handlePhoto = this.handlePhoto.bind(this);
+    this.savePokemon = this.savePokemon.bind(this);
+    this.getID = this.getID.bind(this);
   }
 
   async savePokemon(nom,photo,attaque1) { 
     try{ 
+      const newID = await this.getID();
       const response = await fetch('http://localhost:3001/zombie/', { 
         method:'POST', 
         headers: {'Content-Type': 'application/json'  }, 
-        body:JSON.stringify({id : nom,
+        body:JSON.stringify({id : newID,
           name: nom,
           picture: photo,
-          special: [
-            {
-              name: attaque1
-            },
-          ]
+          special: attaque1
+           
         }) 
       }); 
       if(response.ok){ 
@@ -41,6 +41,27 @@ export class AjouterZombie extends React.Component {
       console.log(error); 
    } 
 } 
+
+async getID() {
+  try {
+    let nextID = 0 
+    const response = await fetch("http://localhost:3001/zombie");
+    const reponseDeApi = await response.json();
+    for (let i=0;i<reponseDeApi.length;i++){
+      if(reponseDeApi[i].id > nextID){
+          nextID = reponseDeApi[i].id;
+      }
+    }   
+    if (!response.ok) {
+      throw Error(response.statusText);
+    }
+    return nextID+1;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
   formIsValid(nom,photo,attaque1){
     const _errors = {};
     if(!nom) _errors.nom = "Le nom est obligatoire";
@@ -50,6 +71,10 @@ export class AjouterZombie extends React.Component {
     this.setState({setErrors : _errors});
     return Object.keys(_errors).length === 0;
   }
+
+
+
+
   handleSave(event){
     event.preventDefault();
     
@@ -66,6 +91,9 @@ export class AjouterZombie extends React.Component {
     const photos = document.getElementById('photoZombie').value;
     this.setState( {photo : photos});
   }
+
+
+
 
 
   render() {

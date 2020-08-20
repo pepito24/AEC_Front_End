@@ -1,3 +1,28 @@
+.footer-top {
+  background-color: #262626;
+  color: #e3e3e3;
+}
+.footer-top img {
+  height: 70px;
+}
+.footer-top hr {
+  background-color: #3e3e3e;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+.footer-top button {
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.footer-top .pad {
+  padding: 100px 0px;
+}
 
+.footer-bottom {
+  height: 70px;
+  background-color: #222222;
+  color: #ffffff;
+}
 
 /*# sourceMappingURL=footer.css.map */
