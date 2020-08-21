@@ -19,11 +19,26 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Weather PWA">
-    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" href="/images/icons/1.png">
 
 
     <meta name="description" content="A sample weather app">
-    <meta name="theme-color" content="#2F3BA2" />
+    <meta name="theme-color" content="#000000">
+
+
+    <script>
+        // Register service worker.
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+        .then((reg) => {
+        console.log('Service worker registered.', reg);
+        });
+        });
+        }
+    </script>
+
+
 
 </head>
 <body>
@@ -65,7 +80,8 @@
                 <h1 class="display-3">LE CORSAIRE</h1>
                 <h2 class="display-3">DU WEB</h2>
                 <p class="lead mb-0 font">Programmation & Marketing Numérique</p><br>
-                <button data-toggle="modal" data-target="#Modal" type="button" class="btn boutonPrincipal">CONTACTEZ MOI ➔ </button>
+                <button data-toggle="modal" id="butInstall"
+                aria-label="Install" hidden type="button" class="btn boutonPrincipal">CONTACTEZ MOI ➔ </button>
             </div>
         </div>
     </div>
@@ -259,5 +275,6 @@
 <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
+<script src="install.js"></script>
 </body>
 </html>

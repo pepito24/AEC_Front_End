@@ -1,10 +1,19 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  "name": "StateOfDecay",
+  "short_name": "SOD",
+  "icons": [{
+    "src": "/AEC_Front_End/Integration1/Examen%20final/images/icons/1.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "rpose" : "any maskable"
+  }, {
+    "src": "/AEC_Front_End/Integration1/Examen%20final/images/icons/2.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose" : "any maskable"
+  }],
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#00000",
+  "theme_color": "#00000"
 }

@@ -15,10 +15,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="tsconfig.json" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,19 +41,19 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration2-Examen2" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration2\Cours 5\img" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration2\Cours 5" />
-      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\pratique" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Portail PME" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration2-Examen2" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration 2" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images" />
       <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\bootstrap" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Examen final\images\icons" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration2-Examen2" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration2\Cours 5\img" />
+      <recent name="C:\Users\team\Documents\GitHubProjects\AEC_Front_End\Integration1\Integration2\Cours 5" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -102,7 +102,7 @@
       <workItem from="1590840942597" duration="10577000" />
       <workItem from="1592049394809" duration="18054000" />
       <workItem from="1592658024344" duration="1664000" />
-      <workItem from="1597964154110" duration="999000" />
+      <workItem from="1597964154110" duration="6987000" />
     </task>
     <servers />
   </component>
