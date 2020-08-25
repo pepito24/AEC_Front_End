@@ -1,20 +1,26 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import {MenuAvecPostBack} from './MenuAvecPostBack' 
 
-import {Route} from 'react-router-dom' 
-
-function App() { 
-return ( 
-  <> 
-  <MenuAvecPostBack /> 
-    <Route path="/" exact component={PersonnageV1} /> 
-    <Route path="/PersonnageV2" component={PersonnageV2} /> 
-    <Route path="/PersonnageV3" component={PersonnageV3} /> 
-    <Route path="/PersonnageV4" component={PersonnageV4} /> 
-    <Route path="/ShortenURL" component={ShortenURL} /> 
-  </>
-); 
-} 
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
 
 export default App;
