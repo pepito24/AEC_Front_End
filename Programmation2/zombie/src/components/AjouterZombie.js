@@ -1,9 +1,8 @@
 import React from "react";
-import { Form } from "react-bootstrap";
-import {Button} from "react-bootstrap"
-import {Image} from "react-bootstrap"
-import {Redirect} from "react-router-dom"
-import {toast} from "react-toastify"
+import { Form, Button,Image,Container,Row,Col } from "react-bootstrap";
+import {Redirect} from "react-router-dom";
+import {toast} from "react-toastify";
+import {API} from "../constantes";
 
 export class AjouterZombie extends React.Component {
   constructor(props) {
@@ -11,17 +10,15 @@ export class AjouterZombie extends React.Component {
     this.state = {photo: "", setErrors : {}};
     this.handleSave = this.handleSave.bind(this);
     this.handlePhoto = this.handlePhoto.bind(this);
-    this.savePokemon = this.savePokemon.bind(this);
-    this.getID = this.getID.bind(this);
+    this.saveZombie = this.saveZombie.bind(this);
   }
 
-  async savePokemon(nom,photo,attaque1) { 
+  async saveZombie(nom,photo,attaque1) { 
     try{ 
-      const newID = await this.getID();
-      const response = await fetch('http://localhost:3001/zombie/', { 
+      const response = await fetch(API, { 
         method:'POST', 
         headers: {'Content-Type': 'application/json'  }, 
-        body:JSON.stringify({id : newID,
+        body:JSON.stringify({
           name: nom,
           picture: photo,
           special: attaque1
@@ -42,24 +39,7 @@ export class AjouterZombie extends React.Component {
    } 
 } 
 
-async getID() {
-  try {
-    let nextID = 0 
-    const response = await fetch("http://localhost:3001/zombie");
-    const reponseDeApi = await response.json();
-    for (let i=0;i<reponseDeApi.length;i++){
-      if(reponseDeApi[i].id > nextID){
-          nextID = reponseDeApi[i].id;
-      }
-    }   
-    if (!response.ok) {
-      throw Error(response.statusText);
-    }
-    return nextID+1;
-  } catch (error) {
-    console.log(error);
-  }
-}
+
 
 
   formIsValid(nom,photo,attaque1){
@@ -84,7 +64,7 @@ async getID() {
     
     if(!this.formIsValid(nom,photo,attaque1)) return;
 
-    this.savePokemon(nom,photo,attaque1);
+    this.saveZombie(nom,photo,attaque1);
   }
 
   handlePhoto(event){

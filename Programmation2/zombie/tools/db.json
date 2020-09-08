@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Regular Zombies",
       "picture": "https://static.wikia.nocookie.net/state-of-decay-2/images/8/8e/Download-1.jpeg/revision/latest/scale-to-width-down/299?cb=20190521173805",
-      "special": "Noneee"
+      "special": "None"
     },
     {
       "id": 2,
@@ -14,9 +14,15 @@
     },
     {
       "id": 3,
-      "name": "Zombie fille",
-      "picture": "https://i.pinimg.com/originals/8c/33/e4/8c33e4c6010780be3a601f8500eb956a.jpg",
-      "special": "Bite"
+      "name": "Plague Zombies",
+      "picture": "https://static.wikia.nocookie.net/state-of-decay-2/images/4/48/Download-3.jpeg/revision/latest/scale-to-width-down/300?cb=20190521174505",
+      "special": "Dead plague"
+    },
+    {
+      "id": 4,
+      "name": "elf",
+      "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/02Compass_baseplate_2010-03-09.jpg/260px-02Compass_baseplate_2010-03-09.jpg",
+      "special": "bite"
     }
   ]
 }

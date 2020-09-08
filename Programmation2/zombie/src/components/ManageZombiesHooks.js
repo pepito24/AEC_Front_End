@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { Zombie } from "./Zombie";
 import {Container, Row, Col} from "react-bootstrap";
+import {API} from "../constantes";
 
 
 function ManageZombiesHooks(){
     const [donneesRecues, setDonneesRecues] = useState([]);
 
   
-    useEffect(() => {getZombies();}, donneesRecues);
+    useEffect(() => {getZombies();}, [donneesRecues.join(",")]);
 
 
       async function getZombies() {
         try {
-            const response = await fetch("http://localhost:3001/zombie");
-            const reponseDeApi = await response.json();
-            setDonneesRecues(reponseDeApi);
-            if (!response.ok) {
+          const response = await fetch(API);
+          const reponseDeApi = await response.json();
+          setDonneesRecues(reponseDeApi);
+          if (!response.ok) {
             throw Error(response.statusText);
-            }
+          }
         } catch (error) {
-            console.log(error);
+          console.log(error);
         }
-        }
+      }
 
     return (
       <Container fluid>
