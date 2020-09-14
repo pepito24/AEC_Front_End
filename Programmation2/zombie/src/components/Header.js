@@ -2,7 +2,6 @@ import React from "react";
 import { Nav, Navbar, Container,} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import '../sass/header.sass';
 
 export class Header extends React.Component {
   constructor(props) {

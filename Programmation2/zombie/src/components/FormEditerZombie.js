@@ -6,7 +6,7 @@ import {toast} from "react-toastify"
 
 function FormEditerZombie(props){
   const [donneesRecues , setDonneesRecues] = useState({name: '', picture:"", special:"" });
-  const [zombieID , setZombieID] = useState(props.location.search.substring(4,props.location.search.length));
+  const [zombieID , setZombieID] = useState(props.location.search.substring(5,props.location.search.length));
   const [photos , setPhotos] = useState("");
   //Ajout de la gestion des erreurs
   useEffect(() => {
@@ -20,6 +20,8 @@ function FormEditerZombie(props){
       const response = await fetch(API + zombieID);
       const reponseDeApi = await response.json();
       setDonneesRecues(reponseDeApi);
+      console.log(reponseDeApi);
+     
       if (!response.ok) {
         throw Error(response.statusText);
       }

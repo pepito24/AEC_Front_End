@@ -100,7 +100,7 @@ export class AjouterZombie extends React.Component {
                   <Form.Label className="text-white mt-3">Description *</Form.Label>
                   <Form.Control as="textarea" rows="5" placeholder="Entrer la description du zombie" />
                 </Form.Group>
-                <Button className="mt-3 mb-5" variant="danger" type="submit" onClick={this.handleSave}>
+                <Button className="mt-3 mb-5" variant="orange" type="submit" onClick={this.handleSave}>
                     Save
                 </Button>
               </Form>

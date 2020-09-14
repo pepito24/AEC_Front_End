@@ -3,6 +3,14 @@ $orange: #ff8400
 $black: #1f2022
 
 
+// header.sass
+@import 'header'
+
+// footer.sass
+@import 'footer'
+
+
+  
 body,p
   font-family: $font-stack
   color: $orange
@@ -51,13 +59,6 @@ h1,h2,h3,h4,h5,h6
   height: 3vh
   background-color: $orange
 
-.footer
-  height: 100%
-  background-color: $black
-
-.footer-bottom
-  height: 5vh
-  background-color: $orange
 
 canvas 
   display: block
@@ -65,7 +66,7 @@ canvas
   height: 100vh
 
 .btn-orange
-  color: white
+  color: white!important
   background-color: $orange
   border-color: $orange
 
