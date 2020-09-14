@@ -7,15 +7,14 @@ import { BoutonAjouterZombie } from "./BoutonAjouterZombie";
 import { useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import '../App.css';
-import  {FormEditerZombie }  from "./FormEditerZombie";
-import { BoutonRetourAccueil } from "./BoutonRetourAccueil";
+import '../sass/App.sass';
+import  FormEditerZombie  from "./FormEditerZombie";
+import  Footer  from "./Footer";
 import ManageZombiesHooks from "./ManageZombiesHooks";
 
 
 function App() {
-  let location = useLocation();
-  console.log(location.pathname);
+  let location = useLocation();;
   return (
     <>
     <ToastContainer autoClose={3000} hideProgressBar />
@@ -25,8 +24,9 @@ function App() {
         <Route path="/Perso/:nom" component={FormEditerZombie} />
         <Route component={PageNotFound} />
       </Switch>
-  {location.pathname != "/ajouterZombie" && !location.pathname.startsWith("/Perso") &&<BoutonAjouterZombie/> }
-  {(location.pathname != "/") && <BoutonRetourAccueil/> }
+  {/*{location.pathname != "/ajouterZombie" && !location.pathname.startsWith("/Perso") &&<BoutonAjouterZombie/> }*/}
+  <Footer/>
+
     </>
   );
 }

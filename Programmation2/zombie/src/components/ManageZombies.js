@@ -28,14 +28,14 @@ export class ManageZombies extends React.Component {
   render() {
     return (
       <Container fluid>
-      <Row className="text-center box1 align-items-center">
-        <Col lg="12">
-          <h1 className="text-white">Welcome to ZombieLand</h1>
-          {this.state.donneesRecues.map((key,i) => (
-                <Zombie nom={key.name} toutLobjet={key} id={i+1}></Zombie>
-              ))}
-        </Col>
-      </Row>
+        <Row className="text-center box1 align-items-center">
+          <Col lg="12">
+          <img class="logo" src="https://www.stateofdecay.com/wp-content/themes/state-of-decay-franchise/dist/images/sod_3_logo.png">
+            {this.state.donneesRecues.map((key,i) => (
+                  <Zombie nom={key.name} toutLobjet={key} id={i+1}></Zombie>
+                ))}
+          </Col>
+        </Row>
       </Container> 
     );
   }

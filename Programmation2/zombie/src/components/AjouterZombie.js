@@ -3,6 +3,8 @@ import { Form, Button,Image,Container,Row,Col } from "react-bootstrap";
 import {Redirect} from "react-router-dom";
 import {toast} from "react-toastify";
 import {API} from "../constantes";
+import { Header } from "./Header";
+
 
 export class AjouterZombie extends React.Component {
   constructor(props) {
@@ -21,8 +23,7 @@ export class AjouterZombie extends React.Component {
         body:JSON.stringify({
           name: nom,
           picture: photo,
-          special: attaque1
-           
+          special: attaque1    
         }) 
       }); 
       if(response.ok){ 
@@ -77,25 +78,35 @@ export class AjouterZombie extends React.Component {
   render() {
     return (
       <>
-        <Form>
-          <Form.Group controlId="nomZombie">
-            <Form.Label>Nom du Zombie</Form.Label>
-            <Form.Control type="text" placeholder="Entrer le nom du Zombie" />
-          </Form.Group>
-          <Form.Group controlId="photoZombie">
-            <Form.Label>URL d'une photo du Zombie</Form.Label>
-            <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto}/>
-          </Form.Group>
-          {this.state.photo !== "" && <Image src={this.state.photo} rounded />}
-          <Form.Group controlId="attaque1">
-            <Form.Label>Nom de l'attaque 1</Form.Label>
-            <Form.Control type="text" placeholder="Entrer le nom de l'attaque 1" />
-          </Form.Group>
-
-        <Button variant="primary" type="submit" onClick={this.handleSave}>
-            Enregistrer
-        </Button>
-        </Form>
+    
+     <Container fluid className=" box2">
+     <Header/>
+        <Row className=" align-items-center mx-3">
+          <Col lg="4"></Col>
+          <Col lg="4" className=" my-5 ">
+              <h1 className="mb-3 text-center text-white">Add Zombies</h1>
+              <p className="mb-5 text-center"><strong>Help your community to survival in the zombie apocalypse</strong></p>
+              <Form>
+                <Form.Group controlId="nomZombie">
+                  <Form.Label className="text-white">Name *</Form.Label>
+                  <Form.Control type="text" placeholder="Entrer le nom du Zombie" />
+                </Form.Group>
+                <Form.Group controlId="photoZombie">
+                  <Form.Label className="text-white mt-3">Picture (URL) *</Form.Label>
+                  <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto}/>
+                </Form.Group>
+                {this.state.photo !== "" && <Image src={this.state.photo} rounded />}
+                <Form.Group controlId="attaque1">
+                  <Form.Label className="text-white mt-3">Description *</Form.Label>
+                  <Form.Control as="textarea" rows="5" placeholder="Entrer la description du zombie" />
+                </Form.Group>
+                <Button className="mt-3 mb-5" variant="danger" type="submit" onClick={this.handleSave}>
+                    Save
+                </Button>
+              </Form>
+            </Col>
+        </Row>
+      </Container> 
       </>
     );
   }

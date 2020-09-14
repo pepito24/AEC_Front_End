@@ -1,39 +1,25 @@
-import React from "react";
+import React , {useState , useEffect} from "react";
 import { Form, Button,Image,Container,Row,Col } from "react-bootstrap";
-import {Redirect} from "react-router-dom"
+import {Redirect} from "react-router-dom";
+import {API} from "../constantes";
 import {toast} from "react-toastify"
 
-export class FormEditerZombie extends React.Component {
-  constructor(props) {
-    super(props);
-    //Afin d'éviter une erreur undefined lorsqu'on lit le tableau abilities, on l'initialise à un tableau vide pour débuter.
-    this.state = {
-                  donneesRecues: {name: '', picture:"", special:"" }, 
-                  setErrors : {}};
+function FormEditerZombie(props){
+  const [donneesRecues , setDonneesRecues] = useState({name: '', picture:"", special:"" });
+  const [zombieID , setZombieID] = useState(props.location.search.substring(4,props.location.search.length));
+  const [photos , setPhotos] = useState("");
+  //Ajout de la gestion des erreurs
+  useEffect(() => {
+    getZombieInfos();
+  },[]);
 
-    this.handleEdit = this.handleEdit.bind(this);
-    this.handlePhoto = this.handlePhoto.bind(this);
-    this.editZombie = this.editZombie.bind(this);
-    this.removeZombie = this.removeZombie.bind(this);
-  }
-
-
-
-
-
-
-
-  //On récupère le zombie pour ensuite remplir le formulaire.
-  async componentDidMount() {
+  
+  async function getZombieInfos() {
     try {
-    //On sait que location.search retourne ?id=4, on désire garder uniquement le 4 
-      await this.setState({ZombieID : this.props.location.search.substring(4,this.props.location.search.length)});
-      await console.log(this.state.ZombieID);
-
-      const response = await fetch("http://localhost:3001/zombie/"+ this.state.ZombieID);
+      
+      const response = await fetch(API + zombieID);
       const reponseDeApi = await response.json();
-      this.setState({ donneesRecues: reponseDeApi });
-      console.log(this.state.donneesRecues);
+      setDonneesRecues(reponseDeApi);
       if (!response.ok) {
         throw Error(response.statusText);
       }
@@ -42,28 +28,22 @@ export class FormEditerZombie extends React.Component {
     }
   }
 
-
-
-
-
-
-  async editZombie(nom,photo,attaque1) { 
+  async function editZombie(nom,photo,attaque1) { 
     try{ 
-      const response = await fetch('http://localhost:3001/zombie/'+ this.state.ZombieID, { 
+      const response = await fetch(API + zombieID, { 
         method:'PUT', 
         headers: {'Content-Type': 'application/json'  }, 
-        body:JSON.stringify({id : this.state.ZombieID,
+        body:JSON.stringify({
           name: nom,
           picture: photo,
           special: attaque1
         }) 
       }); 
       if(response.ok){ 
-        const jsonResponse = await response.json(); 
-        this.props.history.push("/");
+        props.history.push("/");
         toast.success("Modification du Zombie " + nom);
 
-        return jsonResponse; 
+        return response; 
       } 
       throw new Error('Request failed!'); 
   } 
@@ -72,24 +52,17 @@ export class FormEditerZombie extends React.Component {
    } 
 }
 
-
-
-
-
-
-
-async removeZombie() { 
+async function removeZombie() { 
     try{ 
-    const response = await fetch('http://localhost:3001/zombie/'+ this.state.ZombieID, { 
+    const response = await fetch(API + zombieID, { 
       method:'delete', 
     }); 
     if(response.ok){ 
-      const jsonResponse = await response.json(); 
-      console.log("SUPPRESSION!");
-      this.props.history.push("/");
-      toast.error("Supression du Zombie ");
+      
+      props.history.push("/");
+      toast.error("Supression du zombie ");
 
-      return jsonResponse; 
+      return response; 
     } 
     throw new Error('Request failed!'); 
 } 
@@ -98,38 +71,20 @@ async removeZombie() {
  } 
 }
 
-
-
-
-
-
-  handleEdit(event){
+  function handleEdit(event){
     event.preventDefault();
     
     const nom = document.getElementById('nomZombie').value;
     const photo = document.getElementById('photoZombie').value;
     const attaque1 = document.getElementById('attaque1').value;
 
-    this.editZombie(nom,photo,attaque1);
+    editZombie(nom,photo,attaque1);
   }
 
-
-
-
-
-
-
-  handlePhoto(event){
+  function handlePhoto(event){
     const photos = document.getElementById('photoZombie').value;
-    this.setState( {photo : photos});
+    setPhotos(photos);
   }
-
-
-
-
-
-
-  render() {
     return (
       <>
       <Container>
@@ -137,27 +92,29 @@ async removeZombie() {
           <Col>
             <Form>
               <Form.Group controlId="nomZombie">
-                <Form.Label>Nom du Zombie</Form.Label>
-                <Form.Control type="text" defaultValue={this.state.donneesRecues.name}/> {/*/ Faire le test avec value*/}
+                <Form.Label>Nom</Form.Label>
+                <Form.Control type="text" defaultValue={donneesRecues.name}/> {/*/ Faire le test avec value*/}
               </Form.Group>
               <Form.Group controlId="photoZombie">
-                <Form.Label>URL d'une photo du Zombie</Form.Label>
-                <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto} defaultValue={this.state.donneesRecues.picture}/>
+                <Form.Label>URL d'une photo</Form.Label>
+                <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={handlePhoto} defaultValue={donneesRecues.picture}/>
               </Form.Group>
-              {this.state.donneesRecues.picture !== "" && <Image src={this.state.donneesRecues.picture} rounded width="125"/>}
+              {donneesRecues.picture !== "" && <Image src={donneesRecues.picture} rounded width="125"/>}
               <Form.Group controlId="attaque1">
-                <Form.Label>Nom de l'attaque 1</Form.Label>
-                <Form.Control type="text" placeholder="Entrer le nom de l'attaque 1" defaultValue={this.state.donneesRecues.special}/>
+                <Form.Label>Nom de l'attaque</Form.Label>
+                <Form.Control type="text" placeholder="Entrer le nom de l'attaque 1" defaultValue={donneesRecues.special}/>
               </Form.Group>
-            <Button variant="primary" type="submit" onClick={this.handleEdit}>
+
+            <Button variant="primary" type="submit" onClick={handleEdit}>
                 Enregistrer
             </Button>
             </Form>  
             </Col>    
           </Row>
-          <p className="btn btn-danger mt-5" onClick={this.removeZombie}>Supprimer le Zombie</p>
+          <p className="btn btn-danger mt-5" onClick={removeZombie}>Supprimer le zombie</p>
         </Container>
       </>
     );
   }
-}
+
+  export default FormEditerZombie;
