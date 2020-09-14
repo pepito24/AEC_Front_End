@@ -7,7 +7,7 @@ export class BoutonRetourAccueil extends React.Component {
   render() {
     return (
       <> 
-        <Link to="/" className="btn btn-danger">
+        <Link to="/" className="btn btn-orange my-5">
           Back
         </Link>
       </>
