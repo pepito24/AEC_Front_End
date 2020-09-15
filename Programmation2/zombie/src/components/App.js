@@ -18,10 +18,10 @@ function App() {
     <>
     <ToastContainer autoClose={3000} hideProgressBar />
       <Switch>
-        <Route path="/" exact component={ManageZombiesHooks} />
-        <Route path="/ajouterZombie" component={AjouterZombie} />
-        <Route path="/Perso/:nom" component={AfficherZombie} />
-        <Route path="/Perso/:nom/:id/modifier" component={FormEditerZombie} />
+        <Route path="/" exact component={ManageZombiesHooks}/>
+        <Route path="/ajouterZombie" component={AjouterZombie}/>
+        <Route path="/Perso/:nom" component={AfficherZombie}/>
+        <Route path="/Perso/modifier/:nom" component={FormEditerZombie}/>
         <Route component={PageNotFound} />
       </Switch>
   {/*{location.pathname != "/ajouterZombie" && !location.pathname.startsWith("/Perso") &&<BoutonAjouterZombie/> }*/}
