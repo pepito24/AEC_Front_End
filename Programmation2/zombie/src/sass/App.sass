@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6
     font-size: $i * 0.5em
     
 
-.box1,.box2,.box3
+.box1,.box2,.box3,.box5
   background-size: cover
   background-position: center 
   background-repeat: no-repeat
@@ -52,6 +52,9 @@ h1,h2,h3,h4,h5,h6
 .box4
   height: 3vh
   background-color: $orange
+
+.box5
+  background-image: url('https://undeadlabs.com/wp-content/uploads/2018/01/ULMC2880x1800.jpg')
 
 
 canvas 
@@ -76,10 +79,11 @@ canvas
   width: 200px
 
 .img-fiche
-   max-width: 600px
+   width: 80%
+   border: solid 0.5em $orange
 
    @media screen and (min-width: 992px)
-     min-width: 500px
+     min-width: 100%
 
 
 .center
