@@ -1,12 +1,10 @@
 import React from "react";
-import { Nav, Navbar, Container,} from "react-bootstrap";
+import { Nav, Navbar,} from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
+
 
 export class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  
 
   render() {
     return (

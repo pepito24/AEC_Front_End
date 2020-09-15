@@ -1,12 +1,11 @@
 import React , {useState , useEffect} from "react";
 import { Form, Button,Image,Container,Row,Col } from "react-bootstrap";
-import {Redirect} from "react-router-dom";
 import {API} from "../constantes";
-import {toast} from "react-toastify"
+import {toast} from "react-toastify";
 
 function FormEditerZombie(props){
   const [donneesRecues , setDonneesRecues] = useState({name: '', picture:"", special:"" });
-  const [zombieID , setZombieID] = useState(props.location.search.substring(5,props.location.search.length));
+  const [zombieID , setZombieID] = useState(props.location.search.substring(4,props.location.search.length));
   const [photos , setPhotos] = useState("");
   //Ajout de la gestion des erreurs
   useEffect(() => {
@@ -17,7 +16,7 @@ function FormEditerZombie(props){
   async function getZombieInfos() {
     try {
       
-      const response = await fetch(API + zombieID);
+      const response = await fetch(API + "/" + zombieID);
       const reponseDeApi = await response.json();
       setDonneesRecues(reponseDeApi);
       console.log(reponseDeApi);
@@ -32,7 +31,7 @@ function FormEditerZombie(props){
 
   async function editZombie(nom,photo,attaque1) { 
     try{ 
-      const response = await fetch(API + zombieID, { 
+      const response = await fetch(API + "/" + zombieID, { 
         method:'PUT', 
         headers: {'Content-Type': 'application/json'  }, 
         body:JSON.stringify({
@@ -56,7 +55,7 @@ function FormEditerZombie(props){
 
 async function removeZombie() { 
     try{ 
-    const response = await fetch(API + zombieID, { 
+    const response = await fetch(API + "/" + zombieID, { 
       method:'delete', 
     }); 
     if(response.ok){ 
@@ -95,16 +94,16 @@ async function removeZombie() {
             <Form>
               <Form.Group controlId="nomZombie">
                 <Form.Label>Nom</Form.Label>
-                <Form.Control type="text" defaultValue={donneesRecues.name}/> {/*/ Faire le test avec value*/}
+                <Form.Control type="text" defaultValue={donneesRecues.name}/>
               </Form.Group>
               <Form.Group controlId="photoZombie">
                 <Form.Label>URL d'une photo</Form.Label>
                 <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={handlePhoto} defaultValue={donneesRecues.picture}/>
               </Form.Group>
-              {donneesRecues.picture !== "" && <Image src={donneesRecues.picture} rounded width="125"/>}
+              {donneesRecues.picture !== "" && <Image src={donneesRecues.picture} className="img-form"/>}
               <Form.Group controlId="attaque1">
-                <Form.Label>Nom de l'attaque</Form.Label>
-                <Form.Control type="text" placeholder="Entrer le nom de l'attaque 1" defaultValue={donneesRecues.special}/>
+                <Form.Label>Description</Form.Label>
+                <Form.Control type="text" placeholder="Entrer la description" defaultValue={donneesRecues.special}/>
               </Form.Group>
 
             <Button variant="primary" type="submit" onClick={handleEdit}>

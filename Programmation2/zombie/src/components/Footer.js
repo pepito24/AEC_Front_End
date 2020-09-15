@@ -1,6 +1,5 @@
 import React from "react";
-import { Nav, Navbar, NavItem, Container, Row, Col } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 import { BoutonRetourAccueil } from "./BoutonRetourAccueil";
 import { useLocation } from 'react-router-dom';
 

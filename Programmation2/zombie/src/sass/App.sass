@@ -10,7 +10,7 @@ $black: #1f2022
 @import 'footer'
 
 
-  
+
 body,p
   font-family: $font-stack
   color: $orange
@@ -28,32 +28,26 @@ body,p
 h1,h2,h3,h4,h5,h6
   font-family: $font-stack
   font-weight: 700
+  color: white
 
 @for $i from 1 through 6
   h#{7 -$i}
     font-size: $i * 0.5em
     
 
-
-.box1
-  height: 100%
-  background-image: url('https://wallpaperaccess.com/full/2735406.jpg')
+.box1,.box2,.box3
   background-size: cover
   background-position: center 
   background-repeat: no-repeat
+  background-color: black
+  height: 100%
 
+.box1
+  background-image: url('https://wallpaperaccess.com/full/2735406.jpg')
+  
 .box2
-  height: 100%
-  background-color: black
   background-image: url('https://miro.medium.com/max/8032/1*pc5ewtE58QjePhYMUxIRAg.jpeg')
-  background-size: cover
-  background-position: center
-  background-repeat: no-repeat
-
-
-.box3
-  height: 100%
-  background-color: black
+ 
 
 .box4
   height: 3vh
@@ -77,3 +71,18 @@ canvas
   &:hover 
     opacity: 0.5
 
+
+.img-form
+  width: 200px
+
+.img-fiche
+   max-width: 600px
+
+   @media screen and (min-width: 992px)
+     min-width: 500px
+
+
+.center
+
+   @media screen and (max-width: 769px)
+     text-align: center
