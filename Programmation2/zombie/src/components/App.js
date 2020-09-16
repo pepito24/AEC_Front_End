@@ -11,6 +11,7 @@ import FormEditerZombie  from "./FormEditerZombie";
 import AfficherZombie  from "./AfficherZombie";
 import ManageZombiesHooks from "./ManageZombiesHooks";
 import  Footer  from "./Footer";
+import ListeZombie from "./ListeZombie";
 
 function App() {
   let location = useLocation();;
@@ -20,8 +21,10 @@ function App() {
       <Switch>
         <Route path="/" exact component={ManageZombiesHooks}/>
         <Route path="/ajouterZombie" component={AjouterZombie}/>
-        <Route path="/Perso/:nom" component={AfficherZombie}/>
         <Route path="/Perso/modifier/:nom" component={FormEditerZombie}/>
+        <Route path="/Perso/:nom" component={AfficherZombie}/>
+        <Route path="/Liste" component={ListeZombie}/>
+        
         <Route component={PageNotFound} />
       </Switch>
   {/*{location.pathname != "/ajouterZombie" && !location.pathname.startsWith("/Perso") &&<BoutonAjouterZombie/> }*/}

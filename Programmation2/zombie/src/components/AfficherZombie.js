@@ -32,13 +32,12 @@ function AfficherZombie(props){
 
     return (
       <>
-        <Container fluid className=" box3">
+        <Container fluid className="box3">
             <Header/>
                 <Row className="mt-5">
                     <Col lg="3"></Col>
                     <Col lg="2" sm="12" className="text-center">
                         <h1 className="mt-5">{donneesRecues.name}</h1> 
-                        <BoutonModifierZombie nom={donneesRecues.name} id={zombieID}/>  
                     </Col>
                     <Col lg="4" sm="12" className="mt-3 mb-5 mx-3 center">
                         <Image src={donneesRecues.picture} className="img-fiche"/>

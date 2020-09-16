@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Col, Card } from "react-bootstrap";
 
 export class Zombie extends React.Component {
   constructor(props) {
@@ -10,10 +11,21 @@ export class Zombie extends React.Component {
     
     return (
       <>
-        <Link to={"Perso/" + this.props.nom + "?id=" + this.props.id}>
-          <h1>{this.props.nom}</h1>
-          <image src={this.props.urlPhoto} rounded width="125"/>
-        </Link> 
+      <Col lg="2" md="6" className="my-5 text-center">
+        <Card className="cards my-5">
+          <Card.Img variant="top" src={this.props.urlPhoto} />
+          <Card.Body>
+              <Card.Title>
+                <Link to={"Perso/" + this.props.nom + "?id=" + this.props.id}>
+                  <h2>{this.props.nom}</h2>
+                </Link>
+              </Card.Title>
+              <Link to={"Perso/modifier/" + this.props.nom + "?id=" + this.props.id}>
+                <h2>🖉</h2>
+              </Link>
+          </Card.Body>
+        </Card>
+      </Col>
       </>
     );
   }
