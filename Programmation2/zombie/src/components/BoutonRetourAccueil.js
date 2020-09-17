@@ -7,8 +7,8 @@ export class BoutonRetourAccueil extends React.Component {
   render() {
     return (
       <> 
-        <Link to="/" className="btn btn-orange my-5">
-          Back
+        <Link to="/" className="btn btn-black my-5">
+          Back to Home
         </Link>
       </>
     );

@@ -3,15 +3,12 @@ import { Link } from "react-router-dom";
 import { Col, Card } from "react-bootstrap";
 
 export class Zombie extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     
     return (
       <>
-      <Col lg="2" md="6" className="my-5 text-center">
+      <Col xl="2" md="6" xs="12" className="my-5 text-center">
         <Card className="cards my-5">
           <Card.Img variant="top" src={this.props.urlPhoto} />
           <Card.Body>

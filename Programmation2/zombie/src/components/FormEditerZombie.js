@@ -1,12 +1,13 @@
 import React , {useState , useEffect} from "react";
-import { Form, Button,Image,Container,Row,Col } from "react-bootstrap";
+import { Form, Button, Image,Container,Row,Col } from "react-bootstrap";
 import {API} from "../constantes";
 import {toast} from "react-toastify";
+import { Header } from "./Header";
 
 function FormEditerZombie(props){
   const [donneesRecues , setDonneesRecues] = useState({name: '', picture:"", special:"" });
-  const [zombieID , setZombieID] = useState(props.location.search.substring(4,props.location.search.length));
-  const [photos , setPhotos] = useState("");
+  const [zombieID] = useState(props.location.search.substring(4,props.location.search.length));
+  const [setPhotos] = useState("");
   //Ajout de la gestion des erreurs
   useEffect(() => {
     getZombieInfos();
@@ -14,8 +15,7 @@ function FormEditerZombie(props){
 
   
   async function getZombieInfos() {
-    try {
-      
+    try { 
       const response = await fetch(API + "/" + zombieID);
       const reponseDeApi = await response.json();
       setDonneesRecues(reponseDeApi);
@@ -74,7 +74,6 @@ async function removeZombie() {
 
   function handleEdit(event){
     event.preventDefault();
-    
     const nom = document.getElementById('nomZombie').value;
     const photo = document.getElementById('photoZombie').value;
     const attaque1 = document.getElementById('attaque1').value;
@@ -86,34 +85,35 @@ async function removeZombie() {
     const photos = document.getElementById('photoZombie').value;
     setPhotos(photos);
   }
+
+
     return (
       <>
-      <Container>
-        <Row>
-          <Col>
-            <Form>
-              <Form.Group controlId="nomZombie">
-                <Form.Label>Nom</Form.Label>
-                <Form.Control type="text" defaultValue={donneesRecues.name}/>
-              </Form.Group>
-              <Form.Group controlId="photoZombie">
-                <Form.Label>URL d'une photo</Form.Label>
-                <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={handlePhoto} defaultValue={donneesRecues.picture}/>
-              </Form.Group>
-              {donneesRecues.picture !== "" && <Image src={donneesRecues.picture} className="img-form"/>}
-              <Form.Group controlId="attaque1">
-                <Form.Label>Description</Form.Label>
-                <Form.Control type="text" placeholder="Entrer la description" defaultValue={donneesRecues.special}/>
-              </Form.Group>
-
-            <Button variant="primary" type="submit" onClick={handleEdit}>
-                Enregistrer
-            </Button>
-            </Form>  
-            </Col>    
+     <Container fluid className=" box2">
+        <Header/>
+          <Row className=" align-items-center mx-3">
+              <Col lg="4"></Col>
+              <Col lg="4" className=" my-5 ">
+                <Form>
+                  <Form.Group controlId="nomZombie">
+                    <Form.Label className="text-white">Nom</Form.Label>
+                    <Form.Control type="text" defaultValue={donneesRecues.name}/>
+                  </Form.Group>
+                  <Form.Group controlId="photoZombie">
+                    <Form.Label className="text-white">URL d'une photo</Form.Label>
+                    <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={handlePhoto} defaultValue={donneesRecues.picture}/>
+                  </Form.Group>
+                  {donneesRecues.picture !== "" && <Image src={donneesRecues.picture} className="img-form"/>}
+                  <Form.Group controlId="attaque1" className="mt-3">
+                    <Form.Label className="text-white">Description</Form.Label>
+                    <Form.Control as="textarea" rows="5" placeholder="Entrer la description" defaultValue={donneesRecues.special}/>
+                  </Form.Group>
+                    <Button variant="orange" type="submit" onClick={handleEdit}> Enregistrer</Button>
+                    <p className="btn btn-danger ml-md-5 mt-3" onClick={removeZombie}>Supprimer le zombie</p>
+                </Form>  
+              </Col>    
           </Row>
-          <p className="btn btn-danger mt-5" onClick={removeZombie}>Supprimer le zombie</p>
-        </Container>
+      </Container>
       </>
     );
   }

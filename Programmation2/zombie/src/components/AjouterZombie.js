@@ -1,6 +1,5 @@
 import React from "react";
 import { Form, Button,Image,Container,Row,Col } from "react-bootstrap";
-import {Redirect} from "react-router-dom";
 import {toast} from "react-toastify";
 import {API} from "../constantes";
 import { Header } from "./Header";
@@ -95,7 +94,7 @@ export class AjouterZombie extends React.Component {
                       <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto}/>
                     </Form.Group>
                     {this.state.photo !== "" && <Image src={this.state.photo} className="img-form" />}
-                    <Form.Group controlId="attaque1">
+                    <Form.Group controlId="attaque1" className="mt-3">
                       <Form.Label className="text-white mt-3">Description *</Form.Label>
                       <Form.Control as="textarea" rows="5" placeholder="Entrer la description du zombie" />
                     </Form.Group>
