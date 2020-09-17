@@ -4,8 +4,8 @@ import {Gallery} from "./Gallery";
 import {Container, Row, Col} from "react-bootstrap";
 
 
-function ManageZombiesHooks(){
 
+function ManageZombiesHooks(){
 
     return (
       <>
