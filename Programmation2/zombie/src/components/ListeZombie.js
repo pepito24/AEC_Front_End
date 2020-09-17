@@ -3,7 +3,7 @@ import { Zombie } from "./Zombie";
 import { Header } from "./Header";
 import {Container, Row, Col, Button} from "react-bootstrap";
 import {API} from "../constantes";
-import {granimInstance} from "../librery";
+
 
 
 function ListeZombie(){
@@ -45,7 +45,7 @@ function ListeZombie(){
           </Row> 
         </Container>
         <Container fluid className="box6">
-        <canvas lassName="my-5" id="granim-canvas">Installer l'application</canvas>
+        
         <Button variant="primary" size="lg" block id="boutonInstall"> Installer l'application </Button> 
           </Container>  
       </>
