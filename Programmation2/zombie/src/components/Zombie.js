@@ -14,7 +14,7 @@ export class Zombie extends React.Component {
           <Card.Body>
               <Card.Title>
                 <Link to={"Perso/" + this.props.nom + "?id=" + this.props.id}>
-                  <h2>{this.props.nom}</h2>
+                  <h3>{this.props.nom}</h3>
                 </Link>
               </Card.Title>
               <Link to={"Perso/modifier/" + this.props.nom + "?id=" + this.props.id}>
