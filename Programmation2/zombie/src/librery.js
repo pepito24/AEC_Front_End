@@ -1,5 +1,4 @@
 
-
 export var granimInstance = new Granim({
     element: '#granim-canvas',
     name: 'granim',

@@ -7,7 +7,7 @@ import {granimInstance} from "../librery";
 
 
 function ListeZombie(){
-    const [donneesRecues, setDonneesRecues] = useState([]);
+    const [donneesRecues, setDonneesRecues] = useState([]); 
 
   
     useEffect(() => {getZombie();}, [donneesRecues.join(",")]);
