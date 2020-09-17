@@ -3,7 +3,7 @@ import { Zombie } from "./Zombie";
 import { Header } from "./Header";
 import {Container, Row, Col, Button} from "react-bootstrap";
 import {API} from "../constantes";
-
+import {granimInstance} from "../librery";
 
 
 function ListeZombie(){
