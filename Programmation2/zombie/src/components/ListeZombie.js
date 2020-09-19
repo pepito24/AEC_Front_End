@@ -46,7 +46,7 @@ function ListeZombie(){
         </Container>
         <Container fluid className="box6">
         
-        <Button variant="primary" size="lg" block id="boutonInstall"> Installer l'application </Button> 
+        <Button variant="orange" size="lg" block id="boutonInstall"> Installer l'application </Button> 
           </Container>  
       </>
     ); 
