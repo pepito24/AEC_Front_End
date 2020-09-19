@@ -8,9 +8,8 @@ import {Container, Row, Col} from "react-bootstrap";
 function ManageZombiesHooks(){
 
     return (
-      <>
-      <canvas id="canvas-image-blending">
-      <Container fluid className="">
+      <> 
+      <Container fluid className="box1">
         <Header/>
           <Row className="text-center text-white align-items-center">
             <Col lg="12" className="mb-5">
@@ -18,7 +17,6 @@ function ManageZombiesHooks(){
             </Col>
           </Row> 
           </Container> 
-          </canvas>
           <Gallery/> 
       </>
     ); 
