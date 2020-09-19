@@ -3,7 +3,7 @@ import { Zombie } from "./Zombie";
 import { Header } from "./Header";
 import {Container, Row, Col, Button} from "react-bootstrap";
 import {API} from "../constantes";
-
+import BoutonInstallPWA from "./BoutonInstallPWA";
 
 
 function ListeZombie(){
@@ -46,7 +46,7 @@ function ListeZombie(){
         </Container>
         <Container fluid className="box6">
         
-        <Button variant="orange" size="lg" block id="boutonInstall"> Installer l'application </Button> 
+        <BoutonInstallPWA/> 
           </Container>  
       </>
     ); 
