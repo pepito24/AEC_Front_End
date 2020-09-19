@@ -4,7 +4,6 @@ import {toast} from "react-toastify";
 import {API} from "../constantes";
 import { Header } from "./Header";
 
-
 export class AjouterZombie extends React.Component {
   constructor(props) {
     super(props);
@@ -40,8 +39,6 @@ export class AjouterZombie extends React.Component {
 } 
 
 
-
-
   formIsValid(nom,photo,attaque1){
     const _errors = {};
     if(!nom) _errors.nom = "Le nom est obligatoire";
@@ -51,8 +48,6 @@ export class AjouterZombie extends React.Component {
     this.setState({setErrors : _errors});
     return Object.keys(_errors).length === 0;
   }
-
-
 
 
   handleSave(event){
@@ -78,31 +73,31 @@ export class AjouterZombie extends React.Component {
     return (
       <>
         <Container fluid className=" box2">
-        <Header/>
-            <Row className=" align-items-center mx-3">
-              <Col lg="4"></Col>
-              <Col lg="4" className=" my-5 ">
-                  <h1 className="mb-3 text-center text-white">Add Zombies</h1>
-                  <p className="mb-5 text-center"><strong>Help your community to survival in the zombie apocalypse</strong></p>
-                  <Form>
-                    <Form.Group controlId="nomZombie">
-                      <Form.Label className="text-white">Name *</Form.Label>
-                      <Form.Control type="text" placeholder="Entrer le nom du Zombie" />
-                    </Form.Group>
-                    <Form.Group controlId="photoZombie">
-                      <Form.Label className="text-white mt-3">Picture (URL) *</Form.Label>
-                      <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto}/>
-                    </Form.Group>
+          <Header/>
+          <Row className=" align-items-center mx-3">
+            <Col lg="4"></Col>
+            <Col lg="4" className=" my-5 ">
+                <h1 className="mb-3 text-center text-white">Add Zombies</h1>
+                <p className="mb-5 text-center"><strong>Help your community to survival in the zombie apocalypse</strong></p>
+                <Form>
+                  <Form.Group controlId="nomZombie">
+                    <Form.Label className="text-white">Name *</Form.Label>
+                    <Form.Control type="text" placeholder="Entrer le nom du Zombie" />
+                  </Form.Group>
+                  <Form.Group controlId="photoZombie">
+                    <Form.Label className="text-white mt-3">Picture (URL) *</Form.Label>
+                    <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={this.handlePhoto}/>
+                  </Form.Group>
                     {this.state.photo !== "" && <Image src={this.state.photo} className="img-form" />}
-                    <Form.Group controlId="attaque1" className="mt-3">
-                      <Form.Label className="text-white mt-3">Description *</Form.Label>
-                      <Form.Control as="textarea" rows="5" placeholder="Entrer la description du zombie" />
-                    </Form.Group>
-                    <Button className="mt-3 mb-5" variant="orange" type="submit" onClick={this.handleSave}>
-                        Save
-                    </Button>
-                  </Form>
-                </Col>
+                  <Form.Group controlId="attaque1" className="mt-3">
+                    <Form.Label className="text-white mt-3">Description *</Form.Label>
+                    <Form.Control as="textarea" rows="5" placeholder="Entrer la description du zombie" />
+                  </Form.Group>
+                  <Button className="mt-3 mb-5" variant="orange" type="submit" onClick={this.handleSave}>
+                      Save
+                  </Button>
+                </Form>
+              </Col>
             </Row>
           </Container> 
       </>

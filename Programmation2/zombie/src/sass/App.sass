@@ -25,6 +25,7 @@ $black: #1f2022
 
 body,p
   font-family: $font-stack
+  background-color: black
   color: $orange
   font-size: 1em
   font-weight: 400
@@ -47,7 +48,7 @@ h1,h2,h3,h4,h5,h6
     font-size: $i * 0.5em
     
 
-.box1,.box2,.box3,.box5, .box6
+.box1,.box2,.box3,.box5,.box6
   background-size: cover
   background-position: center 
   background-repeat: no-repeat
@@ -65,12 +66,16 @@ h1,h2,h3,h4,h5,h6
   background-color: $orange
 
 .box5
-  height: 100vh
+  min-height: 60vh
   background-image: url('https://i.pinimg.com/originals/8c/bc/71/8cbc71ddf0dd370e64bc83227b154729.jpg')
+
+  @media screen and (max-width: 500px)
+     background-image: none
 
 .box6
   height: 60vh
   background-image: url('https://www.xboxwallpapers.net/1920x1080/state-of-decay-2-road-slaughtering.jpg')
+
 
 
 .btn-orange

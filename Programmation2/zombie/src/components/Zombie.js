@@ -8,7 +8,7 @@ export class Zombie extends React.Component {
     
     return (
       <>
-      <Col xl="2" md="6" xs="12" className="my-5 text-center">
+      <Col xl="2" md="6" xs="12" className="mt-5 text-center">
         <Card className="cards my-5">
           <Card.Img variant="top" src={this.props.urlPhoto} />
           <Card.Body>
