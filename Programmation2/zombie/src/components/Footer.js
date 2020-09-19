@@ -10,7 +10,7 @@ function Footer() {
       <Container fluid>
         <Row className="footer text-center align-items-center">
             <Col lg="12">
-            {(location.pathname != "/") && <BoutonRetourAccueil/> }
+            {(location.pathname !== "/") && <BoutonRetourAccueil/> }
             </Col>
         </Row>
         <Row className="footer-bottom text-center align-items-center">
