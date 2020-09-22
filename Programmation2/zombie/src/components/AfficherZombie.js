@@ -43,7 +43,7 @@ function AfficherZombie(props){
                     <Col lg="4" md="12" className="mt-3 mb-5 mx-lg-5 mr-md-5 center">
                         <Image src={donneesRecues.picture} className="img-fiche"/>
                         <h1 className="my-4">Description</h1>  
-                        <p className="mb-5">{donneesRecues.special}</p>
+                        <p className="mb-5 mr-5">{donneesRecues.special}</p>
                         <Link to="/Liste" className="btn btn-orange my-5">
                           Back to zombies list
                         </Link>
