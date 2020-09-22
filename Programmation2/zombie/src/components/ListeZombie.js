@@ -35,7 +35,7 @@ function ListeZombie(){
                 ))}
             </Row> 
         </Container> 
-
+        <canvas id="canvas-basic">
         <Container fluid className="box3">
           <Row className="text-center align-items-center">
             <Col lg="12" className="my-5">
@@ -43,13 +43,11 @@ function ListeZombie(){
             </Col>
           </Row> 
         </Container>
-        <canvas id="canvas-basic">allo</canvas>
+        </canvas>
         <Container fluid className="box6"> 
-        <Button variant="primary" size="lg" block id="boutonInstall"> 
-
-      Installer l'application 
-
-    </Button> 
+          <Button variant="primary" size="lg" block id="boutonInstall"> 
+            Installer l'application 
+          </Button> 
         </Container>  
       </>
     ); 
