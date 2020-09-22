@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Zombie } from "./Zombie";
 import { Header } from "./Header";
-import {Container, Row, Col} from "react-bootstrap";
+import {Container, Row, Col, Button} from "react-bootstrap";
 import {API} from "../constantes";
-import BoutonInstallPWA from "./BoutonInstallPWA";
 
 function ListeZombie(){
     const [donneesRecues, setDonneesRecues] = useState([]); 
@@ -44,9 +43,13 @@ function ListeZombie(){
             </Col>
           </Row> 
         </Container>
+        <canvas id="canvas-basic">allo</canvas>
+        <Container fluid className="box6"> 
+        <Button variant="primary" size="lg" block id="boutonInstall"> 
 
-        <Container fluid className="box6">
-          <BoutonInstallPWA/> 
+      Installer l'application 
+
+    </Button> 
         </Container>  
       </>
     ); 

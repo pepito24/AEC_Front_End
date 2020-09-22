@@ -1,20 +1,14 @@
 var granimInstance = new Granim({
-    element: '#canvas-image-blending',
-    direction: 'top-bottom',
+    element: '#canvas-basic',
+    direction: 'left-right',
     isPausedWhenNotInView: true,
-    image : {
-        source: 'https://wallpaperaccess.com/full/2735406.jpg',
-        blendingMode: 'darken',
-    },
     states : {
         "default-state": {
             gradients: [
-                ['#29323c', '#485563'],
-                ['#FF6B6B', '#556270'],
-                ['#80d3fe', '#7ea0c4'],
-                ['#f0ab51', '#eceba3']
-            ],
-            transitionSpeed: 7000
+                ['#ff9966', '#ff5e62'],
+                ['#00F260', '#0575E6'],
+                ['#e1eec3', '#f05053']
+            ]
         }
     }
 });

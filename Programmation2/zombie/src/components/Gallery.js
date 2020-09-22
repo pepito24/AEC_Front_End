@@ -22,7 +22,7 @@ export class Gallery extends React.Component {
             <Image className="gallery my-4" src= "https://nightwing.stevivor.com/wp-content/uploads/2018/05/State-of-Decay-2-Logo.jpg"/>
           </Col>
           <Col xs={6} md={3}>
-            <Image className="gallery my-4" src= "https://www.xboxwallpapers.net/1920x1080/state-of-decay.jpg"/>
+            <Image className="gallery my-4" src= "https://gameranx.com/wp-content/uploads/2016/06/State-Of-Decay-2-720P-Wallpaper-3.jpg"/>
           </Col>
         </Row>
         <Row>
