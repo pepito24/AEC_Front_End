@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "./Header";
 import {Gallery} from "./Gallery";
 import {Container, Row, Col} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { BoutonAjouterZombie } from "./BoutonAjouterZombie";
 
 function ManageZombiesHooks(){
 
@@ -20,9 +20,7 @@ function ManageZombiesHooks(){
           <Row className="text-center align-items-center">
             <Col lg="12" className="my-5">
               <h1  className="mt-5">Do you survive in the zombie apocalypse ?</h1>
-              <Link to="/AjouterZombie" className="btn btn-orange mt-3 mb-5">
-                Add Zombie
-              </Link>
+              <BoutonAjouterZombie/>
             </Col>
           </Row> 
         </Container>

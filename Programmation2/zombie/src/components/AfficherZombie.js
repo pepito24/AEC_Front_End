@@ -33,7 +33,7 @@ function AfficherZombie(props){
 
     return (
       <>
-        <Container fluid className="box3">
+        <Container fluid className="box5">
             <Header/>
                 <Row className="mt-5">
                     <Col lg="3"></Col>

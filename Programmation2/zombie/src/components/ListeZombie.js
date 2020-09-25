@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Zombie } from "./Zombie";
 import { Header } from "./Header";
-import {Container, Row, Col, Button} from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
 import {API} from "../constantes";
+import { BoutonAjouterZombie } from "./BoutonAjouterZombie";
+
 
 function ListeZombie(){
     const [donneesRecues, setDonneesRecues] = useState([]); 
@@ -24,6 +26,7 @@ function ListeZombie(){
         }
       }
 
+     
 
     return (
       <>
@@ -35,20 +38,20 @@ function ListeZombie(){
                 ))}
             </Row> 
         </Container> 
-        <canvas id="canvas-basic">
+        
         <Container fluid className="box3">
           <Row className="text-center align-items-center">
             <Col lg="12" className="my-5">
               <h1  className="my-5">Lead your community to survival in the zombie apocalypse</h1>
+              <BoutonAjouterZombie/>
             </Col>
           </Row> 
         </Container>
-        </canvas>
+        
         <Container fluid className="box6"> 
-          <Button className="btn btn-orange" size="lg" block id="boutonInstall"> 
-            Installer l'application 
-          </Button> 
+        
         </Container>  
+        
       </>
     ); 
 }

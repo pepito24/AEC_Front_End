@@ -2,6 +2,7 @@ import React from "react";
 import {Container, Row, Col, Image} from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+
 export class Gallery extends React.Component {
     
 

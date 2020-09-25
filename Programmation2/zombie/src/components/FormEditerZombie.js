@@ -42,7 +42,7 @@ function FormEditerZombie(props){
       }); 
       if(response.ok){ 
         props.history.push("/");
-        toast.success("Modification du Zombie " + nom);
+        toast.success("Zombie edited :" + nom);
 
         return response; 
       } 
@@ -61,7 +61,7 @@ async function removeZombie() {
     if(response.ok){ 
       
       props.history.push("/");
-      toast.error("Supression du zombie ");
+      toast.error("Zombie removed");
 
       return response; 
     } 
@@ -94,22 +94,24 @@ async function removeZombie() {
             <Row className=" align-items-center mx-3">
                 <Col lg="4"></Col>
                 <Col lg="4" className=" my-5 ">
+                  <h1 className="mb-3 text-center text-white">Edit Zombies</h1>
+                  <p className="mb-5 text-center"><strong>Edit or remove Zombies form your list !</strong></p>
                   <Form>
                     <Form.Group controlId="nomZombie">
-                      <Form.Label className="text-white">Nom</Form.Label>
+                      <Form.Label className="text-white">Name *</Form.Label>
                       <Form.Control type="text" defaultValue={donneesRecues.name}/>
                     </Form.Group>
                     <Form.Group controlId="photoZombie">
-                      <Form.Label className="text-white">URL d'une photo</Form.Label>
+                      <Form.Label className="text-white">URL*</Form.Label>
                       <Form.Control type="text" placeholder="Entrer une URL valide" onBlur={handlePhoto} defaultValue={donneesRecues.picture}/>
                     </Form.Group>
                     {donneesRecues.picture !== "" && <Image src={donneesRecues.picture} className="img-form"/>}
                     <Form.Group controlId="attaque1" className="mt-3">
-                      <Form.Label className="text-white">Description</Form.Label>
+                      <Form.Label className="text-white">Description *</Form.Label>
                       <Form.Control as="textarea" rows="5" placeholder="Entrer la description" defaultValue={donneesRecues.special}/>
                     </Form.Group>
-                      <Button variant="orange" type="submit" onClick={handleEdit}> Enregistrer</Button>
-                      <p className="btn btn-danger ml-md-5 mt-3" onClick={removeZombie}>Supprimer le zombie</p>
+                      <Button variant="orange" type="submit" onClick={handleEdit}>Save</Button>
+                      <p className="btn btn-danger ml-md-5 mt-3" onClick={removeZombie}>Remove</p>
                   </Form>  
                 </Col>    
             </Row>
