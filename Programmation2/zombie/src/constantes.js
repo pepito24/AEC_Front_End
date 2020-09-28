@@ -1,1 +1,1 @@
-export const API = "https://crudcrud.com/api/9b1b07c8291a41d4b6501cda9d6bedef/zombies";
+export const API = "https://crudcrud.com/api/637c252f306749b093b7356387e9ba4a/zombies";
