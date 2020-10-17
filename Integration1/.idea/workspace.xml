@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f6916fe-28a7-4c93-b957-7e2fc9c2ad9f" name="Default Changelist" comment="" />
+    <list default="true" id="0f6916fe-28a7-4c93-b957-7e2fc9c2ad9f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Programmation2/.zip" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +20,8 @@
       <list>
         <option value="CSS File" />
         <option value="tsconfig.json" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Portfolio" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
@@ -106,6 +109,8 @@
       <workItem from="1598702967649" duration="1409000" />
       <workItem from="1599778060105" duration="762000" />
       <workItem from="1599829666767" duration="3308000" />
+      <workItem from="1602452299140" duration="1272000" />
+      <workItem from="1602942269510" duration="255000" />
     </task>
     <servers />
   </component>
@@ -126,30 +131,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587212785292">
-      <screen x="-1920" y="-139" width="1920" height="1040" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1602942521783">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-1209" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1587212785292" />
-    <state x="-1230" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585095005404">
-      <screen x="-1920" y="-139" width="1920" height="1040" />
-    </state>
-    <state x="-1230" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.-139.1920.1040/1366.0.1920.1040/0.0.1366.728@-1920.-139.1920.1040" timestamp="1584382759076" />
-    <state x="-1230" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1585095005404" />
-    <state x="-1326" y="158" key="EditFileWatcherDialog" timestamp="1592658169642">
-      <screen x="-1920" y="-139" width="1920" height="1040" />
-    </state>
-    <state x="-1326" y="158" key="EditFileWatcherDialog/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1592658169642" />
-    <state x="-1180" y="135" key="FileChooserDialogImpl" timestamp="1592658578573">
-      <screen x="-1920" y="-139" width="1920" height="1040" />
-    </state>
-    <state x="-1180" y="135" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1592658578573" />
-    <state x="-1459" y="22" key="SettingsEditor" timestamp="1584060238124">
-      <screen x="-1920" y="-139" width="1920" height="1040" />
-    </state>
-    <state x="-1459" y="22" key="SettingsEditor/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1584060238124" />
-    <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587219781559">
-      <screen x="-1920" y="-139" width="1920" height="1040" />
-    </state>
-    <state x="-1319" y="-5" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@-1920.-139.1920.1040" timestamp="1587219781559" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/-1920.-139.1920.1040/1366.0.1920.1040@0.0.1366.728" timestamp="1602942521783" />
   </component>
 </project>
