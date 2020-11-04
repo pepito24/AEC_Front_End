@@ -1,124 +1,106 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Démo Bootstrap 2</title>
-    <!-- LA LIGNE LA PLUS IMPORTANTE AU MONDE -->
+    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
-    <!-- BOOTSTRAP AVANT NOTRE CSS -->
+    <!-- BOOTSTRAP / CSS -->
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Full Page Image Header with Vertically Centered Content -->
+<!--------- Header ---------->
 <header class="masthead text-white">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-                <h1 class="">Erik Paquet</h1>
-                <p class="lead mb-5">Développeur front end junior</p>
-                <!-- Facebook -->
-                <a class="fb-ic">
-                    <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!-- Github -->
-                <a class="tw-ic">
-                    <i class="fab fa-github fa-lg mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!--Linkedin -->
-                <a class="li-ic">
-                    <i class="fab fa-linkedin-in fa-lg mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!--Instagram-->
-                <a class="ins-ic">
-                    <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <!--Pinterest-->
-                <a class="pin-ic">
-                    <i class="fab fa-pinterest fa-lg fa-2x"> </i>
-                </a>
+            <div class="col-12">
+                <img class="mt-3" src="img/my.jpg" alt="">
+                <h1 class=""><U>Bonjour</U>,</h1>
+                <h1 class="">Je suis Erik,</h1>
+                <h3 class="mt-5">Développeur <span class="orange">front end</span> junior /</h3>
+                <h3>Intégrateur intermédiaire</h3>
             </div>
         </div>
     </div>
 </header>
+<!--------- Header ---------->
 
-<!-- Page Content -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="font-weight-light">Page Content</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-    </div>
-</section>
-
-
-
-
-
-<!-- Footer -->
-<footer class="page-footer">
-
-    <!-- Footer Elements -->
-    <div class="container">
-
-        <!-- Grid row-->
+<!------- Page Content ------->
+<section>
+    <div class="container-fluid">
         <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-12 py-5">
-                <div class="mb-5 flex-center text-center text-white">
-
-
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12 py-5 largebox-1">  
+                        <div class="row text-center">
+                            <div class="col-md-1"> </div>
+                            <div onclick="email()" class="col-md-10 py-5 largebox-2"> 
+                               <!------- <img class="" src="img/Acomba.png" alt="">  ------->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row-->
-
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">   
+                    </div>
+                </div>  
+                <div class="row text-center">
+                    <div onclick="email()" class="col-md-6 py-5 smallbox-1"> 
+                        <i class="fas fa-envelope-open-text fa-lg fa-6x"></i>
+                        <h2 class="font-weight-light mt-3">E-mail</h2> 
+                    </div> 
+                    <div onclick="github()" class="col-md-6 py-5 smallbox-2">   
+                        <i class="fab fa-github fa-lg fa-6x"></i>
+                        <h2 class="font-weight-light mt-3">Github</h2> 
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div onclick="linkedin()" class="col-md-6 py-5 smallbox-3">  
+                        <i class="fab fa-linkedin fa-lg fa-6x"></i>
+                        <h2 class="font-weight-light mt-3">Linkedin</h2>  
+                    </div>
+                    <div onclick="facebook()" class="col-md-6 py-5 smallbox-4">  
+                        <i class="fab fa-facebook-square fa-lg fa-6x"></i>
+                        <h2 class="font-weight-light mt-3">Facebook</h2>
+                    </div>
+                    <div onclick="github()" class="col-md-6 py-5 smallbox-5">  
+                        <i class="fas fa-address-card fa-lg fa-6x"></i>
+                        <h2 class="font-weight-light mt-3">Curriculum vitæ</h2>
+                    </div>
+                    <div onclick="insta()" class="col-md-6 py-5 smallbox-6">  
+                        <i class="fab fa-instagram fa-lg fa-6x"></i>
+                        <h2 class="font-weight-light mt-3">Instagram</h2>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
-    <!-- Footer Elements -->
+</section>
+<!------- Page Content ------->
 
+<!------------ Footer ------------->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 py-5">
+                <div class="mb-5 flex-center text-center text-white">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Copyright -->
     <div class="footer-copyright text-center text-white py-3">© 2020 Copyright: Erik Paquet
     </div>
     <!-- Copyright -->
-
 </footer>
-<!-- Footer -->
-
-
+<!----------- Footer -------------->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+<script src="JS/javascript.js"></script>
 </body>
 </html>

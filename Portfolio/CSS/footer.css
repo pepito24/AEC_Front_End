@@ -1,5 +1,8 @@
 .page-footer {
-  background-color: cyan;
+  background-color: #2f2f2f;
 }
 
+.page-footer .footer-copyright {
+  background-color: black;
+}
 /*# sourceMappingURL=footer.css.map */

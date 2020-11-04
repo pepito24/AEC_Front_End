@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["footer.sass"],"names":[],"mappings":"AAEA;EACE","file":"footer.css"}
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACX,gBAAgB,EAAE,OAAO;CAGK;;AAJhC,AAGE,YAHU,CAGV,iBAAiB,CAAC;EAChB,gBAAgB,EAAE,KAAK;CAAG",
+    "sources": [
+        "footer.sass"
+    ],
+    "names": [],
+    "file": "footer.css"
+}

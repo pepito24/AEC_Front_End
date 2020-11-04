@@ -1,7 +1,62 @@
-
 @import 'header'
 @import 'footer'
+
+
+body
+  background-color: #2f2f2f
 
 h1
   font-size: 5rem
   font-weight: bold
+
+.orange
+  color: darkorange
+
+.largebox-1
+  background-color: #f0f0f0
+  background-image: url('')
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  min-height: 900px 
+  
+
+.largebox-2
+  background-color: #2f2f2f
+  min-height: 200px
+
+  img 
+    max-height: 300px
+    float: right
+
+
+
+.smallbox-1,.smallbox-2,.smallbox-3,.smallbox-4,.smallbox-5,.smallbox-6
+  min-height: 300px
+
+  i 
+    margin-top: 50px
+
+  &:hover
+    background-color: darkorange
+    z-index: 1
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    cursor: pointer
+
+.smallbox-1
+  background-color: #78f378
+    
+.smallbox-2
+  background-color: #83faea
+
+.smallbox-3
+  background-color: #ffffe0
+
+.smallbox-4
+  background-color: #fa8383
+
+.smallbox-5
+  background-color: #ffbc65
+
+.smallbox-6
+  background-color: #c1c788

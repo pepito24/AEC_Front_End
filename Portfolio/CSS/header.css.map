@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"header.css"}
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,SAAS,CAAC;EACR,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,KAAK;EAEjB,gBAAgB,EAAE,OAAO;EACzB,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,GAAG;EACxB,iBAAiB,EAAE,SAAS;CAKH;;AAZ3B,AASE,SATO,CASP,GAAG,CAAC;EACF,UAAU,EAAE,KAAK;EACjB,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,GAAG;CAAG",
+    "sources": [
+        "header.sass"
+    ],
+    "names": [],
+    "file": "header.css"
+}
