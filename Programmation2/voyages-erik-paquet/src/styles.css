@@ -1,0 +1,77 @@
+.example-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.footer {
+  background-color: lightgrey;
+}
+
+mat-card {
+  width: 100%;
+  margin: 0px 50px;
+  text-align: left;
+  padding: 30px !important;
+}
+
+mat-card img {
+  height: 300px;
+  float: left;
+  padding-right: 30px;
+}
+
+mat-card mat-card-content h1 {
+  padding-top: 20px;
+}
+
+mat-card mat-card-content h2 img {
+  height: 20px;
+}
+
+mat-card mat-card-content s {
+  color: red;
+}
+
+.back {
+  background-color: #f0f0f0;
+}
+
+.bottom {
+  background-color: #01b1f7;
+}
+
+.rabais {
+  float: right;
+  background-color: red;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.rabais p {
+  color: white;
+  padding-top: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-form .example-full-width {
+  width: 100%;
+}
+
+.example-form td {
+  padding-right: 8px;
+}
+
+.box3 {
+  padding: 50px;
+  margin: 15px auto;
+}
+/*# sourceMappingURL=styles.css.map */
