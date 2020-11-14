@@ -3,7 +3,7 @@
     <mat-grid-list cols="1" rowHeight="4.2:1">
         <mat-grid-tile *ngFor="let forfait of TableauForfaits">
             <mat-card>
-                <div class="rabais" *ngIf="forfait.prix > forfait.rabais ">
+                <div class="rabais" *ngIf="forfait.prix > forfait.rabais">
                     <p>Rabais de <br>
                         {{forfait.prix - forfait.rabais}}$ CAD</p>
                 </div>
@@ -14,8 +14,10 @@
 
                 <mat-card-content>
                     
-                    <h2>{{forfait.hotel.nom}} <br> <app-etoiles></app-etoiles></h2><br>
-                    {{forfait.hotel.coordonnees}}<br><br>
+                    <h2>{{forfait.hotel.nom}}</h2>
+                    {{forfait.hotel.coordonnees}}<br>
+                    <app-etoiles></app-etoiles><br><br>
+                    
                     {{forfait.hotel.caracteristiques[0]}}<br>
                     {{forfait.hotel.caracteristiques[1]}}<br><br>
                     Départ : {{forfait.dateDepart}} <br>

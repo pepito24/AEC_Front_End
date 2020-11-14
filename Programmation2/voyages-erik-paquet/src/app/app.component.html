@@ -1,4 +1,21 @@
-<app-header></app-header>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <p>Auto-resizing sidenav</p>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    </mat-drawer>
+
+    
+    <mat-toolbar>
+        <span class="example-spacer"></span>
+        <button type="button" mat-button (click)="drawer.toggle()">
+          Toggle sidenav
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+     </mat-toolbar>
+
 
 <app-liste-forfaits></app-liste-forfaits>
 
@@ -8,4 +25,7 @@
 
 <app-footer></app-footer>
 
+</mat-drawer-container>
+
 <router-outlet></router-outlet>
+

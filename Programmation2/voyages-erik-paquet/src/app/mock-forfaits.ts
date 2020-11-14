@@ -13,7 +13,7 @@ export const FORFAITS: Forfait[] = [
             coordonnees: '147 Rue Saint RaoulQuébec, QC G1B 1L3',
             etoiles: 5,
             chambres: 20,
-            caracteristiques: ['Plage','Massage','Picine','Service au chambre'],
+            caracteristiques: ['Face à la plage','Situé à proximité de la nature','Ascenseurs','Miniclub','Mariages','Plage', 'Massages', 'Picines', 'Tout inclus'],
         },
         dateDepart: '2020-11-10',
         dateRetour: '2020-11-17',
@@ -49,7 +49,7 @@ export const FORFAITS: Forfait[] = [
             coordonnees: '147 Rue Saint Raoul Québec, QC G1B 1L3',
             etoiles: 5,
             chambres: 20,
-            caracteristiques: ['Plage','Massage','Picine','Service au chambre'],
+            caracteristiques: ['Face à la plage', 'Miniclub','Mariages','Plage', 'Massages', 'Picines', 'Tout inclus'],
         },
         dateDepart: '2020-11-10',
         dateRetour: '2020-11-17',
@@ -72,7 +72,7 @@ export const FORFAITS: Forfait[] = [
         dateDepart: '2020-11-10',
         dateRetour: '2020-11-17',
         prix: 600,
-        rabais: 0,
+        rabais: 500,
         forfaitVedette: false,
     },
 
@@ -91,7 +91,7 @@ export const FORFAITS: Forfait[] = [
         dateRetour: '2020-11-17',
         prix: 600,
         rabais: 600,
-        forfaitVedette: true,
+        forfaitVedette: false,
     },
 
     { 
@@ -111,6 +111,4 @@ export const FORFAITS: Forfait[] = [
         rabais: 1500,
         forfaitVedette: false,
     },
-    
-  
 ];

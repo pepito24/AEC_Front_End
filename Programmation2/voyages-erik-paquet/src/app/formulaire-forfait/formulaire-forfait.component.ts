@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Forfait } from '../forfait';
+import { FORFAITS } from '../mock-forfaits';
+import {FormControl} from '@angular/forms';
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
+
 
 @Component({
   selector: 'app-formulaire-forfait',
@@ -7,9 +13,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormulaireForfaitComponent implements OnInit {
 
-  constructor() { }
+  TableauForfaits: Forfait[] = FORFAITS;
 
-  ngOnInit(): void {
+  
+
+  
+//code pour le autocomplete
+  myControl = new FormControl();
+  options: string[] = ['One', 'Two', 'Three'];
+  filteredOptions: Observable<string[]>;
+
+  ngOnInit() {
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value))
+    );
   }
+
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.options.filter(option => option.toLowerCase().indexOf(filterValue) === 0);
+  }
+//code pour le autocomplete fin
 
 }

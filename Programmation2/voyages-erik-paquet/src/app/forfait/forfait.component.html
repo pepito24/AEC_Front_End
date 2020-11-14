@@ -1,5 +1,6 @@
+
 <section class="back">
-    <mat-grid-list cols="3" rowHeight="1.8:1">
+    <mat-grid-list cols="3" rowHeight="400px">
         <mat-grid-tile *ngFor="let forfait of TableauForfaits">
             <ng-template [ngIf]="forfait. forfaitVedette === true">
             <mat-card>
@@ -16,9 +17,6 @@
                     <h2>{{forfait.hotel.nom}} <br> <app-etoiles></app-etoiles></h2><br>
                     Départ : {{forfait.dateDepart}} <br>
                     Durée : 7 Jours
-               
-
-                
 
                     <div *ngIf="forfait.prix > forfait.rabais; else elseBlock ">
                         <h1><S>{{forfait.prix}}$ CAD</S> - {{forfait.rabais}}$ CAD</h1>
@@ -34,3 +32,4 @@
         </mat-grid-tile>
     </mat-grid-list>
 </section>
+

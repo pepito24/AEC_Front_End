@@ -21,6 +21,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { EtoilesComponent } from './etoiles/etoiles.component';
+import { FormsModule } from '@angular/forms';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 
@@ -48,6 +54,12 @@ import { EtoilesComponent } from './etoiles/etoiles.component';
     MatFormFieldModule,
     MatInputModule,
     MatAutocompleteModule,
+    FormsModule,
+    MatSliderModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatSidenavModule,
+    MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
