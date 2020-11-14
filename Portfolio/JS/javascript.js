@@ -18,3 +18,7 @@ function facebook() {
 function insta() {
   window.open("https://www.instagram.com/erik_lodbrok/");
 }
+
+function cv() {
+  window.open("https://pepito24.github.io/AEC_Front_End/Portfolio/img/%C3%89rik%20Paquet.pdf");
+}
