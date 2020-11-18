@@ -1,0 +1,30 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://source.unsplash.com/BtbjCFUvBXs/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: darkorange;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  color: black;
+  font-size: 2rem;
+}
+
+h3 {
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.page-footer {
+  background-color: darkorange;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
