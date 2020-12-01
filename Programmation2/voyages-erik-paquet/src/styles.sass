@@ -1,57 +1,4 @@
 
-.example-spacer 
-  flex: 1 1 auto
-
-.footer
-  background-color: lightgrey
-
-mat-card
-  width: 100%
-  margin: 0px 50px
-  text-align: left
-  padding: 30px!important
-
-  img
-     height: 300px
-     float: left
-     padding-right: 30px
-
-  mat-card-content
-   
-    h1 
-      padding-top: 20px
-
-    h2 
-      margin-bottom: 5px!important 
-
-      img 
-        height: 20px
-
-    s 
-      color: red
-
-.back
-  background-color: #f0f0f0
-  
-
-.bottom 
-  background-color: #01b1f7
-  
-
-.rabais
-  float: right
-  background-color: red
-  width: 90px
-  height: 90px
-  border-radius: 50%
-  
-
-  p 
-    color: white
-    padding-top: 25px
-    font-weight: bold
-    text-align: center
-
 .example-form 
   min-width: 150px
   max-width: 500px
@@ -66,32 +13,177 @@ mat-card
     padding-right: 8px
 
 
-.box3
-  padding: 50px
-
-
-  .example-form 
-    min-width: 150px
-    max-width: 500px
-    width: 100%
-
-
-  .example-full-width 
-    width: 100%
-
 mat-slider 
   width: 300px
 
-.etoiles
-  height: 20px
 
 .example-container 
   width: 100%
   height: 100%
 
-.example-sidenav 
-  padding: 20px
-
 
 mat-form-field 
   margin-right: 12px
+
+.example-margin
+  margin: 15px 15px 15px 0px
+ 
+.example-full-width 
+  margin: 15px 0px
+
+
+
+
+// -------------- Général -------------- //
+
+.m5 
+  margin: 20px 0px
+
+
+
+// -------------- Header -------------- //
+
+.example-spacer 
+  flex: 1 1 auto
+
+
+
+// -------------- Ronds Rouge, étoile vedette et étoiles notes -------------- //
+
+// Ronds rouge //
+
+.rabais
+  float: right
+  background-color: red
+  width: 90px
+  height: 90px
+  border-radius: 50%
+
+  p 
+    color: white
+    padding-top: 25px
+    font-weight: bold
+    text-align: center
+
+// étoile vedette //
+
+.vedette
+
+  img 
+    float: right
+    width: 40px
+    height: 40px
+
+
+// étoiles //
+
+.etoiles
+  height: 15px
+  padding-right: 3px
+  margin-bottom: 10px
+
+
+// -------------- SideNav -------------- //
+
+.example-sidenav 
+  padding: 20px
+
+  .fermer
+      float: right
+      background-color: red
+      color: white
+
+  h2 
+    margin-bottom: 30px
+      
+
+// -------------- Boites -------------- //
+
+.boite1, .boite2
+
+  h1
+    font-size: 30px
+    font-weight: 800
+    margin-bottom: 0px
+
+  h2 
+    margin: 10px 0px 0px 0px 
+
+// Boite 1 //
+
+.boite1
+  background-color: #f0f0f0
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+
+  @media screen and (max-width: 500px) 
+   flex-direction: column
+   width: 100% 
+
+  .card 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    margin: 30px
+    background-color: white
+    flex: 100%
+    max-width: 100%
+    min-width: 350px
+
+    @media screen and (max-width: 500px) 
+      flex: 100%
+    
+
+    .container 
+      padding: 30px
+
+      p 
+        margin-bottom: 0px
+
+
+
+
+// Boite 2 //
+  
+.boite2
+  background-color: lightblue
+  align-items: center
+  justify-content: center
+  padding: 50px 0px
+
+  .card 
+    background-color: white
+    margin: 15px 0px
+
+    @media screen and (max-width: 500px) 
+      flex: 100%
+    
+
+    .container 
+      padding: 30px
+
+      p 
+        margin-bottom: 10px
+
+    .photo
+      max-width: 100%
+      margin-bottom: 10px
+
+    
+ 
+// Boite 3 //
+	
+.boite3
+  padding: 30px
+
+
+
+
+
+
+
+
+// -------------- Footer -------------- //
+
+.footer
+  background-color: lightgrey

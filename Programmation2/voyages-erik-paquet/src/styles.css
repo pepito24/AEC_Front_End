@@ -1,44 +1,46 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-form .example-full-width {
+  width: 100%;
+}
+
+.example-form td {
+  padding-right: 8px;
+}
+
+mat-slider {
+  width: 300px;
+}
+
+.example-container {
+  width: 100%;
+  height: 100%;
+}
+
+mat-form-field {
+  margin-right: 12px;
+}
+
+.example-margin {
+  margin: 15px 15px 15px 0px;
+}
+
+.example-full-width {
+  margin: 15px 0px;
+}
+
+.m5 {
+  margin: 20px 0px;
+}
+
 .example-spacer {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-}
-
-.footer {
-  background-color: lightgrey;
-}
-
-mat-card {
-  width: 100%;
-  margin: 0px 50px;
-  text-align: left;
-  padding: 30px !important;
-}
-
-mat-card img {
-  height: 300px;
-  float: left;
-  padding-right: 30px;
-}
-
-mat-card mat-card-content h1 {
-  padding-top: 20px;
-}
-
-mat-card mat-card-content h2 img {
-  height: 20px;
-}
-
-mat-card mat-card-content s {
-  color: red;
-}
-
-.back {
-  background-color: #f0f0f0;
-}
-
-.bottom {
-  background-color: #01b1f7;
 }
 
 .rabais {
@@ -56,32 +58,137 @@ mat-card mat-card-content s {
   text-align: center;
 }
 
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
+.vedette img {
+  float: right;
+  width: 40px;
+  height: 40px;
 }
 
-.example-form .example-full-width {
-  width: 100%;
+.etoiles {
+  height: 15px;
+  padding-right: 3px;
+  margin-bottom: 10px;
 }
 
-.example-form td {
-  padding-right: 8px;
+.example-sidenav {
+  padding: 20px;
 }
 
-.box3 {
-  padding: 50px;
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
+.example-sidenav .fermer {
+  float: right;
+  background-color: red;
+  color: white;
 }
 
-.box3 .example-full-width {
-  width: 100%;
+.example-sidenav h2 {
+  margin-bottom: 30px;
 }
 
-mat-slider {
-  width: 300px;
+.boite1 h1, .boite2 h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+.boite1 h2, .boite2 h2 {
+  margin: 10px 0px 0px 0px;
+}
+
+.boite1 {
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .boite1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+}
+
+.boite1 .card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 30px;
+  background-color: white;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  max-width: 100%;
+  min-width: 350px;
+}
+
+@media screen and (max-width: 500px) {
+  .boite1 .card {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+.boite1 .card .container {
+  padding: 30px;
+}
+
+.boite1 .card .container p {
+  margin-bottom: 0px;
+}
+
+.boite2 {
+  background-color: lightblue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0px;
+}
+
+.boite2 .card {
+  background-color: white;
+  margin: 15px 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .boite2 .card {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+}
+
+.boite2 .card .container {
+  padding: 30px;
+}
+
+.boite2 .card .container p {
+  margin-bottom: 10px;
+}
+
+.boite2 .card .photo {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.boite3 {
+  padding: 30px;
+}
+
+.footer {
+  background-color: lightgrey;
 }
 /*# sourceMappingURL=styles.css.map */

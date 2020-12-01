@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Forfait } from '../forfait';
+import { FORFAITS } from '../mock-forfaits';
 
 @Component({
   selector: 'app-liste-forfaits',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./liste-forfaits.component.sass']
 })
 export class ListeForfaitsComponent implements OnInit {
+
+  TableauForfaits: Forfait[] = FORFAITS;
 
   constructor() { }
 

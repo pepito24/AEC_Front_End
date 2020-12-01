@@ -1,69 +1,103 @@
-<div class="box3">
-   
-    <form class="example-form">
+<div class="boite3">
+  <form class="example-form">
 
+<!-- Destination -->
+    <mat-form-field class="example-full-width">
+      <input type="text"
+          placeholder="Destination"
+          aria-label="String"
+          required
+          matInput
+          [matAutocomplete]="auto">
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
 
-      <mat-form-field class="example-full-width">
-        <input type="text"
-               placeholder="Pick one"
-               aria-label="Number"
-               matInput
-               [matAutocomplete]="auto">
-        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-            {{option}}
-          </mat-option>
-        </mat-autocomplete>
-      </mat-form-field>
+<!-- Ville de départ -->
+    <mat-form-field class="example-full-width">
+      <input type="text"
+          placeholder="Ville de départ"
+          aria-label="String"
+          required
+          matInput
+          [matAutocomplete]="auto2">
+        <mat-autocomplete #auto2="matAutocomplete">
+        <mat-option>Québec</mat-option>
+        <mat-option>Montréal</mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
 
-    <!-- Nom -->
-        <mat-form-field class="example-full-width">
-          <mat-label>Nom de l’hôtel</mat-label>
-          <input type="text" matInput placeholder="Ex. The Fives Beach Hotel" value="">
-        </mat-form-field>
+<!-- Nom de l’hôtel -->
+    <mat-form-field class="example-full-width">
+      <mat-label>Nom de l’hôtel</mat-label>
+      <input type="text" required minlength="2" matInput placeholder="Ex. The Fives Beach Hotel" value=""
+      [ngModel]="hotel" name="ctrlHotel" #ctrlHotel="ngModel">
+      
+      <mat-error *ngIf="ctrlHotel.hasError('required')">
+        Le nom est <strong>obligatoire</strong>
+      </mat-error>
+      <mat-error *ngIf="ctrlHotel.hasError('minlength')">
+        La longueur minimale est de 2 caractères. 
+      </mat-error>
+    </mat-form-field>
 
-    <!-- Coordonnées -->
-        <mat-form-field class="example-full-width">
-            <mat-label>Coordonnées</mat-label>
-            <input type="text" matInput placeholder="Ex. Pizza">
-          </mat-form-field>
+<!-- Coordonnées (Adresse) -->
+    <mat-form-field class="example-full-width">
+      <mat-label>Coordonnées (Adresse)</mat-label>
+      <input type="text" required minlength="2" matInput placeholder="Ex. 147 rue Saint Raoul"
+      [ngModel]="coordonnees" name="ctrlCoordonnees" #ctrlCoordonnees="ngModel">
 
-    <!-- etoiles -->
-          <mat-label>Nombre d’étoiles</mat-label><br>
-            <mat-slider
-                thumbLabel
-                tickInterval="1000"
-                min="1"
-                max="5">
-            </mat-slider>
+      <mat-error *ngIf="ctrlCoordonnees.hasError('required')">
+        Les coordonnées sont <strong>obligatoire</strong>
+      </mat-error>
+      <mat-error *ngIf="ctrlCoordonnees.hasError('minlength')">
+        La longueur minimale est de 2 caractères. 
+      </mat-error>
+    </mat-form-field>
 
-    <!-- Nbr de chambre -->
-          <mat-form-field class="example-full-width">
-            <mat-label>Nombre de chambres</mat-label>
-            <input  type="number" matInput placeholder="Ex. 1" >
-          </mat-form-field>
+<!-- Nombre d’étoiles -->
+    <mat-label>Nombre d’étoiles</mat-label><br>
+      <mat-slider
+        thumbLabel
+        tickInterval="100"
+        min="1"
+        max="5">
+    </mat-slider>
 
+<!-- Nombre de chambres -->
+    <mat-form-field class="example-full-width">
+      <mat-label>Nombre de chambres</mat-label>
+      <input  type="number" required matInput placeholder="Ex. 1" min="1">
+    </mat-form-field>
 
-    <!-- Caracteristiques  metre un ngfor-->
-    
-          <mat-checkbox class="example-margin" *ngFor="let forfait of TableauForfaits">{{forfait[0].hotel.caracteristiques}}</mat-checkbox><br>
+<!-- Caractéristiques -->
+    <mat-checkbox class="example-margin" *ngFor="let caracteristiques of TableauCarac">{{caracteristiques}}</mat-checkbox><br>
           
+<!-- Date de départ -->
+    <mat-form-field class="datepic" appearance="fill">
+      <mat-label>Date de départ</mat-label>
+      <input matInput [matDatepicker]="picker" required>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <button mat-raised-button (click)="picker.open()">Ouvrir</button>
+
+<!-- Date de retour -->
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Date de retour</mat-label>
+      <input matInput [matDatepicker]="picker2" required>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    <button mat-raised-button (click)="picker2.open()">Ouvrir</button>
 
 
-          <!-- ici -->
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker">
-            <mat-datepicker #picker></mat-datepicker>
-          </mat-form-field>
-          <button mat-raised-button (click)="picker.open()">Open</button>
+<!----- prix -------->
+    <mat-form-field class="example-full-width m5">
+        <mat-label>Prix</mat-label>
+        <input  type="number" matInput min="1" placeholder="Ex. 1000" required>
+    </mat-form-field>
 
-    <!-- prix -->
-            <mat-form-field class="example-full-width">
-                <mat-label>Prix</mat-label>
-                <input  type="number" matInput placeholder="Ex. 1000">
-            </mat-form-field>
-
-      </form>
-  
+  </form>
 </div>

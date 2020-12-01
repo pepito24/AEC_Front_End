@@ -11,6 +11,7 @@ export class ForfaitPlusComponent implements OnInit {
 
   TableauForfaits: Forfait[] = FORFAITS;
 
+
   constructor() { }
 
   ngOnInit(): void {

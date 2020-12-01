@@ -7,6 +7,7 @@ import { FORFAITS } from '../mock-forfaits';
   templateUrl: './forfait.component.html',
   styleUrls: ['./forfait.component.sass']
 })
+
 export class ForfaitComponent implements OnInit {
 
   TableauForfaits: Forfait[] = FORFAITS;

@@ -1,35 +1,56 @@
 
-<section class="back">
-    <mat-grid-list cols="3" rowHeight="400px">
-        <mat-grid-tile *ngFor="let forfait of TableauForfaits">
-            <ng-template [ngIf]="forfait. forfaitVedette === true">
-            <mat-card>
+<div class="boite1">
+    <div *ngFor="let forfait of TableauForfaits | vedette">
+        <div class="card">
+            <div class="container">
                 <div class="rabais" *ngIf="forfait.prix > forfait.rabais">
-                    <p>Rabais de <br>
-                        {{forfait.prix - forfait.rabais}}$ CAD</p>
+                    <p>Rabais de <br> {{forfait.prix - forfait.rabais}}$ CAD</p>
                 </div>
-                
-                <mat-card-title>{{forfait.destination}}</mat-card-title>
+                <h1>{{forfait.destination}}</h1>
+                <h3>Départ de : {{forfait.villeDepart}}</h3>
+                <h2>{{forfait.hotel.nom}}</h2> 
 
-                <mat-card-subtitle>Départ de : {{forfait.villeDepart}}</mat-card-subtitle>
+                <app-etoiles></app-etoiles>
 
-                <mat-card-content>
-                    <h2>{{forfait.hotel.nom}} <br> <app-etoiles></app-etoiles></h2><br>
-                    Départ : {{forfait.dateDepart}} <br>
-                    Durée : 7 Jours
+                   
+                <div *ngIf="forfait.hotel.etoiles === 5">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                </div>
+            
+                <div *ngIf="forfait.hotel.etoiles === 4">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                </div>
+            
+                <div *ngIf="forfait.hotel.etoiles === 3">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                </div>
+            
+                <div *ngIf="forfait.hotel.etoiles === 2">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                </div>
+            
+                <div *ngIf="forfait.hotel.etoiles === 1">
+                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
+                </div>
 
-                    <div *ngIf="forfait.prix > forfait.rabais; else elseBlock ">
-                        <h1><S>{{forfait.prix}}$ CAD</S> - {{forfait.rabais}}$ CAD</h1>
-                    </div>
-
-                    <ng-template #elseBlock><h1>{{forfait.prix}}$ CAD</h1></ng-template>
-                       
-                </mat-card-content>
-                
-
-            </mat-card>
-        </ng-template>
-        </mat-grid-tile>
-    </mat-grid-list>
-</section>
+                    <p><b>Départ :</b> {{forfait.dateDepart}}</p>
+                    <p><b>Durée :</b> 7 Jours</p>
+                <div *ngIf="forfait.prix > forfait.rabais; else elseBlock ">
+                    <h2><S>{{forfait.prix}}$ CAD</S> - {{forfait.rabais}}$ CAD</h2>
+                </div>
+                <ng-template #elseBlock><h1>{{forfait.prix}}$ CAD</h1></ng-template>
+            </div>
+        </div>
+    </div>
+</div>
 

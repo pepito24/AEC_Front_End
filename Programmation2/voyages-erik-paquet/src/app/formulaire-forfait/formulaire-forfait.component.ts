@@ -4,7 +4,7 @@ import { FORFAITS } from '../mock-forfaits';
 import {FormControl} from '@angular/forms';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
-
+import {CARACTERISTIQUE} from '../mock-caracteristique';
 
 @Component({
   selector: 'app-formulaire-forfait',
@@ -13,14 +13,20 @@ import {map, startWith} from 'rxjs/operators';
 })
 export class FormulaireForfaitComponent implements OnInit {
 
+//------------------  ngModel  --------------------
+
+  hotel: string = "";
+  coordonnees: string = "";
+  
+//------------------  Tableaux  --------------------
+
   TableauForfaits: Forfait[] = FORFAITS;
+  TableauCarac: string[] = CARACTERISTIQUE;
 
-  
+//------------------   Autocomplete  --------------------
 
-  
-//code pour le autocomplete
   myControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
+  options: string[] = ['Cuba', 'Rome', 'Boston'];
   filteredOptions: Observable<string[]>;
 
   ngOnInit() {
@@ -35,6 +41,10 @@ export class FormulaireForfaitComponent implements OnInit {
 
     return this.options.filter(option => option.toLowerCase().indexOf(filterValue) === 0);
   }
-//code pour le autocomplete fin
+
+//--------------------------------------
+
 
 }
+
+

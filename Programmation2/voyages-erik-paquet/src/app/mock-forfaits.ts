@@ -11,7 +11,7 @@ export const FORFAITS: Forfait[] = [
         {
             nom: 'The Fives Beach Hotel',
             coordonnees: '147 Rue Saint RaoulQuébec, QC G1B 1L3',
-            etoiles: 5,
+            etoiles: 4,
             chambres: 20,
             caracteristiques: ['Face à la plage','Situé à proximité de la nature','Ascenseurs','Miniclub','Mariages','Plage', 'Massages', 'Picines', 'Tout inclus'],
         },
@@ -47,7 +47,7 @@ export const FORFAITS: Forfait[] = [
         {
             nom: 'The Circus',
             coordonnees: '147 Rue Saint Raoul Québec, QC G1B 1L3',
-            etoiles: 5,
+            etoiles: 0,
             chambres: 20,
             caracteristiques: ['Face à la plage', 'Miniclub','Mariages','Plage', 'Massages', 'Picines', 'Tout inclus'],
         },
@@ -55,7 +55,7 @@ export const FORFAITS: Forfait[] = [
         dateRetour: '2020-11-17',
         prix: 1800,
         rabais: 1600,
-        forfaitVedette: true,
+        forfaitVedette: false,
     },
 
     { 
@@ -73,7 +73,7 @@ export const FORFAITS: Forfait[] = [
         dateRetour: '2020-11-17',
         prix: 600,
         rabais: 500,
-        forfaitVedette: false,
+        forfaitVedette: true,
     },
 
     { 
@@ -83,7 +83,7 @@ export const FORFAITS: Forfait[] = [
         {
             nom: 'Thrump Hotel',
             coordonnees: '147 Rue Saint Raoul Québec, QC G1B 1L3',
-            etoiles: 5,
+            etoiles: 0,
             chambres: 20,
             caracteristiques: ['Plage','Massage','Picine','Service au chambre'],
         },
@@ -101,7 +101,7 @@ export const FORFAITS: Forfait[] = [
         {
             nom: 'Le Frais-Chier',
             coordonnees: '147 Rue Saint Raoul Québec, QC G1B 1L3',
-            etoiles: 5,
+            etoiles: 0,
             chambres: 20,
             caracteristiques: ['Plage','Massage','Picine','Service au chambre'],
         },

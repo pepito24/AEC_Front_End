@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { ForfaitComponent } from './forfait/forfait.component';
 import { ForfaitPlusComponent } from './forfait-plus/forfait-plus.component';
 import { FormulaireForfaitComponent } from './formulaire-forfait/formulaire-forfait.component';
-import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListeForfaitsComponent } from './liste-forfaits/liste-forfaits.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,7 +26,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatNativeDateModule } from '@angular/material/core';
-
+import { VedettePipe } from './vedette.pipe';
+import { RechercheComponent } from './recherche/recherche.component';
+import {MatSelectModule} from '@angular/material/select';
+import { ReactiveFormsModule  } from "@angular/forms";
 
 
 
@@ -37,10 +39,11 @@ import { MatNativeDateModule } from '@angular/material/core';
     ForfaitComponent,
     ForfaitPlusComponent,
     FormulaireForfaitComponent,
-    HeaderComponent,
     FooterComponent,
     ListeForfaitsComponent,
-    EtoilesComponent
+    EtoilesComponent,
+    VedettePipe,
+    RechercheComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +63,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatDatepickerModule,
     MatSidenavModule,
     MatNativeDateModule,
+    MatSelectModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

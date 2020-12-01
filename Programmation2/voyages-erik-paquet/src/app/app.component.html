@@ -1,8 +1,11 @@
 
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
-      <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button class="fermer" type="button" mat-button (click)="drawer.toggle()">
+       X
+      </button>
+      <h2>Formulaire de recherche</h2>
+      <app-recherche></app-recherche>
     </mat-drawer>
 
     
@@ -10,9 +13,6 @@
         <span class="example-spacer"></span>
         <button type="button" mat-button (click)="drawer.toggle()">
           Toggle sidenav
-        </button>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>share</mat-icon>
         </button>
      </mat-toolbar>
 
