@@ -30,6 +30,7 @@ import { VedettePipe } from './vedette.pipe';
 import { RechercheComponent } from './recherche/recherche.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule  } from "@angular/forms";
+import { EtoilesPipe } from './etoiles.pipe';
 
 
 
@@ -43,7 +44,8 @@ import { ReactiveFormsModule  } from "@angular/forms";
     ListeForfaitsComponent,
     EtoilesComponent,
     VedettePipe,
-    RechercheComponent
+    RechercheComponent,
+    EtoilesPipe
   ],
   imports: [
     BrowserModule,

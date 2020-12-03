@@ -10,38 +10,7 @@
                 <h3>Départ de : {{forfait.villeDepart}}</h3>
                 <h2>{{forfait.hotel.nom}}</h2> 
 
-                <app-etoiles></app-etoiles>
-
-                   
-                <div *ngIf="forfait.hotel.etoiles === 5">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                </div>
-            
-                <div *ngIf="forfait.hotel.etoiles === 4">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                </div>
-            
-                <div *ngIf="forfait.hotel.etoiles === 3">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                </div>
-            
-                <div *ngIf="forfait.hotel.etoiles === 2">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                </div>
-            
-                <div *ngIf="forfait.hotel.etoiles === 1">
-                    <img class="etoiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png">
-                </div>
+                   <app-etoiles></app-etoiles>
 
                     <p><b>Départ :</b> {{forfait.dateDepart}}</p>
                     <p><b>Durée :</b> 7 Jours</p>

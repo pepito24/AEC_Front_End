@@ -17,18 +17,21 @@
     </mat-form-field>
 
 <!-- Ville de départ -->
-    <mat-form-field class="example-full-width">
-      <input type="text"
-          placeholder="Ville de départ"
-          aria-label="String"
-          required
-          matInput
-          [matAutocomplete]="auto2">
-        <mat-autocomplete #auto2="matAutocomplete">
-        <mat-option>Québec</mat-option>
-        <mat-option>Montréal</mat-option>
-      </mat-autocomplete>
-    </mat-form-field>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input type="text"
+           placeholder="Ville de départ"
+           aria-label="Number"
+           matInput
+           [formControl]="myControl2"
+           [matAutocomplete]="auto2">
+    <mat-autocomplete #auto2="matAutocomplete">
+      <mat-option *ngFor="let option of options2" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
 
 <!-- Nom de l’hôtel -->
     <mat-form-field class="example-full-width">

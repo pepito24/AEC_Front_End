@@ -125,7 +125,7 @@ var tx6 = new Vue({
   data: {
     firstname: "Erik",
   },
-  computed: {      // pour calculer des trucs
+  computed: {      // ajit sur une propri/t/ exemple firstname (firstname est modifier la)
     moncalcul24() {
      
     },

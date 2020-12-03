@@ -44,6 +44,9 @@ export class FormulaireForfaitComponent implements OnInit {
 
 //--------------------------------------
 
+myControl2 = new FormControl();
+  options2: string[] = ['Québec', 'Montreal'];
+
 
 }
 
