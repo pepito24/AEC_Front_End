@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Formulaire } from './formulaire';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'voyages-erik-paquet';
   showFiller = false;
+
+  formulaire :Formulaire = { 
+    date: '', 
+    nbrjour: '', 
+    etoiles: null,
+    caracteristiques: [],
+
+};
+
 }

@@ -5,23 +5,20 @@
        X
       </button>
       <h2>Formulaire de recherche</h2>
-      <app-recherche></app-recherche>
+      <app-recherche [(formulaire)]="formulaire"></app-recherche>
     </mat-drawer>
 
     
     <mat-toolbar>
         <span class="example-spacer"></span>
         <button type="button" mat-button (click)="drawer.toggle()">
-          Toggle sidenav
+          Menu
         </button>
      </mat-toolbar>
-
-
-<app-liste-forfaits></app-liste-forfaits>
+      
+<app-forfait></app-forfait>
 
 <app-forfait-plus></app-forfait-plus>
-
-<app-formulaire-forfait></app-formulaire-forfait>
 
 <app-footer></app-footer>
 

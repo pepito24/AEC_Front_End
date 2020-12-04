@@ -10,7 +10,7 @@
                 <h3>Départ de : {{forfait.villeDepart}}</h3>
                 <h2>{{forfait.hotel.nom}}</h2> 
 
-                   <app-etoiles></app-etoiles>
+                 <app-etoiles [etoiles]="forfait.hotel.etoiles"></app-etoiles>
 
                     <p><b>Départ :</b> {{forfait.dateDepart}}</p>
                     <p><b>Durée :</b> 7 Jours</p>

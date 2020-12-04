@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input,} from '@angular/core';
 import { Forfait } from '../forfait';
 import { FORFAITS } from '../mock-forfaits';
+import { Formulaire } from '../formulaire';
 
 @Component({
   selector: 'app-forfait-plus',
@@ -10,7 +11,7 @@ import { FORFAITS } from '../mock-forfaits';
 export class ForfaitPlusComponent implements OnInit {
 
   TableauForfaits: Forfait[] = FORFAITS;
-
+  @Input() formulaire: Formulaire;
 
   constructor() { }
 

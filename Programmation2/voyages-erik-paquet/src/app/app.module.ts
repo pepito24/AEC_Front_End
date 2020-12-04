@@ -7,7 +7,6 @@ import { ForfaitComponent } from './forfait/forfait.component';
 import { ForfaitPlusComponent } from './forfait-plus/forfait-plus.component';
 import { FormulaireForfaitComponent } from './formulaire-forfait/formulaire-forfait.component';
 import { FooterComponent } from './footer/footer.component';
-import { ListeForfaitsComponent } from './liste-forfaits/liste-forfaits.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -30,7 +29,7 @@ import { VedettePipe } from './vedette.pipe';
 import { RechercheComponent } from './recherche/recherche.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule  } from "@angular/forms";
-import { EtoilesPipe } from './etoiles.pipe';
+
 
 
 
@@ -41,11 +40,9 @@ import { EtoilesPipe } from './etoiles.pipe';
     ForfaitPlusComponent,
     FormulaireForfaitComponent,
     FooterComponent,
-    ListeForfaitsComponent,
     EtoilesComponent,
     VedettePipe,
     RechercheComponent,
-    EtoilesPipe
   ],
   imports: [
     BrowserModule,
