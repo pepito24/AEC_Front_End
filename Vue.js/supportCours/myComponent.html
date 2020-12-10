@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <my-component></my-component>
+      </div>
+    </div>
+    <script>
+      Vue.component("my-component", {
+        template: "<div>{{message}}</div>",
+        data: function () {
+          return {
+            message: "Hello World",
+          };
+        },
+      });
+
+      const app = new Vue({
+        el: "#app",
+      });
+    </script>
+  </body>
+</html>

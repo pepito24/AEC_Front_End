@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <input-name v-on:update="setName($event)"></input-name>
+      </div>
+      <h1>Hello, {{name}}</h1>
+    </div>
+    <script>
+      Vue.component("input-name", {
+        data: function () {
+          return {
+            name: "World",
+          };
+        },
+      });
+
+      const app = new Vue({
+        el: "#app",
+        data: { name: "World" },
+        methods: {
+          setName: function (v) {
+            this.name = v;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

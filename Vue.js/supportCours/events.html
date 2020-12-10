@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1>Utilisation de v-on</h1>
+    <div id="app">
+      <p>
+        Bouton avec du javascript:
+        <input type="button" value="Hello" v-on:click="msg='Hello'" />
+        <input type="button" value="Bonjour" v-on:click="msg='Bonjour'" />
+      </p>
+      <p>
+        Bouton avec du javascript utilisant le $event:
+        <input
+          type="button"
+          value="Hello"
+          v-on:click="msg=$event.target.value"
+        />
+        <input
+          type="button"
+          value="Bonjour"
+          v-on:click="msg=$event.target.value"
+        />
+      </p>
+      <p>
+        Bouton avec un appel de fonction avec parametre @:
+        <input type="button" value="Hello" @click="changeMessage('Hello')" />
+        <input
+          type="button"
+          value="Bonjour"
+          v-on:click="changeMessage('Bonjour')"
+        />
+      </p>
+      <p>
+        Bouton avec un appel de fonction avec event en parametre:
+        <input type="button" value="Hello" v-on:click="clickHello" />
+        <input type="button" value="Bonjour" v-on:click="clickBonjour" />
+      </p>
+      <p>Mon message : {{msg}}</p>
+    </div>
+    <script>
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          msg: "aucun bouton",
+        },
+        methods: {
+          changeMessage: function (message) {
+            this.msg = message;
+          },
+          clickHello: function (event) {
+            this.msg = "Hello";
+            this.msg = event.target.value;
+          },
+          clickBonjour: function (event) {
+            this.msg = "Bonjour";
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

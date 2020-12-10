@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app"><h1>{{message | capitalize}}</h1></div>
+    <script>
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          message: "capitalize first letter",
+        },
+        filters: {
+          capitalize: function (value) {
+            if (!value) return "";
+            value = value.toString();
+            return value.charAt(0).toUpperCase() + value.slice(1);
+          },
+        },
+      });
+      Vue.filters("myFilter", function (value) {});
+    </script>
+  </body>
+</html>

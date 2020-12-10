@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style type="text/css">
+      .fade-enter-active,
+      .fade-leave-active {
+        transition: opacity 0.5s;
+      }
+      .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo">
+      <button v-on:click="show = !show">Permuter</button>
+      <transition name="fade">
+        <p v-if="show">bonjour</p>
+      </transition>
+    </div>
+    <script>
+      new Vue({
+        el: "#demo",
+        data: {
+          show: true,
+        },
+      });
+    </script>
+  </body>
+</html>
