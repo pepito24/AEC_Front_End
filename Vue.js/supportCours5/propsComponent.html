@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ title }}</h1>
+      <user-name name="John"></user-name>
+    </div>
+    <script>
+      Vue.component("user-name", {
+        props: ["name"],
+        template: "<p>Hi {{ name }}</p>",
+      });
+
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          title: "My props",
+        },
+      });
+    </script>
+  </body>
+</html>

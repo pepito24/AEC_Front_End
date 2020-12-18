@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ title }}</h1>
+      <sub-content>
+        <template v-slot:name>
+          <h1>What is Lorem Ipsum?</h1>
+        </template>
+        <template v-slot:description>
+          <p>
+            What is Lorem Ipsum?Lorem Ipsum is simply dummy text of the printing
+            andtypesetting industry.Lorem Ipsum has been the industry's standard
+            dummy.
+          </p>
+        </template>
+      </sub-content>
+    </div>
+    <script>
+      Vue.component("sub-content", {
+        template: `<div>
+                       <slot name="title"></slot>
+                       <slot name="description"></slot>
+                  </div>`,
+      });
+
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          title: "My slot",
+        },
+      });
+    </script>
+  </body>
+</html>

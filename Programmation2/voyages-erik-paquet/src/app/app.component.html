@@ -1,5 +1,5 @@
 
-<mat-drawer-container class="example-container" autosize>
+<!--<mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <button class="fermer" type="button" mat-button (click)="drawer.toggle()">
        X
@@ -14,6 +14,7 @@
         <button type="button" mat-button (click)="drawer.toggle()">
           Menu
         </button>
+        
      </mat-toolbar>
       
 <app-forfait></app-forfait>
@@ -24,5 +25,34 @@
 
 </mat-drawer-container>
 
+<router-outlet></router-outlet>-->
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <button class="fermer" type="button" mat-button (click)="drawer.toggle()">
+     X
+    </button>
+    <h2>Formulaire de recherche</h2>
+    <app-recherche [(formulaire)]="formulaire"></app-recherche>
+  </mat-drawer>
+
+  <mat-toolbar>
+
+    <a class="menu" routerLink="/accueil">Accueil</a>
+    <a routerLink="/a-propos">A propos</a>
+
+      <span class="example-spacer"></span>
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Menu
+      </button>
+      
+   </mat-toolbar>
+    
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>
+
+</mat-drawer-container>
+
 

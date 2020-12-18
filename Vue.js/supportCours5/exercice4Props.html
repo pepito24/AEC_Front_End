@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ title }}</h1>
+      <users v-bind:users="users"></users>
+    </div>
+    <script>
+      Vue.component("users", {
+        props: ["users"],
+        template: `<div>
+                    <ul>
+                      <li v-for="user in users">
+                        {{user.firstname}} {{user.lastname}}
+                        <userDetails v-bind:phone-number="user.phoneNumber" v-bind:email="user.email"></userDetails>
+                        <adressDetails v-bind:adresses="user.adresses"></adressDetails>
+                      </li>
+                    </ul>
+                  </div>`,
+      });
+      Vue.component("userDetails", {
+        props: ["phoneNumber", "email"],
+        template: `<div>
+                    phoneNumber: {{phoneNumber}}<br/>
+                    email: {{email}}
+                  </div>`,
+      });
+      Vue.component("adressDetails", {
+        props: ["adresses"],
+        template: `<div>
+                    <ul>
+                      <li v-for="adress in adresses">
+                        {{ adress.streetNumber }}, {{ adress.streetName }}<br/>
+                        {{ adress.city }}, {{ adress.province }}<br/>
+                        {{ adress.postalCode }}<br/>
+                      </li>
+                    </ul>
+                  </div>`,
+      });
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          title: "my users",
+          users: [
+            {
+              firstname: "John",
+              lastname: "Dow",
+              contact: {
+                phoneNumber: "555 444 1234",
+                email: "john.dow@test.com",
+                adresses: [
+                  {
+                    streetNumber: "1",
+                    streetName: "broadway",
+                    city: "St John",
+                    province: "NE",
+                    postalCode: "A1A 1A1",
+                  },
+                ],
+              },
+            },
+            {
+              firstname: "Jane",
+              lastname: "Dow",
+              contact: {
+                phoneNumber: "666 444 1234",
+                email: "jane.dow@test.com",
+                adresses: [
+                  {
+                    streetNumber: "2",
+                    streetName: "second street",
+                    city: "St John",
+                    province: "NE",
+                    postalCode: "A2A 2A2",
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>

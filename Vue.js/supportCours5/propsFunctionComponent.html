@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ title }}</h1>
+      <my-button name="Share" v-bind:handle-click="shareMe"></my-button>
+    </div>
+    <script>
+      Vue.component("my-button", {
+        props: ["name", "handleClick"],
+        template: `<button v-on:click="handleClick">{{ name }}</button>`,
+      });
+
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          title: "My function props",
+        },
+        methods: {
+          shareMe: function () {
+            //write your logic
+            console.log("share");
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

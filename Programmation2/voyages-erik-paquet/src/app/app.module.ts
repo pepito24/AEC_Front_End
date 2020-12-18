@@ -29,6 +29,11 @@ import { VedettePipe } from './vedette.pipe';
 import { RechercheComponent } from './recherche/recherche.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule  } from "@angular/forms";
+import { AProposComponent } from './a-propos/a-propos.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { MexiqueComponent } from './mexique/mexique.component';
+import { CubaComponent } from './cuba/cuba.component';
 
 
 
@@ -43,6 +48,11 @@ import { ReactiveFormsModule  } from "@angular/forms";
     EtoilesComponent,
     VedettePipe,
     RechercheComponent,
+    AProposComponent,
+    AccueilComponent,
+    AdministrationComponent,
+    MexiqueComponent,
+    CubaComponent,
   ],
   imports: [
     BrowserModule,

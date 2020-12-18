@@ -188,6 +188,15 @@ mat-form-field {
   padding: 30px;
 }
 
+.boite4 {
+  height: 100%;
+  padding: 30px 50px;
+}
+
+.menu {
+  margin-right: 15px;
+}
+
 .footer {
   background-color: lightgrey;
 }

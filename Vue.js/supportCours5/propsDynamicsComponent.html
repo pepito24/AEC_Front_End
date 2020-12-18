@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manipulation de vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ title }}</h1>
+      <blog-post
+        v-for="post in posts"
+        v-bind:id="post.id"
+        v-bind:title="post.title"
+      ></blog-post>
+    </div>
+    <script>
+      Vue.component("blog-post", {
+        props: ["id", "title"],
+        template: "<div v-bind:id='id'>{{ title }}</div>",
+      });
+
+      new Vue({
+        el: "#app",
+        data: {
+          title: "My dynamics props",
+          posts: [
+            { id: 1, title: "Mon initiation avec Vue" },
+            { id: 2, title: "Blogger avec Vue" },
+            { id: 3, title: "Pourquoi Vue est tellement cool" },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
