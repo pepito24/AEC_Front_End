@@ -10,7 +10,7 @@
                     <p>Rabais de <br> {{forfait.prix - forfait.rabais}}$ CAD</p>
                 </div>
 
-                <div class="vedette" *ngIf="forfait.forfaitVedette === true">
+                <div class="vedette" *ngIf="forfait.vedette === true">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png" />
                 </div>
 
@@ -22,7 +22,7 @@
 
                 {{forfait.hotel.coordonnees}}<br>
                 
-                <app-etoiles [etoiles]="forfait.hotel.etoiles"></app-etoiles><br><br>
+                <app-etoiles [etoiles]="forfait.hotel.nombreEtoiles"></app-etoiles><br><br>
 
                 <p><b>Départ :</b> {{forfait.dateDepart}}</p>
 

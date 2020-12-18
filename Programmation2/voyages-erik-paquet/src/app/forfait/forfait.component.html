@@ -1,6 +1,6 @@
 
 <div class="boite1">
-    <div *ngFor="let forfait of TableauForfaits | vedette">
+    <div *ngFor="let forfait of TableauForfaits | vedette | slice:0:3">
         <div class="card">
             <div class="container">
                 <div class="rabais" *ngIf="forfait.prix > forfait.rabais">
@@ -10,7 +10,7 @@
                 <h3>Départ de : {{forfait.villeDepart}}</h3>
                 <h2>{{forfait.hotel.nom}}</h2> 
 
-                 <app-etoiles [etoiles]="forfait.hotel.etoiles"></app-etoiles>
+                 <app-etoiles [etoiles]="forfait.hotel.nombreEtoiles"></app-etoiles>
 
                     <p><b>Départ :</b> {{forfait.dateDepart}}</p>
                     <p><b>Durée :</b> 7 Jours</p>

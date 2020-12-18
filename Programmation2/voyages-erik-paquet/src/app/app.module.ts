@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+import { VoyageService } from './voyage.service';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ForfaitComponent } from './forfait/forfait.component';
@@ -74,8 +77,10 @@ import { CubaComponent } from './cuba/cuba.component';
     MatNativeDateModule,
     MatSelectModule,
     ReactiveFormsModule,
+    HttpClientModule,
+
   ],
-  providers: [],
+  providers: [VoyageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 export interface Hotel {
     nom: string,
     coordonnees: string,
-    etoiles: number,
-    chambres: number,
+    nombreEtoiles: number,
+    nombreChambres: number,
     caracteristiques: string[],
 }

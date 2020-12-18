@@ -9,5 +9,5 @@ export interface Forfait {
     dateRetour: string,
     prix: number,
     rabais: number,
-    forfaitVedette: boolean,
+    vedette: boolean,
 }
