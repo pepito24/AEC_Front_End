@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>exercice 6</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+
+<!------------ Header -------------->
+    <div id="app">
+        <top>
+            <template v-slot:header>
+                <div class="icon-bar">
+                    <a class="active" v-on:click="show = 1"><i class="fa fa-home"></i></a> 
+                    <a v-on:click="show = 2"><i class="fa fa-search"></i></a> 
+                    <a v-on:click="show = 3"><i class="fa fa-envelope"></i></a> 
+                    <a v-on:click="show = 4"><i class="fa fa-globe"></i></a>  
+                </div>
+            </template>
+        </top>
+     
+  <!------------ Accueil -------------->      
+        <div v-if="show === 1">
+          <home>
+            <template v-slot:accueil>
+              <div class="texte">
+                <h1>Accueil</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </template>
+          </home>         
+        </div>
+
+<!------------ Contact -------------->
+  <div v-if="show === 3">
+    <cont>
+      <template v-slot:contact>
+        <h1 class="texte">Contact</h1>
+                <!-- Formulaire-->
+        <div class="form">
+          <label for="firstName">First Name</label><br>
+          <input class="text" id="firstName" type="text" v-model="firstName" />
+          <label for="lastName">Last Name</label><br>
+          <input class="text" id="lastName" type="text" v-model="lastName" />
+          <input type="radio" v-model="gender" v-bind:value="sexe[0]">Homme<br />
+          <input type="radio" v-model="gender" v-bind:value="sexe[1]">Femme<br />
+          <!-- Bouton avec Modal-->
+          <button class="button" v-on:click="leModal = true">
+            Soumettre le formulaire
+          </button>
+          <transition name="fade" appear>
+            <div
+              class="modal-overlay"
+              v-if="leModal"
+              @click="leModal = false"
+            ></div>
+          </transition>
+          <transition name="slide" appear>
+            <div class="modal" v-if="leModal">
+              <input type="checkbox" @click="changeColor2()">
+              <label for="click" v-bind:class="[{ 'actived2': isActive2 }]">Changer de couleur !</label><br>
+              <h1 v-bind:class="[{ 'actived2': isActive2 }]">{{gender}} {{firstName}} {{lastName}}</h1>
+              <button class="button" v-on:click="leModal = false">
+                Fermer
+              </button>
+            </div>
+          </transition> 
+        </div>
+      </template>
+    </cont>         
+  </div>
+
+<!------------ A propos -------------->
+
+<div v-if="show === 4">
+  <propos>
+    <template v-slot:a-propos>
+      <div class="texte">
+        <h1>A propos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </template>
+  </propos>         
+</div>
+
+<!------------ Conversion -------------->
+
+<div v-if="show === 2">
+  <conver>
+    <template v-slot:conversion>
+      <div class="texte">
+        <h1>Conversion</h1>
+        <div class="form">
+          <label for="cm">Cm</label><br>
+          <input class="text" id="cm" type="text" v-model="converter" />
+          &#9196;<br>
+          <label for="feet">Pouce</label><br>
+          <input class="text" id="feet" type="text" v-model="feet" />
+        </div>
+      </div>
+    </template>
+  </conver>         
+</div>
+
+<!------------ Footer -------------->
+  <div>
+    <bas class="footer">
+        <template v-slot:footer>
+            <p>@ Le corsaire du web 2021</p>
+        </template>
+    </bas>
+  </div>
+
+
+
+
+</div><!-- fin id #app-->
+<script>
+
+// --------------- header -------------------- //
+
+  Vue.component("top", {
+        template: `<div>
+                       <slot name="header"></slot>
+                  </div>`,
+      });
+
+// --------------- footer -------------------- //
+
+  Vue.component("bas", {
+    template: `<div>
+                    <slot name="footer"></slot>
+                </div>`,
+    });
+
+// --------------- Accueil -------------------- //
+    
+  Vue.component("home", {
+    template: `<div>
+                    <slot name="accueil"></slot>
+                </div>`,
+    });
+
+// --------------- Contact -------------------- //
+
+  Vue.component("cont", {
+    template: `<div>
+                  <slot name="contact"></slot>
+              </div>`,
+  });
+
+// --------------- A Propos -------------------- //
+
+Vue.component("propos", {
+    template: `<div>
+                  <slot name="a-propos"></slot>
+              </div>`,
+  });
+
+// --------------- A Propos -------------------- //
+
+Vue.component("conver", {
+    template: `<div>
+                  <slot name="conversion"></slot>
+              </div>`,
+  });
+
+// --------------- Vue -------------------- //
+
+  let cm = new Vue({
+    el: "#app",
+    data: {
+    show: 1,
+    firstName: "Erik",
+    lastName: "Paquet",
+    leModal: false,
+    isActive2: false,
+    gender:"",
+    sexe:[a= "Mr.",b= "Ms."],
+
+    temperatureC: 0,
+    converter: 0,
+  },
+  methods: {
+        changeColor2() {
+          this.isActive2 = !this.isActive2
+        }
+      },
+  computed: {
+      temperatureConverted() {
+        let tempConverted;
+        if (this.converter) {
+          tempConverted = this.temperatureC * (9.0 / 5) + 32 + " F";
+        } else {
+          tempConverted = this.temperatureC + " C";
+        }
+        return tempConverted;
+      },
+    },
+  });
+
+// --------------- Fin -------------------- //
+
+</script>
+
+    </body>
+</html>

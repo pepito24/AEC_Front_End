@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>exercice 6</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+
+
+    <div id="apc">
+        <top>
+            <template v-slot:header>
+                <div class="icon-bar">
+                    <a class="active" href="#"><i class="fa fa-home"></i></a> 
+                    <a href="#"><i class="fa fa-search"></i></a> 
+                    <a href="#"><i class="fa fa-envelope"></i></a> 
+                    <a href="#"><i class="fa fa-globe"></i></a>
+                    <a href="#"><i class="fa fa-trash"></i></a>     
+                </div>
+            </template>
+        </top>         
+    </div>
+
+
+    <div id="app">
+        <h1>{{firstname}}</h1>
+        <h1 v-text="lastname"></h1>
+    </div>
+
+
+    <div id="abc">
+        <bas class="footer">
+            <template v-slot:footer>
+                <p>@ Le corsaire du web 2021</p>
+            </template>
+        </bas>
+    </div>
+
+
+    <script>
+
+      Vue.component("top", {
+        template: `<div>
+                       <slot name="header"></slot>
+                  </div>`,
+      });
+
+      Vue.component("bas", {
+    template: `<div>
+                    <slot name="footer"></slot>
+                </div>`,
+    });
+
+    let vm = new Vue({
+        el: "#app",
+        data: {
+          firstname: "Erik",
+          lastname: "Paquet",
+        },
+      });
+
+
+    let cm = new Vue({
+        el: "#apc",
+    });
+
+     
+    let am = new Vue({
+        el: "#abc",
+    });
+
+
+    </script>
+
+    </body>
+</html>

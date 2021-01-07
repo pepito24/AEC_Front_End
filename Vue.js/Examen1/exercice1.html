@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>exercice 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+  <body>
+
+    <div id="app">
+      <h1>{{firstname}}</h1>
+      <h1 v-text="lastname"></h1>
+    </div>
+
+
+    <script>
+      let vm = new Vue({
+        el: "#app",
+        data: {
+          firstname: "Erik",
+          lastname: "Paquet",
+        },
+      });
+    </script>
+
+    </body>
+</html>

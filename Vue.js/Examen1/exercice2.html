@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>exercice 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style type="text/css">
+        .actived {
+          text-decoration: underline;
+        }
+      </style> 
+</head>
+
+  <body>
+    <div id="app">
+
+      <div class="form">
+        <label for="firstName">First Name</label><br>
+        <input id="firstName" type="text" v-model="firstName" /><br><br>
+        <label for="lastName">Last Name</label><br>
+        <input id="lastName" type="text" v-model="lastName" /><br><br>
+        <input id="click" type="checkbox" @click="changeColor()">
+        <label for="click">Surligne la balise h1</label>
+      </div>
+
+      <h1 v-bind:class="[{ 'actived': isActive }]">{{firstName}} {{lastName}}</h1>
+    
+    </div>
+
+
+      <script>
+        let vm = new Vue({
+          el: "#app",
+          data: { 
+            firstName: "Erik",
+            lastName: "Paquet",
+            isActive: false
+          },   
+          methods: {
+            changeColor() {
+              this.isActive = !this.isActive
+            }
+          }
+        });
+      </script>
+
+   </body>
+</html>

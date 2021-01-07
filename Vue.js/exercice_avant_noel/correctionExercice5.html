@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <label>km: <input type="text" v-model="km2" /></label><br />
+      <label>cm: <input type="text" v-model="cm" /></label><br />
+      <label>mm: <input type="text" v-model="mm" /></label><br />
+    </div>
+
+    <script>
+      let maVueModele = new Vue({
+        el: "#app",
+        data: {
+          km2: 0,
+          cm: 0,
+          mm: 0,
+        },
+        watch: {
+          km2: function (val) {
+            this.km2 = val;
+            this.cm = val * 100000;
+            this.mm = val * 1000000;
+          },
+          cm: function (val) {
+            this.km2 = val / 100000;
+            this.cm = val;
+            this.mm = val * 10;
+          },
+          mm: function (val) {
+            this.km2 = val / 1000000;
+            this.cm = val / 10;
+            this.mm = val;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
