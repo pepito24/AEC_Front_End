@@ -1,32 +1,4 @@
 
-<!--<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-      <button class="fermer" type="button" mat-button (click)="drawer.toggle()">
-       X
-      </button>
-      <h2>Formulaire de recherche</h2>
-      <app-recherche [(formulaire)]="formulaire"></app-recherche>
-    </mat-drawer>
-
-    
-    <mat-toolbar>
-        <span class="example-spacer"></span>
-        <button type="button" mat-button (click)="drawer.toggle()">
-          Menu
-        </button>
-        
-     </mat-toolbar>
-      
-<app-forfait></app-forfait>
-
-<app-forfait-plus></app-forfait-plus>
-
-<app-footer></app-footer>
-
-</mat-drawer-container>
-
-<router-outlet></router-outlet>-->
-
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
@@ -41,6 +13,7 @@
 
     <a class="menu" routerLink="/accueil">Accueil</a>
     <a routerLink="/a-propos">A propos</a>
+    <a routerLink="/gestion">Gestion</a>
 
       <span class="example-spacer"></span>
       <button type="button" mat-button (click)="drawer.toggle()">

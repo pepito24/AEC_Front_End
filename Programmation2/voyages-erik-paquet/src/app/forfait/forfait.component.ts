@@ -11,7 +11,6 @@ import { VoyageService } from '../voyage.service';
 
 export class ForfaitComponent implements OnInit {
   
-  //TableauForfaits: Forfait[] = FORFAITS;
   TableauForfaits: Forfait[];
 
   constructor(private voyageService: VoyageService) { }

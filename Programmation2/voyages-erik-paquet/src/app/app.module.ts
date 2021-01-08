@@ -37,6 +37,8 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { AdministrationComponent } from './administration/administration.component';
 import { MexiqueComponent } from './mexique/mexique.component';
 import { CubaComponent } from './cuba/cuba.component';
+import {MatTableModule} from '@angular/material/table';
+import { GestionForfaitComponent } from './gestion-forfait/gestion-forfait.component';
 
 
 
@@ -56,6 +58,7 @@ import { CubaComponent } from './cuba/cuba.component';
     AdministrationComponent,
     MexiqueComponent,
     CubaComponent,
+    GestionForfaitComponent,
   ],
   imports: [
     BrowserModule,
@@ -78,6 +81,7 @@ import { CubaComponent } from './cuba/cuba.component';
     MatSelectModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatTableModule,
 
   ],
   providers: [VoyageService],

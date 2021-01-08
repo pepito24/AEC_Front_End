@@ -200,4 +200,8 @@ mat-form-field {
 .footer {
   background-color: lightgrey;
 }
+
+table {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */

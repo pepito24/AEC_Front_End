@@ -93,12 +93,12 @@
     <template v-slot:conversion>
       <div class="texte">
         <h1>Conversion</h1>
-        <div class="form">
+        <div class="formtwo">
           <label for="cm">Cm</label><br>
           <input class="text" id="cm" type="text" v-model="converter" />
-          &#9196;<br>
+          &#9196;<br><br>
           <label for="feet">Pouce</label><br>
-          <input class="text" id="feet" type="text" v-model="feet" />
+          <input class="text" id="feet" type="text" v-bind:value="temperatureConverted"/>
         </div>
       </div>
     </template>
@@ -180,9 +180,10 @@ Vue.component("conver", {
     isActive2: false,
     gender:"",
     sexe:[a= "Mr.",b= "Ms."],
-
-    temperatureC: 0,
     converter: 0,
+    conversion: "",
+    chiffreConversion: null,
+    
   },
   methods: {
         changeColor2() {
@@ -191,13 +192,8 @@ Vue.component("conver", {
       },
   computed: {
       temperatureConverted() {
-        let tempConverted;
-        if (this.converter) {
-          tempConverted = this.temperatureC * (9.0 / 5) + 32 + " F";
-        } else {
-          tempConverted = this.temperatureC + " C";
-        }
-        return tempConverted;
+        let chiffreConversion = this.converter * 0.39370079;
+        return chiffreConversion.toFixed(2);
       },
     },
   });
