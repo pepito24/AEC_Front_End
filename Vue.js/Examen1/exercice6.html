@@ -9,71 +9,138 @@
 </head>
   <body>
 
-
-    <div id="apc">
+<!------------ Header -------------->
+    <div id="app">
         <top>
             <template v-slot:header>
                 <div class="icon-bar">
-                    <a class="active" href="#"><i class="fa fa-home"></i></a> 
-                    <a href="#"><i class="fa fa-search"></i></a> 
-                    <a href="#"><i class="fa fa-envelope"></i></a> 
-                    <a href="#"><i class="fa fa-globe"></i></a>
-                    <a href="#"><i class="fa fa-trash"></i></a>     
+                    <a class="active" v-on:click=""><i class="fa fa-home"></i></a> 
+                    <a v-on:click=""><i class="fa fa-search"></i></a> 
+                    <a v-on:click=""><i class="fa fa-envelope"></i></a> 
+                    <a v-on:click=""><i class="fa fa-globe"></i></a>  
                 </div>
             </template>
-        </top>         
-    </div>
+        </top>
+     
 
+<!------------ Contact -------------->
+ 
+    <div>
+    <!-- Formulaire -->
+        <formu>
+            <template v-slot:formulaire>
+                <div class="form">
 
-    <div id="app">
-        <h1>{{firstname}}</h1>
-        <h1 v-text="lastname"></h1>
-    </div>
+                <label for="firstName">First Name</label><br>
+                <input class="text" id="firstName" type="text" v-model="firstName" />
 
+                <label for="lastName">Last Name</label><br>
+                <input class="text" id="lastName" type="text" v-model="lastName" />
 
-    <div id="abc">
-        <bas class="footer">
-            <template v-slot:footer>
-                <p>@ Le corsaire du web 2021</p>
+                <input type="radio" v-model="gender" v-bind:value="sexe[0]">Homme<br />
+                <input type="radio" v-model="gender" v-bind:value="sexe[1]">Femme<br />
+
+                <!-- Bouton avec Modal-->
+                <button class="button" v-on:click="leModal = true">
+                    Soumettre le formulaire
+                </button>
             </template>
-        </bas>
-    </div>
+        </formu>
+
+    <!-- Modal -->
+          <transition name="fade" appear>
+            <div
+              class="modal-overlay"
+              v-if="leModal"
+              @click="leModal = false"
+            ></div>
+          </transition>
+          <transition name="slide" appear>
+            <div class="modal" v-if="leModal">
+              <input type="checkbox" @click="changeColor2()">
+              <label for="click" v-bind:class="[{ 'actived2': isActive2 }]">Changer de couleur !</label><br>
+              <h1 v-bind:class="[{ 'actived2': isActive2 }]">{{gender}} {{firstName}} {{lastName}}</h1>
+              <button class="button" v-on:click="leModal = false">
+                Fermer
+              </button>
+            </div>
+          </transition> 
+        </div>
+      
+            
+  
+
+<!------------ Footer -------------->
+  <div>
+    <bas class="footer">
+        <template v-slot:footer>
+            <p>@ Le corsaire du web 2021</p>
+        </template>
+    </bas>
+  </div>
 
 
-    <script>
 
-      Vue.component("top", {
+
+</div><!-- fin id #app-->
+<script>
+
+// --------------- header -------------------- //
+
+  Vue.component("top", {
         template: `<div>
                        <slot name="header"></slot>
                   </div>`,
       });
 
-      Vue.component("bas", {
+// --------------- footer -------------------- //
+
+  Vue.component("bas", {
     template: `<div>
                     <slot name="footer"></slot>
                 </div>`,
     });
 
-    let vm = new Vue({
-        el: "#app",
-        data: {
-          firstname: "Erik",
-          lastname: "Paquet",
-        },
-      });
+// --------------- formulaire -------------------- //
 
+Vue.component("formu", {
+    template: `<div>
+                  <slot name="formulaire"></slot>
+              </div>`,
 
-    let cm = new Vue({
-        el: "#apc",
-    });
+      methods: {
+        update(showModal) {
+          this.showModal = showModal;
+      },
+    }, 
+  });
+  
+// --------------- Vue -------------------- //
 
-     
-    let am = new Vue({
-        el: "#abc",
-    });
+  let cm = new Vue({
+    el: "#app",
+    data: {
+      show: 1,
+      firstName: "Erik",
+      lastName: "Paquet",
+      leModal: false,
+      isActive2: false,
+      gender:"",
+      sexe:[a= "Mr.",b= "Ms."],
+      converter: 0,
+      conversion: "",
+      chiffreConversion: null, 
+  },
+  methods: {
+        changeColor2() {
+          this.isActive2 = !this.isActive2
+        }
+      },
+  });
 
+// --------------- Fin -------------------- //
 
-    </script>
+</script>
 
     </body>
 </html>

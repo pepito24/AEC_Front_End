@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>exercice 6</title>
+    <title>exercice 7</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,18 +39,28 @@
     <cont>
       <template v-slot:contact>
         <h1 class="texte">Contact</h1>
-                <!-- Formulaire-->
-        <div class="form">
-          <label for="firstName">First Name</label><br>
-          <input class="text" id="firstName" type="text" v-model="firstName" />
-          <label for="lastName">Last Name</label><br>
-          <input class="text" id="lastName" type="text" v-model="lastName" />
-          <input type="radio" v-model="gender" v-bind:value="sexe[0]">Homme<br />
-          <input type="radio" v-model="gender" v-bind:value="sexe[1]">Femme<br />
-          <!-- Bouton avec Modal-->
-          <button class="button" v-on:click="leModal = true">
-            Soumettre le formulaire
-          </button>
+          <!-- Formulaire-->
+          <formu>
+            <template v-slot:formulaire>
+                <div class="form">
+    
+                <label for="firstName">First Name</label><br>
+                <input class="text" id="firstName" type="text" v-model="firstName" />
+    
+                <label for="lastName">Last Name</label><br>
+                <input class="text" id="lastName" type="text" v-model="lastName" />
+    
+                <input type="radio" v-model="gender" v-bind:value="sexe[0]">Homme<br />
+                <input type="radio" v-model="gender" v-bind:value="sexe[1]">Femme<br />
+    
+                <!-- Bouton avec Modal-->
+                <button class="button" v-on:click="leModal = true">
+                    Soumettre le formulaire
+                </button>
+              </template>
+            </formu>
+
+          <!-- Modal -->
           <transition name="fade" appear>
             <div
               class="modal-overlay"
@@ -114,9 +124,6 @@
     </bas>
   </div>
 
-
-
-
 </div><!-- fin id #app-->
 <script>
 
@@ -168,23 +175,36 @@ Vue.component("conver", {
               </div>`,
   });
 
+  // --------------- formulaire -------------------- //
+
+Vue.component("formu", {
+    template: `<div>
+                  <slot name="formulaire"></slot>
+              </div>`,
+
+      methods: {
+        update(showModal) {
+          this.showModal = showModal;
+      },
+    }, 
+  });
+
 // --------------- Vue -------------------- //
 
   let cm = new Vue({
     el: "#app",
     data: {
-    show: 1,
-    firstName: "Erik",
-    lastName: "Paquet",
-    leModal: false,
-    isActive2: false,
-    gender:"",
-    sexe:[a= "Mr.",b= "Ms."],
-    converter: 0,
-    conversion: "",
-    chiffreConversion: null,
-    
-  },
+      show: 1,
+      firstName: "Erik",
+      lastName: "Paquet",
+      leModal: false,
+      isActive2: false,
+      gender:"",
+      sexe:[a= "Mr.",b= "Ms."],
+      converter: 0,
+      conversion: "",
+      chiffreConversion: null, 
+    },
   methods: {
         changeColor2() {
           this.isActive2 = !this.isActive2
