@@ -1,1 +1,7 @@
-<p>mexique works!</p>
+
+
+<div class="boite2">
+    <div *ngFor="let forfait of TableauForfaits | mexique">
+        <app-forfait-plus [forfait]="forfait"></app-forfait-plus>
+    </div>
+</div>  

@@ -1,1 +1,7 @@
-<p>cuba works!</p>
+
+
+<div class="boite2">
+    <div *ngFor="let forfait of TableauForfaits | cuba">
+        <app-forfait-plus [forfait]="forfait"></app-forfait-plus>
+    </div>
+</div>  

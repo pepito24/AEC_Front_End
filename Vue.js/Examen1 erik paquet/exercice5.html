@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>exercice 5</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+  <body>
+    <div id="app">
+
+  <!-- Formulaire-->
+    <formu>
+      <template v-slot:formulaire>
+        <div class="form">
+
+          <label for="firstName">First Name</label><br>
+          <input class="text" id="firstName" type="text" v-model="firstName" />
+
+          <label for="lastName">Last Name</label><br>
+          <input class="text" id="lastName" type="text" v-model="lastName" />
+
+          <input type="radio" v-model="gender" v-bind:value="sexe[0]">Homme<br />
+          <input type="radio" v-model="gender" v-bind:value="sexe[1]">Femme<br />
+
+          <!-- Bouton avec Modal-->
+          <button class="button" v-on:click="showModal = true">
+            Soumettre le formulaire
+          </button>
+        </template>
+      </formu>
+
+ <!-- Modal  -->
+    <mod v-on:update-show-modal="update" >
+      <template v-slot:modals>
+        <transition name="fade" appear>
+          <div
+            class="modal-overlay"
+            v-if="leModal"
+            @click="leModal = false"
+          ></div>
+        </transition>
+        <transition name="slide" appear>
+          <div class="modal" v-if="showModal">
+            <input type="checkbox" @click="changeColor2()">
+            <label for="click">Changer de couleur !</label><br>
+            <h1 v-bind:class="[{ 'actived2': isActive2 }]">{{gender}} {{firstName}} {{lastName}}</h1>
+            <button class="button" v-on:click="showModal = false">
+              Fermer
+            </button>
+          </div>
+        </transition> 
+      </template>
+    <mod>
+  </div>
+  
+
+<script>
+
+// --------------- formulaire -------------------- //
+
+Vue.component("formu", {
+    template: `<div>
+                  <slot name="formulaire"></slot>
+              </div>`,
+
+      methods: {
+        update(showModal) {
+          this.showModal = showModal;
+      },
+    }, 
+  });
+
+// --------------- modal -------------------- //
+
+Vue.component("mod", {
+    template: ` <div>
+                  <slot name="modals"></slot>
+              </div> `,
+
+    methods: {
+      showThisModal() {
+        showModal = false;
+        this.$emit("update-show-modal", showModal);
+      },
+    },
+  });
+
+// --------------- Vue -------------------- //
+
+new Vue({
+  el: "#app",
+  data: { 
+    firstName: "Erik",
+    lastName: "Paquet",
+    isActive2: false,
+    showModal: "",
+    gender:"",
+    sexe:[a= "Mr.",b= "Ms."],
+  },    
+  methods: {
+    changeColor2() {
+      this.isActive2 = !this.isActive2
+    }
+  }, 
+});
+
+</script>
+
+  </body>
+</html>

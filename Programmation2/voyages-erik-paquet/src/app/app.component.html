@@ -9,18 +9,27 @@
     <app-recherche [(formulaire)]="formulaire"></app-recherche>
   </mat-drawer>
 
-  <mat-toolbar>
+ 
+    <div class="topnav">
+      <a routerLink="/accueil" class="active">Voyage.ca</a>
+      <div id="myLinks">
+        <a class="menu" routerLink="/accueil">Accueil</a>
+        <a routerLink="/a-propos">A propos</a>
+        <a routerLink="/cuba">Cuba</a>
+        <a routerLink="/mexique">Mexique</a>
+        <a routerLink="/administration">Administration</a>
+        <a routerLink="/tableau-de-bord">Tableau de bord</a>
 
-    <a class="menu" routerLink="/accueil">Accueil</a>
-    <a routerLink="/a-propos">A propos</a>
-    <a routerLink="/gestion">Gestion</a>
-
-      <span class="example-spacer"></span>
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Menu
-      </button>
-      
-   </mat-toolbar>
+        <span class="example-spacer"></span>
+        <button class="menu_bouton " type="button" mat-button (click)="drawer.toggle()">
+          Menu
+        </button>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+  
     
 <router-outlet></router-outlet>
 

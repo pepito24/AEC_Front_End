@@ -25,7 +25,7 @@
             <input type="radio" v-model="gender" v-bind:value="sexe[1]">Femme<br />
 
             <!-- Bouton avec Modal-->
-            <button class="button" v-on:click="showThisModal">
+            <button class="button" v-on:click="showModal = true">
               Soumettre le formulaire
             </button>
           </template>
@@ -37,7 +37,7 @@
             <transition name="slide" appear>
               <div class="modal" v-if="showModal">
                 <input type="checkbox" @click="changeColor2()">
-                <label for="click" v-bind:class="[{ 'actived2': isActive2 }]">Changer de couleur !</label><br>
+                <label for="click">Changer de couleur !</label><br>
                 <h1 v-bind:class="[{ 'actived2': isActive2 }]">{{gender}} {{firstName}} {{lastName}}</h1>
                 <button class="button" v-on:click="showModal = false">
                   Fermer

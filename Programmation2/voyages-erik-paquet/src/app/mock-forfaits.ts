@@ -5,6 +5,8 @@ import { Forfait } from './forfait';
 export const FORFAITS: Forfait[] = [
     
     { 
+        da:'Cuba',
+        _id:'123',
         destination: 'Cuba',
         villeDepart: 'Quebec',
         hotel: 
@@ -20,95 +22,5 @@ export const FORFAITS: Forfait[] = [
         prix: 1200,
         rabais: 1000,
         vedette: true,
-    },
-
-    { 
-        destination: 'Punta Cana',
-        villeDepart: 'Quebec',
-        hotel:
-        {
-            nom: 'Residences Playa Del Carmen',
-            coordonnees: '7 Rue de Punta Cana, PC D4R5T6',
-            nombreEtoiles: 5,
-            nombreChambres: 20,
-            caracteristiques: ['Face à la plage', 'Plage','Massage','Picine','Service au chambre', 'Tout inclus'],
-        },
-        dateDepart: '12/12/2020',
-        dateRetour: '19/12/2020',
-        prix: 1500,
-        rabais: 1200,
-        vedette: true,
-    },
-
-    { 
-        destination: 'Rome',
-        villeDepart: 'Montreal',
-        hotel: 
-        {
-            nom: 'The Circus',
-            coordonnees: '14 Rue Saint Raoul, G1B 1L3',
-            nombreEtoiles: 4,
-            nombreChambres: 20,
-            caracteristiques: ['Face à la plage', 'Miniclub','Mariages','Plage', 'Massages', 'Picines', 'Tout inclus'],
-        },
-        dateDepart: '12/12/2020',
-        dateRetour: '22/12/2020',
-        prix: 1800,
-        rabais: 1600,
-        vedette: false,
-    },
-
-    { 
-        destination: 'New-York',
-        villeDepart: 'Quebec',
-        hotel: 
-        {
-            nom: 'Plaza Hotel',
-            coordonnees: '646 Rue du Plaza, NY T1B 1G3',
-            nombreEtoiles: 5,
-            nombreChambres: 20,
-            caracteristiques: ['Massage','Picine','Mariages','Service au chambre'],
-        },
-        dateDepart: '12/12/2020',
-        dateRetour: '26/12/2020',
-        prix: 600,
-        rabais: 500,
-        vedette: true,
-    },
-
-    { 
-        destination: 'Boston',
-        villeDepart: 'Montreal',
-        hotel: 
-        {
-            nom: 'Thrump Hotel',
-            coordonnees: '547 Rue York, QC C1X 1X3',
-            nombreEtoiles: 2,
-            nombreChambres: 20,
-            caracteristiques: ['Plage','Massage','Picine','Service au chambre', 'Tout inclus'],
-        },
-        dateDepart: '12/12/2020',
-        dateRetour: '19/12/2020',
-        prix: 600,
-        rabais: 600,
-        vedette: false,
-    },
-
-    { 
-        destination: 'Paris',
-        villeDepart: 'Montreal',
-        hotel: 
-        {
-            nom: 'Le Francais',
-            coordonnees: '147 Rue de Paris',
-            nombreEtoiles: 4,
-            nombreChambres: 20,
-            caracteristiques: ['Plage','Picine','Service au chambre'],
-        },
-        dateDepart: '12/12/2020',
-        dateRetour: '19/12/2020',
-        prix: 1600,
-        rabais: 1500,
-        vedette: false,
     },
 ];

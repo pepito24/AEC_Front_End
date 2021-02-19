@@ -84,6 +84,19 @@ mat-form-field {
   margin-bottom: 30px;
 }
 
+.example-sidenav .recherche_bouton {
+  padding: 10px 25px;
+  background-color: lightblue;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+}
+
+.example-sidenav .recherche_bouton:hover {
+  background-color: blue;
+}
+
 .boite1 h1, .boite2 h1 {
   font-size: 30px;
   font-weight: 800;
@@ -193,15 +206,184 @@ mat-form-field {
   padding: 30px 50px;
 }
 
-.menu {
+mat-toolbar a {
   margin-right: 15px;
+  font-size: 16px;
 }
 
 .footer {
   background-color: lightgrey;
 }
 
-table {
+#heroFormAjout {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.mat-column-actions {
+  min-width: 90px !important;
+}
+
+.boutonsAction {
+  padding: 0;
+}
+
+.boutonsAction form {
+  display: inline-block;
+}
+
+.tableau {
   width: 100%;
+  margin: 30px 0;
+}
+
+.tableau .form-add {
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.tableau .form-add h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.tableau .form-add .zone {
+  width: 80%;
+  margin: 10px 10%;
+}
+
+.tableau .form-add .zone2 {
+  width: 60%;
+  margin-left: 10%;
+}
+
+.tableau .form-add .zone2:first-child {
+  margin-top: 30px;
+}
+
+.tableau .form-add .btnfinal {
+  margin: 0% 40% 30px 40%;
+  width: 20%;
+}
+
+.tableau .form-add .zone_bouton {
+  width: 20%;
+}
+
+.tableau .form-add .ml5 {
+  margin: 15px 10% 0% 10%;
+}
+
+.tableau .form-add .add {
+  width: 30%;
+  margin: 0 0 0 32%;
+}
+
+.tableau .form-add button {
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+  width: 125px;
+}
+
+.tableau table {
+  width: 100%;
+  padding: 30px 10px;
+}
+
+.tableau table .mat-form-field-infix {
+  max-width: 63px;
+  text-align: center;
+}
+
+.tableau table td {
+  width: 20%;
+  padding-left: 0px !important;
+  text-align: center;
+}
+
+.tableau table td:last-child {
+  padding-right: 0px !important;
+}
+
+.tableau table td span {
+  font-size: 12px;
+}
+
+.tableau table th {
+  width: 10%;
+  text-align: center;
+  padding-left: 0px !important;
+}
+
+.tableau table th:last-child {
+  padding-right: 0px !important;
+}
+
+.tableau table th td {
+  width: 10%;
+}
+
+.tableau table th td span {
+  font-size: 12px;
+}
+
+.titre {
+  text-align: center;
+  padding: 30px 0px 0px 0px;
+}
+
+.graphique {
+  width: 70%;
+  margin: 4% 15%;
+  height: 300px;
+}
+
+.tarte {
+  margin: 30px 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: lightblue;
+  color: white;
+}
+
+.menu_bouton {
+  padding: 10px 30px;
+  background-color: lightblue;
+  color: white;
+  margin: 15px 16px !important;
 }
 /*# sourceMappingURL=styles.css.map */

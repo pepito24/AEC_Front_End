@@ -58,7 +58,7 @@
           <transition name="slide" appear>
             <div class="modal" v-if="leModal">
               <input type="checkbox" @click="changeColor2()">
-              <label for="click" v-bind:class="[{ 'actived2': isActive2 }]">Changer de couleur !</label><br>
+              <label for="click">Changer de couleur !</label><br>
               <h1 v-bind:class="[{ 'actived2': isActive2 }]">{{gender}} {{firstName}} {{lastName}}</h1>
               <button class="button" v-on:click="leModal = false">
                 Fermer
@@ -67,8 +67,6 @@
           </transition> 
         </div>
       
-            
-  
 
 <!------------ Footer -------------->
   <div>
@@ -115,6 +113,21 @@ Vue.component("formu", {
     }, 
   });
   
+// --------------- modal -------------------- //
+
+Vue.component("mod", {
+    template: ` <div>
+                  <slot name="modals"></slot>
+              </div> `,
+
+    methods: {
+      showThisModal() {
+        showModal = false;
+        this.$emit("update-show-modal", showModal);
+      },
+    },
+  });
+  
 // --------------- Vue -------------------- //
 
   let cm = new Vue({
@@ -130,6 +143,7 @@ Vue.component("formu", {
       converter: 0,
       conversion: "",
       chiffreConversion: null, 
+      showModal: "",
   },
   methods: {
         changeColor2() {

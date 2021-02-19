@@ -34,12 +34,16 @@ import {MatSelectModule} from '@angular/material/select';
 import { ReactiveFormsModule  } from "@angular/forms";
 import { AProposComponent } from './a-propos/a-propos.component';
 import { AccueilComponent } from './accueil/accueil.component';
-import { AdministrationComponent } from './administration/administration.component';
 import { MexiqueComponent } from './mexique/mexique.component';
 import { CubaComponent } from './cuba/cuba.component';
 import {MatTableModule} from '@angular/material/table';
 import { GestionForfaitComponent } from './gestion-forfait/gestion-forfait.component';
-
+import { ChartsModule } from 'ng2-charts';
+import { GraphiqueComponent } from './graphique/graphique.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { GraphiqueDeuxComponent } from './graphique-deux/graphique-deux.component';
+import { CubaPipe } from './cuba.pipe';
+import { MexiquePipe } from './mexique.pipe';
 
 
 
@@ -55,10 +59,13 @@ import { GestionForfaitComponent } from './gestion-forfait/gestion-forfait.compo
     RechercheComponent,
     AProposComponent,
     AccueilComponent,
-    AdministrationComponent,
     MexiqueComponent,
     CubaComponent,
     GestionForfaitComponent,
+    GraphiqueComponent,
+    GraphiqueDeuxComponent,
+    CubaPipe,
+    MexiquePipe,
   ],
   imports: [
     BrowserModule,
@@ -82,6 +89,8 @@ import { GestionForfaitComponent } from './gestion-forfait/gestion-forfait.compo
     ReactiveFormsModule,
     HttpClientModule,
     MatTableModule,
+    ChartsModule,
+    MatDialogModule,
 
   ],
   providers: [VoyageService],

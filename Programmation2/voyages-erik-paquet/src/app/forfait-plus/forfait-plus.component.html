@@ -1,45 +1,43 @@
 
 
-<div class="boite2">
-    <div *ngFor="let forfait of TableauForfaits">
-        <div class="card">
-            <img class="photo" src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_960_720.jpg"/>
-            <div class="container">
 
-                <div class="rabais" *ngIf="forfait.prix > forfait.rabais">
-                    <p>Rabais de <br> {{forfait.prix - forfait.rabais}}$ CAD</p>
-                </div>
+<div class="card">
+    <img class="photo" src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_960_720.jpg"/>
+    <div class="container">
 
-                <div class="vedette" *ngIf="forfait.vedette === true">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png" />
-                </div>
-
-                <h1>{{forfait.destination}}</h1>
-
-                <h3>Départ de : {{forfait.villeDepart}}</h3>
-
-                <h2>{{forfait.hotel.nom}}</h2>
-
-                {{forfait.hotel.coordonnees}}<br>
-                
-                <app-etoiles [etoiles]="forfait.hotel.nombreEtoiles"></app-etoiles><br><br>
-
-                <p><b>Départ :</b> {{forfait.dateDepart}}</p>
-
-                <p><b>Durée :</b> 7 Jours</p>
-
-                <div>
-                    <ng-container *ngFor="let caracteristiques of forfait.hotel.caracteristiques">
-                        {{caracteristiques}} - 
-                    </ng-container>
-                </div>
-
-                <div *ngIf="forfait.prix > forfait.rabais; else elseBlock">
-                    <h2><S>{{forfait.prix}}$ CAD</S> - {{forfait.rabais}}$ CAD</h2>
-                </div>
-
-                <ng-template #elseBlock><h2>{{forfait.prix}}$ CAD</h2></ng-template>
-            </div>
+        <div class="rabais" *ngIf="forfait.prix > forfait.rabais">
+            <p>Rabais de <br> {{forfait.prix - forfait.rabais}}$ CAD</p>
         </div>
+
+        <div class="vedette" *ngIf="forfait.vedette === true">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%C3%89toile_d%27or.svg/1024px-%C3%89toile_d%27or.svg.png" />
+        </div>
+
+        <h1>{{forfait.destination}}</h1>
+
+        <h3>Départ de: {{forfait.villeDepart}}</h3>
+
+        <h2>{{forfait.hotel.nom}}</h2>
+
+        {{forfait.hotel.coordonnees}}<br>
+        
+        <app-etoiles [etoiles]="forfait.hotel.nombreEtoiles"></app-etoiles><br><br>
+
+        <p><b>Départ :</b> {{forfait.dateDepart}}</p>
+
+        <p><b>Durée :</b> {{calculerDuree(forfait.dateDepart, forfait.dateRetour)}}</p>
+
+        <div>
+            <ng-container *ngFor="let caracteristiques of forfait.hotel.caracteristiques">
+                {{caracteristiques}} - 
+            </ng-container>
+        </div>
+
+        <div *ngIf="forfait.prix > forfait.rabais; else elseBlock">
+            <h2><S>{{forfait.prix}}$ CAD</S> - {{forfait.rabais}}$ CAD</h2>
+        </div>
+
+        <ng-template #elseBlock><h2>{{forfait.prix}}$ CAD</h2></ng-template>
     </div>
 </div>
+

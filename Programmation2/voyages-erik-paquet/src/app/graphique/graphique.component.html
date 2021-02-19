@@ -1,0 +1,13 @@
+<div class="graphique">
+    <canvas id="monGraphique" baseChart
+        [datasets]="mesdonnees.data"
+        [labels]="mesdonnees.etiquettes"
+        [options]="mongraphique.options"
+        [legend]="mongraphique.legende"
+        [chartType]="mongraphique.type">
+    </canvas>
+</div>
+
+<div>
+    <app-graphique-deux></app-graphique-deux>
+</div>

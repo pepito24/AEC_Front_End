@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<div id="app">
+  <h1>Bonjour l'application !</h1>
+  <p>
+    <!-- utilisez le composant router-link pour la navigation. -->
+    <!-- spécifiez le lien en le passant à la prop `to` -->
+    <!-- `<router-link>` sera rendu en tag `<a>` par défaut -->
+    <router-link to="/foo">Aller &agrave; Foo</router-link>
+    <router-link to="/bar">Aller &agrave; Bar</router-link>
+    <router-link to="/user/Baylly/billet/123"
+      >Afficher Billet Utilisateur</router-link
+    >
+  </p>
+  <!-- balise pour le composant router-view -->
+  <!-- le composant correspondant à la route sera rendu ici -->
+  <router-view></router-view>
+</div>
+
+<script src="vueRouter.js"></script>

@@ -1,7 +1,11 @@
 
 <app-forfait></app-forfait>
 
-<app-forfait-plus></app-forfait-plus>
+<div class="boite2">
+    <div *ngFor="let forfait of TableauForfaits">
+        <app-forfait-plus [forfait]="forfait"></app-forfait-plus>
+    </div>
+</div>
 
 
 
