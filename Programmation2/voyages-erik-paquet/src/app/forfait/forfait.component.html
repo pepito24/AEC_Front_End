@@ -13,7 +13,7 @@
                  <app-etoiles [etoiles]="forfait.hotel.nombreEtoiles"></app-etoiles>
 
                     <p><b>Départ :</b> {{forfait.dateDepart}}</p>
-                    <p><b>Durée :</b> 7 Jours</p>
+                    <p><b>Durée :</b> {{calculerDuree(forfait.dateDepart, forfait.dateRetour)}}</p>
                 <div *ngIf="forfait.prix > forfait.rabais; else elseBlock ">
                     <h2><S>{{forfait.prix}}$ CAD</S> - {{forfait.rabais}}$ CAD</h2>
                 </div>

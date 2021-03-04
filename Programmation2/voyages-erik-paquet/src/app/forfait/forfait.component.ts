@@ -23,4 +23,11 @@ export class ForfaitComponent implements OnInit {
     this.voyageService.getVoyages()
         .subscribe(resultat => this.TableauForfaits = resultat);
   }
+
+
+  calculerDuree(dateDebutString : string, dateFinString : string) {
+    let dateDebut = new Date(dateDebutString);
+    let dateFin = new Date(dateFinString);
+    return  (dateFin.valueOf() - dateDebut.valueOf()) / (1000 * 60 * 60 * 24);
+  }
 }

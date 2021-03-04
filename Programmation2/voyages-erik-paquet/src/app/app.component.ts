@@ -12,9 +12,7 @@ export class AppComponent {
   
 
   formulaire :Formulaire = { 
-    date: '', 
-    nbrjour: '', 
-    etoiles: null,
+    destination: '', 
 
 };
 
