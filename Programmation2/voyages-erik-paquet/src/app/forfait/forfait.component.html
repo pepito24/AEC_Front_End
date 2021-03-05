@@ -9,9 +9,7 @@
                 <h1>{{forfait.destination}}</h1>
                 <h3>Départ de : {{forfait.villeDepart}}</h3>
                 <h2>{{forfait.hotel.nom}}</h2> 
-
                  <app-etoiles [etoiles]="forfait.hotel.nombreEtoiles"></app-etoiles>
-
                  <p><b>Départ :</b> {{calculerDate(forfait.dateDepart)}}</p>
                     <p><b>Durée :</b> {{calculerDuree(forfait.dateDepart, forfait.dateRetour)}}</p>
                 <div *ngIf="forfait.prix > forfait.rabais; else elseBlock ">
