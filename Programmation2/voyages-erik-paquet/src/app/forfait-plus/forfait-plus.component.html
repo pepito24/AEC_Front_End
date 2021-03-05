@@ -6,7 +6,7 @@
     <div class="container">
 
         <div class="rabais" *ngIf="forfait.prix > forfait.rabais">
-            <p>Rabais de <br> {{forfait.prix - forfait.rabais}}$ CAD</p>
+            <p>Rabais de <br> {{forfait.rabais}}$ CAD</p>
         </div>
 
         <div class="vedette" *ngIf="forfait.vedette === true">
@@ -23,7 +23,7 @@
         
         <app-etoiles [etoiles]="forfait.hotel.nombreEtoiles"></app-etoiles><br><br>
 
-        <p><b>Départ :</b> {{forfait.dateDepart}}</p>
+        <p><b>Départ :</b> {{calculerDate(forfait.dateDepart)}}</p>
 
         <p><b>Durée :</b> {{calculerDuree(forfait.dateDepart, forfait.dateRetour)}}</p>
 
@@ -34,7 +34,7 @@
         </div>
 
         <div *ngIf="forfait.prix > forfait.rabais; else elseBlock">
-            <h2><S>{{forfait.prix}}$ CAD</S> - {{forfait.rabais}}$ CAD</h2>
+            <h2><S>{{forfait.prix}}$ CAD</S> - {{forfait.prix - forfait.rabais}}$ CAD</h2>
         </div>
 
         <ng-template #elseBlock><h2>{{forfait.prix}}$ CAD</h2></ng-template>

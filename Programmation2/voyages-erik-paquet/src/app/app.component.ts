@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { Formulaire } from './formulaire';
 
 @Component({
@@ -10,10 +10,12 @@ export class AppComponent {
   title = 'voyages-erik-paquet';
   showFiller = false;
   
+  ngOnInit(): void {}
+
 
   formulaire :Formulaire = { 
     destination: '', 
 
-};
+  };
 
 }

@@ -112,7 +112,7 @@
                     name="coordonnees">
         
                 <mat-error *ngIf="coordonnees.hasError('required')">
-                Les coordonnées sont <strong>obligatoire</strong>
+                Les coordonnées sont <strong>obligatoires</strong>
                 </mat-error>
                 <mat-error *ngIf="coordonnees.hasError('minlength')">
                 La longueur minimale est de 2 caractères. 
@@ -140,44 +140,56 @@
                     required 
                     [(ngModel)]="newForfait.hotel.nombreChambres"
                     name="nombreChambres"
-                    matInput #nombreChambres="ngModel"
+                    matInput 
+                    #nombreChambres="ngModel"
                     placeholder="Ex. 1"
-                    min="1">
+                    min="1"
+                    onkeypress="return event.charCode >= 48">
             </mat-form-field>
-
-            <!-- Caractéristiques -->
+                   
             
             <!----- prix -------->
             <mat-form-field class="zone">
                 <mat-label>Prix</mat-label>
                 <input  
                 type="number" 
-                min="100" 
+                min="0" 
+                onkeypress="return event.charCode >= 48"
                 [(ngModel)]="newForfait.prix"
                 name="prix"
-                matInput #prix="ngModel"
+                matInput 
+                #prix="ngModel"
                 placeholder="Ex. 1000" 
                 required>
             </mat-form-field>
 
-             <!----- rabais -------->
+            <!----- rabais -------->
             <mat-form-field class="zone">
-                <mat-label>Rabais</mat-label>
+                <mat-label>Montant du rabais ($CAD)</mat-label>
                 <input  
                 type="number" 
-                min="1" 
+                min="0" 
+                onkeypress="return event.charCode >= 48"
                 [(ngModel)]="newForfait.rabais"
                 name="rabais"
-                matInput #rabais="ngModel"
+                matInput 
+                #rabais="ngModel"
                 placeholder="Ex. 1000" 
                 required>
             </mat-form-field>
 
-             <!----- vedette -------->
-             
+            <!----- Vedette -------->
+            <div class="zone">
+                <input  
+                type="checkbox"
+                [(ngModel)]="newForfait.vedette"
+                name="vedette" 
+                #vedette
+                data-toggle="toggle"
+                > En vedette ?
+            </div>
 
             <button class="btnfinal" matSuffix  type="submit" mat-icon-button color="primary" [disabled]="!forfaitFormAjout.form.valid">Ajouter</button>
-
         </form>
     </div>
 
@@ -192,7 +204,20 @@
             <td mat-cell *matCellDef="let forfait">
                 <form #forfaitFormEdition="ngForm" id="forfaitFormEdition" (ngSubmit)="forfaitFormEdition.form.valid && onEdit(forfaitFormEdition)">
                     <mat-form-field *ngIf="(selectedForfait && selectedForfait === forfait);else editDestination;" class="input-full-width">
-                        <input name="selectedForfaitDestination" [(ngModel)]="selectedForfait.destination" matInput required minlength="2" maxlength="50" #selectedForfaitDestination="ngModel">
+                        <input 
+                            name="selectedForfaitDestination" 
+                            [(ngModel)]="selectedForfait.destination" 
+                            matInput 
+                            required 
+                            minlength="2" 
+                            maxlength="50" 
+                            #selectedForfaitDestination="ngModel">
+                            <mat-error *ngIf="selectedForfaitDestination.hasError('required')">
+                                La destination est <strong>obligatoire</strong>
+                            </mat-error>
+                            <mat-error *ngIf="selectedForfaitDestination.hasError('minlength')">
+                                La longueur minimale est de 2 caractères. 
+                            </mat-error>
                     </mat-form-field>
                 </form>
                 <ng-template #editDestination><span (click)="onSelect(forfait)">{{forfait.destination}}</span></ng-template>
@@ -202,29 +227,82 @@
         <!-- Nom -->
         <ng-container matColumnDef="nom">
             <th mat-header-cell *matHeaderCellDef> Nom </th>
-            <td mat-cell *matCellDef="let forfait"> {{forfait.hotel.nom}} </td>
+            <td mat-cell *matCellDef="let forfait">
+                <form #forfaitFormEdition="ngForm" id="forfaitFormEdition" (ngSubmit)="forfaitFormEdition.form.valid && onEdit(forfaitFormEdition)">
+                    <mat-form-field *ngIf="(selectedForfait && selectedForfait === forfait);else editNom;" class="input-full-width">
+                        <input 
+                            name="selectedForfaitNom" 
+                            [(ngModel)]="selectedForfait.hotel.nom" 
+                            matInput required 
+                            minlength="2" 
+                            maxlength="50" 
+                            #selectedForfaitNom="ngModel">
+                            <mat-error *ngIf="selectedForfaitNom.hasError('required')">
+                                Le nom est <strong>obligatoire</strong>
+                              </mat-error>
+                              <mat-error *ngIf="selectedForfaitNom.hasError('minlength')">
+                                La longueur minimale est de 2 caractères. 
+                              </mat-error>
+                    </mat-form-field>
+                </form>
+                <ng-template #editNom><span (click)="onSelect(forfait)">{{forfait.hotel.nom}}</span></ng-template>
+            </td>
         </ng-container>
+
 
         <!-- villeDepart -->
         <ng-container matColumnDef="villeDepart">
             <th mat-header-cell *matHeaderCellDef> Ville de depart </th>
-            <td mat-cell *matCellDef="let forfait"> {{forfait.villeDepart}} </td>
+            <td mat-cell *matCellDef="let forfait">
+                <form #forfaitFormEdition="ngForm" id="forfaitFormEdition" (ngSubmit)="forfaitFormEdition.form.valid && onEdit(forfaitFormEdition)">
+                    <mat-form-field *ngIf="(selectedForfait && selectedForfait === forfait);else editVilleDepart;" class="input-full-width">
+                        <input 
+                            name="selectedForfaitVilleDepart" 
+                            [(ngModel)]="selectedForfait.villeDepart" 
+                            matInput 
+                            required 
+                            minlength="2" 
+                            maxlength="50" 
+                            #selectedForfaitVilleDepart="ngModel">
+                            <mat-error *ngIf="selectedForfaitVilleDepart.hasError('required')">
+                                Le ville de départ est <strong>obligatoire</strong>
+                                </mat-error>
+                                <mat-error *ngIf="selectedForfaitVilleDepart.hasError('minlength')">
+                                La longueur minimale est de 2 caractères. 
+                                </mat-error>
+                    </mat-form-field>
+                </form>
+                <ng-template #editVilleDepart><span (click)="onSelect(forfait)">{{forfait.villeDepart}}</span></ng-template>
+            </td>
         </ng-container>
+
 
         <!-- prix -->
         <ng-container matColumnDef="prix">
             <th mat-header-cell *matHeaderCellDef> Prix </th>
-            <td mat-cell *matCellDef="let forfait"> {{forfait.prix}} $ </td>
+            <td mat-cell *matCellDef="let forfait">
+                <form #forfaitFormEdition="ngForm" id="forfaitFormEdition" (ngSubmit)="forfaitFormEdition.form.valid && onEdit(forfaitFormEdition)">
+                    <mat-form-field *ngIf="(selectedForfait && selectedForfait === forfait);else editPrix;" class="input-full-width">
+                        <input 
+                            name="selectedForfaitPrix" 
+                            onkeypress="return event.charCode >= 48"  
+                            min="0" 
+                            [(ngModel)]="selectedForfait.prix" 
+                            type="number" 
+                            matInput 
+                            required 
+                            #selectedForfaitPrix="ngModel">
+                    </mat-form-field>
+                </form>
+                <ng-template #editPrix><span (click)="onSelect(forfait)">{{forfait.prix}}</span></ng-template>
+            </td>
         </ng-container>
 
 
         <ng-container matColumnDef="actions">
             <th mat-header-cell *matHeaderCellDef>Actions</th>
             <td mat-cell *matCellDef="let forfait" class="boutonsAction">
-
                 <button *ngIf="(selectedForfait && selectedForfait === forfait);else editButton;" color="primary" form="forfaitFormEdition">done</button>
-               
-
                 <ng-template #editButton>
                     <form (ngSubmit)="onSelect(forfait)">
                         <button>edit</button>
@@ -233,18 +311,11 @@
                 <form (ngSubmit)="onDelete(forfait)">
                     <button>delete</button>
                 </form>
-
-
             </td>
         </ng-container>
-        
-
         <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
         <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
-
-    </table>
-
-    
+    </table> 
 </div>
 
 

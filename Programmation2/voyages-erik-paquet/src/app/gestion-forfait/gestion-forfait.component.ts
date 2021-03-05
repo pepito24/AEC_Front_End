@@ -89,11 +89,7 @@ private _filter(value: string): string[] {
 
 myControl2 = new FormControl();
 options2: string[] = ['Québec', 'Montreal'];
-
-
-
   
-
 }
 
 
